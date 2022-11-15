@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    private float _speed;
+    [SerializeField] private GameObject missile;
 
     
     void Start()
     {
-        speed = 9f;
+        _speed = 9f;
     }
 
     void FixedUpdate()
@@ -19,9 +20,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Shooting");
+            Instantiate(missile, transform.position, missile.transform.rotation);
         }
     }
 
@@ -29,12 +30,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
+            transform.Translate(Vector3.right * Time.deltaTime * _speed);
         }
         
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * speed);
+            transform.Translate(Vector3.left * Time.deltaTime * _speed);
         }
     }
 
@@ -48,6 +49,11 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > 6)
         {
             transform.position = new Vector3(6, transform.position.y, transform.position.z);
+        }
+        
+        if (missile.gameObject.transform.position.y > 12)
+        {
+           Destroy(missile.gameObject);
         }
     }
 }

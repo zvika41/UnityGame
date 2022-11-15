@@ -28,13 +28,21 @@ public class GameManager : MonoBehaviour
     public bool isGameActive;
     public int score;
 
+    private PlayerController _playerController;
     private ScoreData _data;
     private float _spawnRate;
     
 
     void Awake()
-    { 
+    {
+        if (_instance == null)
+        {
+            _instance = GameObject.Find("GameManager").GetComponent<GameManager>();
+        }
+        
         _data = new ScoreData();
+        _playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        _playerController.gameObject.SetActive(false);
         LoadScorer();
     }
 
@@ -47,6 +55,7 @@ public class GameManager : MonoBehaviour
     public void StartGame(int difficulty)
     {
         startGameText.gameObject.SetActive(false);
+        _playerController.gameObject.SetActive(true);
         isGameActive = true;
         _spawnRate /= difficulty;
         InitScore();
@@ -83,7 +92,12 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        if (_playerController.gameObject.activeInHierarchy)
+        {
+            _playerController.gameObject.SetActive(false);
+        }
         isGameActive = false;
+        StopAllCoroutines();
         gameOverText.gameObject.SetActive(true);
         button.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
