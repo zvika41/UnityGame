@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TreeEditor;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class Targets : MonoBehaviour
@@ -33,6 +34,11 @@ public class Targets : MonoBehaviour
     }
 
     private void Update()
+    {
+       HandleGameObjects();
+    }
+
+    private void HandleGameObjects()
     {
         if (gameObject.transform.position.y > 0 && gameObject.CompareTag("Good") || gameObject.transform.position.y > 0 && gameObject.CompareTag("Bad"))
         {
@@ -81,26 +87,31 @@ public class Targets : MonoBehaviour
         return new Vector3(Random.Range(-_xRange, _xRange), _ySpawnPos);
     }
     
-    private void OnMouseDown()
+    // private void OnMouseDown()
+    // {
+    //     if (_gameManager.isGameActive)
+    //     {
+    //         if (gameObject.CompareTag("Good"))
+    //         {
+    //            
+    //             _gameManager.UpdateScore(_points);
+    //         }
+    //         else if (gameObject.CompareTag("Bad"))
+    //         {
+    //             
+    //             _gameManager.GameOver();
+    //         }
+    //     }
+    // }
+    
+    private void OnCollisionEnter(Collision other)
     {
-        if (_gameManager.isGameActive)
+        if (_gameManager.isGameActive && other.gameObject.CompareTag("Player"))
         {
-            if (gameObject.CompareTag("Good"))
-            {
-               HandleObjectClicked();
-                _gameManager.UpdateScore(_points);
-            }
-            else if (gameObject.CompareTag("Bad"))
-            {
-                HandleObjectClicked();
-                _gameManager.GameOver();
-            }
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+            Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
+            _gameManager.GameOver();
         }
-    }
-
-    private void HandleObjectClicked()
-    {
-        Destroy(gameObject);
-        Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
     }
 }
