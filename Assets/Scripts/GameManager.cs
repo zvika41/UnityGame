@@ -11,6 +11,11 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager _instance;
+
+    public static GameManager Instance => _instance;
+
+
     [SerializeField] private List<GameObject> targets;
     [SerializeField] private Text scoreText;
     [SerializeField] private Text scoreNumber;

@@ -34,6 +34,11 @@ public class Targets : MonoBehaviour
 
     private void Update()
     {
+       HandleGameObjects();
+    }
+
+    private void HandleGameObjects()
+    {
         if (gameObject.transform.position.y > 0 && gameObject.CompareTag("Good") || gameObject.transform.position.y > 0 && gameObject.CompareTag("Bad"))
         {
             _isObjectShowed = true;
@@ -91,6 +96,11 @@ public class Targets : MonoBehaviour
                 _gameManager.UpdateScore(_points);
             }
             else if (gameObject.CompareTag("Bad"))
+            {
+                HandleObjectClicked();
+                _gameManager.GameOver();
+            }
+            else if (gameObject.CompareTag("Player"))
             {
                 HandleObjectClicked();
                 _gameManager.GameOver();
