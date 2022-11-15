@@ -14,8 +14,6 @@ public class DifficultyLevel : MonoBehaviour
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         _difficulteLevel = GetComponent<Button>();
         _difficulteLevel.onClick.AddListener(OnDifficultySelected);
-        
-        
     }
 
     private void OnDifficultySelected()
