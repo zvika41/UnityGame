@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\zvika\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\zvika\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Prototype 5.-1266806843.00" t="ExcludeRecursive" />
+    <e p="C:\Users\zvika\Desktop\Unity Learning\Prototype 5" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="2D Space Kit" t="Include">
+          <e p="Asteroids" t="Include" />
+          <e p="Background Elements" t="Include">
+            <e p="Dust and Nebulae" t="Include">
+              <e p="Materials" t="Include" />
+            </e>
+            <e p="Planets" t="Include">
+              <e p="Planet Masks" t="Include">
+                <e p="Note.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Stars" t="Include">
+              <e p="Recolor Us!.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Backgrounds" t="Include">
+            <e p="Background Tip.txt" t="Include" />
+            <e p="Fantasy Purple 2048" t="Include">
+              <e p="Note.txt" t="Include" />
+            </e>
+            <e p="Red Nebula 2048" t="Include" />
+          </e>
+          <e p="Debris" t="Include" />
+          <e p="Example Scene" t="Include" />
+          <e p="Missiles" t="Include" />
+          <e p="Particles (Sprites)" t="Include">
+            <e p="Materials" t="Include" />
+            <e p="Note on Flares.txt" t="Include" />
+          </e>
+          <e p="Prefabs" t="Include" />
+          <e p="Readme.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="AimBeam.cs" t="Include" />
+            <e p="Crosshair.cs" t="Include" />
+            <e p="CustomPointer.cs" t="Include" />
+            <e p="ExampleShipControl.cs" t="Include" />
+            <e p="ParallaxLayer.cs" t="Include" />
+            <e p="PlayerControlledTurret.cs" t="Include" />
+            <e p="Projectile.cs" t="Include" />
+            <e p="PSDestroy.cs" t="Include" />
+            <e p="ShipCamera.cs" t="Include" />
+            <e p="WARNING.txt" t="Include" />
+          </e>
+          <e p="Ships and Stations" t="Include">
+            <e p="Rendering Tip.txt" t="Include" />
+          </e>
+          <e p="Turrets" t="Include" />
+        </e>
+        <e p="Challenge 5" t="Include">
+          <e p="_Source_Files" t="Include">
+            <e p="Materials" t="Include" />
+          </e>
+          <e p="Instructions" t="Include" />
+          <e p="Particles" t="Include" />
+          <e p="Prefabs" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="DestroyObjectX.cs" t="Include" />
+            <e p="DifficultyButtonX.cs" t="Include" />
+            <e p="GameManagerX.cs" t="Include" />
+            <e p="TargetX.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Course Library" t="Include">
+          <e p="_Source_Files" t="Include">
+            <e p="_LICENSE.txt" t="Include" />
+            <e p="FBX" t="Include" />
+            <e p="Materials" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="DestroyAfterDelay.cs" t="Include" />
+            </e>
+            <e p="SimpleFX" t="Include">
+              <e p="Materials" t="Include">
+                <e p="UnlitVertexColour_Alpha.shader" t="Include" />
+              </e>
+            </e>
+            <e p="Textures" t="Include" />
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="Baloo_Chettan" t="Include">
+              <e p="OFL.txt" t="Include" />
+            </e>
+            <e p="Exo_2" t="Include">
+              <e p="OFL.txt" t="Include" />
+            </e>
+            <e p="Indie_Flower" t="Include">
+              <e p="OFL.txt" t="Include" />
+            </e>
+            <e p="Margarine" t="Include">
+              <e p="OFL.txt" t="Include" />
+            </e>
+            <e p="Oswald" t="Include">
+              <e p="OFL.txt" t="Include" />
+            </e>
+            <e p="Roboto_Condensed" t="Include">
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Materials" t="Include" />
+          <e p="Particles" t="Include" />
+          <e p="Props" t="Include">
+            <e p="Bad" t="Include" />
+            <e p="Balls" t="Include" />
+            <e p="Food" t="Include" />
+            <e p="Other" t="Include" />
+          </e>
+          <e p="Textures" t="Include">
+            <e p="Abstract" t="Include">
+              <e p="Materials" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Prefabs" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="BillingMode.json" t="Include" />
+        </e>
+        <e p="Scenes" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="DifficultyLevel.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="SpawnObjectManager.cs" t="Include" />
+          <e p="Targets.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Documentation" t="Include" />
+          <e p="Examples &amp; Extras" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Anton OFL.txt" t="Include" />
+              <e p="Bangers - OFL.txt" t="Include" />
+              <e p="Oswald-Bold - OFL.txt" t="Include" />
+            </e>
+            <e p="Materials" t="Include" />
+            <e p="Prefabs" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="Color Gradient Presets" t="Include" />
+              <e p="Fonts &amp; Materials" t="Include" />
+              <e p="Sprite Assets" t="Include" />
+            </e>
+            <e p="Scenes" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Benchmark01.cs" t="Include" />
+              <e p="Benchmark01_UGUI.cs" t="Include" />
+              <e p="Benchmark02.cs" t="Include" />
+              <e p="Benchmark03.cs" t="Include" />
+              <e p="Benchmark04.cs" t="Include" />
+              <e p="CameraController.cs" t="Include" />
+              <e p="ChatController.cs" t="Include" />
+              <e p="EnvMapAnimator.cs" t="Include" />
+              <e p="ObjectSpin.cs" t="Include" />
+              <e p="ShaderPropAnimator.cs" t="Include" />
+              <e p="SimpleScript.cs" t="Include" />
+              <e p="SkewTextExample.cs" t="Include" />
+              <e p="TeleType.cs" t="Include" />
+              <e p="TextConsoleSimulator.cs" t="Include" />
+              <e p="TextMeshProFloatingText.cs" t="Include" />
+              <e p="TextMeshSpawner.cs" t="Include" />
+              <e p="TMP_DigitValidator.cs" t="Include" />
+              <e p="TMP_ExampleScript_01.cs" t="Include" />
+              <e p="TMP_FrameRateCounter.cs" t="Include" />
+              <e p="TMP_PhoneNumberValidator.cs" t="Include" />
+              <e p="TMP_TextEventCheck.cs" t="Include" />
+              <e p="TMP_TextEventHandler.cs" t="Include" />
+              <e p="TMP_TextInfoDebugTool.cs" t="Include" />
+              <e p="TMP_TextSelector_A.cs" t="Include" />
+              <e p="TMP_TextSelector_B.cs" t="Include" />
+              <e p="TMP_UiFrameRateCounter.cs" t="Include" />
+              <e p="TMPro_InstructionOverlay.cs" t="Include" />
+              <e p="VertexColorCycler.cs" t="Include" />
+              <e p="VertexJitter.cs" t="Include" />
+              <e p="VertexShakeA.cs" t="Include" />
+              <e p="VertexShakeB.cs" t="Include" />
+              <e p="VertexZoom.cs" t="Include" />
+              <e p="WarpTextExample.cs" t="Include" />
+            </e>
+            <e p="Sprites" t="Include" />
+            <e p="Textures" t="Include" />
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="Fonts &amp; Materials" t="Include" />
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+            <e p="Sprite Assets" t="Include" />
+            <e p="Style Sheets" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+            <e p="EmojiOne.json" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Prototype 5.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
