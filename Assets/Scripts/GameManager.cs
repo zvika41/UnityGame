@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEditor;
 using UnityEngine.SceneManagement;
@@ -20,7 +19,6 @@ public class GameManager : MonoBehaviour
     
     #region --- SerializeField ---
 
-    [SerializeField] private List<GameObject> targets;
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private TextMeshProUGUI startGameText;
     [SerializeField] private Button button;
