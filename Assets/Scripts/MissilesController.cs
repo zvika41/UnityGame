@@ -56,6 +56,8 @@ public class MissilesController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        if (!GameManager.Instance.IsGameActive) return;
+        
         if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) && other.gameObject.transform.position.y < 12)
         {
             Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);

@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 using TMPro;
 using UnityEditor;
 using UnityEngine.SceneManagement;
@@ -15,6 +13,7 @@ public class GameManager : MonoBehaviour
     #region --- Const ---
 
     private const string GAME_MANAGER_NAME = "GameManager";
+    private const string SPAWN_MANAGER_NAME = "SpawnManager";
 
     #endregion Const
     
@@ -33,11 +32,18 @@ public class GameManager : MonoBehaviour
     #region --- Members ---
     
     private PlayerController _playerController;
+    private SpawnManager _spawnManager;
     private bool _isGameActive;
-    private float _spawnRate;
 
     #endregion Members
 
+
+    #region --- Properties ---
+
+    public bool IsGameActive => _isGameActive;
+
+    #endregion Properties
+    
 
     #region --- Mono Methods ---
 
@@ -50,6 +56,8 @@ public class GameManager : MonoBehaviour
 
         _playerController = GameObject.Find(GlobalConstMembers.PLAYER).GetComponent<PlayerController>();
         _playerController.gameObject.SetActive(false);
+
+        _spawnManager = GameObject.Find(SPAWN_MANAGER_NAME).GetComponent<SpawnManager>();
     }
 
     #endregion Mono Methods
@@ -62,10 +70,8 @@ public class GameManager : MonoBehaviour
         startGameText.gameObject.SetActive(false);
         _playerController.gameObject.SetActive(true);
         _isGameActive = true;
-        _spawnRate = 1;
-        _spawnRate /= difficulty;
         ScoringSystem.Instance.InitScore();
-        StartCoroutine(SpawnTarget());
+        _spawnManager.StartSpawn(difficulty);
     }
     
     public void GameOver()
@@ -74,11 +80,12 @@ public class GameManager : MonoBehaviour
         {
             _playerController.gameObject.SetActive(false);
         }
+        
         _isGameActive = false;
         gameOverText.gameObject.SetActive(true);
         button.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
-        
+        _spawnManager.StopSpawn();
         ScoringSystem.Instance.SaveData();
     }
 
@@ -97,19 +104,4 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion Public Methods
-
-
-    #region --- Private Methods ---
-
-    private IEnumerator SpawnTarget()
-    {
-        while (_isGameActive)
-        {
-            yield return new WaitForSeconds(_spawnRate);
-            int index = Random.Range(0, targets.Count);
-            Instantiate(targets[index]);
-        }
-    }
-
-    #endregion Private Methods
 }
