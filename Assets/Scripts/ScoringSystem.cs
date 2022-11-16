@@ -6,32 +6,60 @@ using UnityEngine.UI;
 public class ScoringSystem : MonoBehaviour
 {
     private static ScoringSystem _instance;
-
     public static ScoringSystem Instance => _instance;
+
+    
+    #region --- Const ---
+
+    private const string FILE_PATH = "/savefile.json";
+    private const string SCORE_TEXT = "Score: ";
+    private const string BEST_SCORE_TEXT = "Best Score: ";
+    private const string SCORE_ON_START = "0";
+
+    #endregion Const
     
     
+    #region --- SerializeField ---
+
     [SerializeField] private Text scoreText;
     [SerializeField] private Text scoreNumber;
     [SerializeField] private Text bestScoreText;
+
+    #endregion SerializeField
+    
+    
+    #region --- Members ---
     
     private ScoreData _data;
     private int _score;
 
+    #endregion Members
 
-    public int Score => _score;
-    
-    
-    void Awake()
+
+    #region --- Mono Methods ---
+
+    private void Awake()
     {
         if (_instance == null)
         {
             _instance = GameObject.Find("ScoringSystem").GetComponent<ScoringSystem>();
         }
         
-        LoadScorer();
         _data = new ScoreData();
+        LoadScore();
     }
-    
+
+    #endregion Mono Methods
+
+
+    #region --- Public Methods ---
+
+    public void InitScore()
+    {
+        scoreText.gameObject.SetActive(true);
+        scoreText.text = SCORE_TEXT;
+        scoreNumber.text = SCORE_ON_START;
+    }
     
     public void UpdateScore(int addScore)
     {
@@ -50,13 +78,6 @@ public class ScoringSystem : MonoBehaviour
         scoreNumber.text = _score.ToString();
     }
     
-    public void InitScore()
-    {
-        scoreText.gameObject.SetActive(true);
-        scoreText.text = "Score: ";
-        scoreNumber.text = 0.ToString();
-    }
-    
     public void SaveData()
     {
         if (_data.score < _score)
@@ -65,12 +86,17 @@ public class ScoringSystem : MonoBehaviour
         }
         
         string json = JsonUtility.ToJson(_data);
-        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
+        File.WriteAllText(Application.persistentDataPath + FILE_PATH, json);
     }
+    
+    #endregion Public Methods
 
-    private void LoadScorer()
+
+    #region --- Private Methods ---
+
+    private void LoadScore()
     {
-        string path = Application.persistentDataPath + "/savefile.json";
+        string path = Application.persistentDataPath + FILE_PATH;
 
         if (File.Exists(path))
         {
@@ -83,13 +109,20 @@ public class ScoringSystem : MonoBehaviour
                 bestScoreText.gameObject.SetActive(true);
             }
             
-            bestScoreText.text = "Best Score: " + _data.score;
+            bestScoreText.text = BEST_SCORE_TEXT + _data.score;
         }
     }
-    
+
+    #endregion Private Methods
+
+
+    #region --- Internal Classes ---
+
     [Serializable]
     class ScoreData
     {
         public int score;
     }
+
+    #endregion Internal Classes
 }

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using TMPro;
@@ -14,18 +12,30 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager Instance => _instance;
     
+    
+    #region --- SerializeField ---
+
     [SerializeField] private List<GameObject> targets;
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private TextMeshProUGUI startGameText;
     [SerializeField] private Button button;
     [SerializeField] private Button exitButton;
+
+    #endregion SerializeField
+    
+    
+    #region --- Members ---
     
     private PlayerController _playerController;
     private bool _isGameActive;
     private float _spawnRate;
-    
-    
-    void Awake()
+
+    #endregion Members
+
+
+    #region --- Mono Methods ---
+
+    private void Awake()
     {
         if (_instance == null)
         {
@@ -36,31 +46,22 @@ public class GameManager : MonoBehaviour
         _playerController.gameObject.SetActive(false);
     }
 
-    void Start()
-    {
-        _spawnRate = 1;
-    }
-    
+    #endregion Mono Methods
+
+
+    #region --- Public Methods ---
+
     public void StartGame(int difficulty)
     {
         startGameText.gameObject.SetActive(false);
         _playerController.gameObject.SetActive(true);
         _isGameActive = true;
+        _spawnRate = 1;
         _spawnRate /= difficulty;
         ScoringSystem.Instance.InitScore();
         StartCoroutine(SpawnTarget());
     }
     
-    private IEnumerator SpawnTarget()
-    {
-        while (_isGameActive)
-        {
-            yield return new WaitForSeconds(_spawnRate);
-            int index = Random.Range(0, targets.Count);
-            Instantiate(targets[index]);
-        }
-    }
-
     public void GameOver()
     {
         if (_playerController.gameObject.activeInHierarchy)
@@ -68,7 +69,6 @@ public class GameManager : MonoBehaviour
             _playerController.gameObject.SetActive(false);
         }
         _isGameActive = false;
-        StopAllCoroutines();
         gameOverText.gameObject.SetActive(true);
         button.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
@@ -90,8 +90,20 @@ public class GameManager : MonoBehaviour
 #endif
     }
 
-    
+    #endregion Public Methods
 
 
-    
+    #region --- Private Methods ---
+
+    private IEnumerator SpawnTarget()
+    {
+        while (_isGameActive)
+        {
+            yield return new WaitForSeconds(_spawnRate);
+            int index = Random.Range(0, targets.Count);
+            Instantiate(targets[index]);
+        }
+    }
+
+    #endregion Private Methods
 }

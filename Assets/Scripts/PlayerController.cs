@@ -2,39 +2,47 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float _speed;
+    #region --- Const ---
+
+    private const float Speed = 15f;
+
+    #endregion Const
+    
+    #region --- SerializeField ---
+
     [SerializeField] private GameObject missile;
 
+    #endregion SerializeField
     
-    void Start()
-    {
-        _speed = 9f;
-    }
 
-    void FixedUpdate()
+    #region --- Mono Methods ---
+
+    private void Update()
     {
         HandlePlayerMovement();
         HandlePlayerBounds();
     }
+    
+    #endregion Mono Methods
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(missile, transform.position, missile.transform.rotation);
-        }
-    }
+
+    #region --- Private Methods ---
 
     private void HandlePlayerMovement()
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * _speed);
+            transform.Translate(Vector3.right * Time.deltaTime * Speed);
         }
         
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * _speed);
+            transform.Translate(Vector3.left * Time.deltaTime * Speed);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Instantiate(missile, transform.position, missile.transform.rotation);
         }
     }
 
@@ -49,10 +57,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(6, transform.position.y, transform.position.z);
         }
-        
-        if (missile.gameObject.transform.position.y > 12)
-        {
-           Destroy(missile.gameObject);
-        }
     }
+
+    #endregion Private Methods
 }

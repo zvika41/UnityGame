@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 506046969279440276}
   - component: {fileID: 528752984935810416}
   - component: {fileID: 528752984935810419}
-  - component: {fileID: 528752984935810418}
   - component: {fileID: 5515448335156874277}
   m_Layer: 0
   m_Name: Missile
@@ -113,7 +112,7 @@ Transform:
   m_Children:
   - {fileID: 529449347929380918}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &513815597410892428
 MeshFilter:
@@ -194,7 +193,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1147919, y: 0.72733116, z: 2.5171716}
   m_Center: {x: -0.000000029802322, y: -0.0000011920931, z: 0}
---- !u!114 &528752984935810418
+--- !u!114 &5515448335156874277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,17 +205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7a7135a53ef1e4581d0609e9caacb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  missile: {fileID: 527761041456558962}
   particleSystem: {fileID: 4758139293545943008, guid: c7ad2532a6eeb40b59033c75e71fa054,
     type: 3}
---- !u!114 &5515448335156874277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527761041456558962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b74aea5de375e04582820bf14155aa7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

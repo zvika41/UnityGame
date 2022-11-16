@@ -3,6 +3,8 @@ using Random = UnityEngine.Random;
 
 public class Targets : MonoBehaviour
 {
+    #region --- Members ---
+    
     public ParticleSystem particleSystem;
 
     private Rigidbody _rigidBody;
@@ -14,8 +16,12 @@ public class Targets : MonoBehaviour
     private float _ySpawnPos;
     private bool _isObjectShowed;
     private bool _test;
+
+    #endregion Members
     
     
+    #region --- Mono Methods ---
+
     private void Start()
     {
         _rigidBody = GetComponent<Rigidbody>();
@@ -27,30 +33,17 @@ public class Targets : MonoBehaviour
 
     private void Update()
     {
-       HandleGameObjects();
+        HandleGameObjects();
     }
+    
+    #endregion Mono Methods
+   
+    
+    #region --- Private Methods ---
 
     private void HandleGameObjects()
     {
-        if (gameObject.transform.position.y > 0 && gameObject.CompareTag(GlobalConstMembers.ENEMY) || gameObject.transform.position.y > 0 && gameObject.CompareTag(GlobalConstMembers.BOMB))
-        {
-            _isObjectShowed = true;
-        }
-
-        if (_isObjectShowed && gameObject.transform.position.y < 0 && gameObject.CompareTag(GlobalConstMembers.ENEMY))
-        {
-            // if (ScoringSystem.Instance.Score > 0)
-            // {
-            //     ScoringSystem.Instance.UpdateScore(-1);
-            // }
-            // // else if (_gameManager.score == 0)
-            // // {
-            // //     _gameManager.GameOver();
-            // // }
-            
-            Destroy(gameObject);
-        }
-        else if (_isObjectShowed && gameObject.transform.position.y < 0 && gameObject.CompareTag(GlobalConstMembers.BOMB))
+        if (gameObject.transform.position.y < 0 && (gameObject.CompareTag(GlobalConstMembers.ENEMY) || gameObject.CompareTag(GlobalConstMembers.BOMB)))
         {
             Destroy(gameObject);
         }
@@ -79,9 +72,14 @@ public class Targets : MonoBehaviour
         return new Vector3(Random.Range(-_xRange, _xRange), _ySpawnPos);
     }
 
+    #endregion Private Methods
+    
+    
+    #region --- Event Handler ---
+
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag(GlobalConstMembers.PLAYER))
+        if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
             Destroy(other.gameObject);
@@ -89,4 +87,6 @@ public class Targets : MonoBehaviour
             GameManager.Instance.GameOver();
         }
     }
+
+    #endregion Event Handler
 }
