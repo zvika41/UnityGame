@@ -7,70 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="2D Space Kit" t="Include">
-          <e p="Asteroids" t="Include" />
-          <e p="Background Elements" t="Include">
-            <e p="Dust and Nebulae" t="Include">
-              <e p="Materials" t="Include" />
-            </e>
-            <e p="Planets" t="Include">
-              <e p="Planet Masks" t="Include">
-                <e p="Note.txt" t="Include" />
-              </e>
-            </e>
-            <e p="Stars" t="Include">
-              <e p="Recolor Us!.txt" t="Include" />
-            </e>
-          </e>
-          <e p="Backgrounds" t="Include">
-            <e p="Background Tip.txt" t="Include" />
-            <e p="Fantasy Purple 2048" t="Include">
-              <e p="Note.txt" t="Include" />
-            </e>
-            <e p="Red Nebula 2048" t="Include" />
-          </e>
-          <e p="Debris" t="Include" />
-          <e p="Example Scene" t="Include" />
-          <e p="Missiles" t="Include" />
-          <e p="Particles (Sprites)" t="Include">
-            <e p="Materials" t="Include" />
-            <e p="Note on Flares.txt" t="Include" />
-          </e>
-          <e p="Prefabs" t="Include" />
-          <e p="Readme.txt" t="Include" />
-          <e p="Scripts" t="Include">
-            <e p="AimBeam.cs" t="Include" />
-            <e p="Crosshair.cs" t="Include" />
-            <e p="CustomPointer.cs" t="Include" />
-            <e p="ExampleShipControl.cs" t="Include" />
-            <e p="ParallaxLayer.cs" t="Include" />
-            <e p="PlayerControlledTurret.cs" t="Include" />
-            <e p="Projectile.cs" t="Include" />
-            <e p="PSDestroy.cs" t="Include" />
-            <e p="ShipCamera.cs" t="Include" />
-            <e p="WARNING.txt" t="Include" />
-          </e>
-          <e p="Ships and Stations" t="Include">
-            <e p="Materials" t="Include" />
-            <e p="Rendering Tip.txt" t="Include" />
-          </e>
-          <e p="Turrets" t="Include" />
-        </e>
-        <e p="Challenge 5" t="Include">
-          <e p="_Source_Files" t="Include">
-            <e p="Materials" t="Include" />
-          </e>
-          <e p="Instructions" t="Include" />
-          <e p="Particles" t="Include" />
-          <e p="Prefabs" t="Include" />
-          <e p="Scripts" t="Include">
-            <e p="DestroyObjectX.cs" t="Include" />
-            <e p="DifficultyButtonX.cs" t="Include" />
-            <e p="GameManagerX.cs" t="Include" />
-            <e p="TargetX.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Course Library" t="Include">
+        <e p="Library" t="Include">
           <e p="_Source_Files" t="Include">
             <e p="_LICENSE.txt" t="Include" />
             <e p="FBX" t="Include" />
@@ -113,6 +50,52 @@
             <e p="Food" t="Include" />
             <e p="Other" t="Include" />
           </e>
+          <e p="StarSparrow" t="Include">
+            <e p="Materials" t="Include">
+              <e p="BonusContent" t="Include" />
+              <e p="Extra" t="Include" />
+            </e>
+            <e p="Meshes" t="Include">
+              <e p="BonusContent" t="Include" />
+            </e>
+            <e p="Prefabs" t="Include">
+              <e p="BonusContent" t="Include">
+                <e p="PolygonSpaceship" t="Include" />
+              </e>
+              <e p="Examples" t="Include" />
+              <e p="Modular Examples" t="Include" />
+              <e p="Modules" t="Include" />
+            </e>
+            <e p="Readme" t="Include">
+              <e p="Readme Files" t="Include">
+                <e p="Icons" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="ReadmeStarSparrowEditor.cs" t="Include" />
+                  </e>
+                  <e p="ReadmeStarSparrow.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Scenes" t="Include">
+              <e p="Settings" t="Include" />
+            </e>
+            <e p="SRP" t="Include" />
+            <e p="SubstancePainter" t="Include">
+              <e p="Substance3DPainter.txt" t="Include" />
+            </e>
+            <e p="Textures" t="Include">
+              <e p="BonusContent" t="Include">
+                <e p="Asteroids" t="Include" />
+                <e p="FlyingInsect" t="Include" />
+                <e p="Mines" t="Include" />
+                <e p="MissileBomb" t="Include" />
+                <e p="Planet" t="Include" />
+                <e p="PolygonSpaceship" t="Include" />
+              </e>
+              <e p="Masks" t="Include" />
+            </e>
+          </e>
           <e p="Textures" t="Include">
             <e p="Abstract" t="Include">
               <e p="Materials" t="Include" />
@@ -133,52 +116,6 @@
           <e p="PlayerController.cs" t="Include" />
           <e p="ScoringSystem.cs" t="Include" />
           <e p="Targets.cs" t="Include" />
-        </e>
-        <e p="StarSparrow" t="Include">
-          <e p="Materials" t="Include">
-            <e p="BonusContent" t="Include" />
-            <e p="Extra" t="Include" />
-          </e>
-          <e p="Meshes" t="Include">
-            <e p="BonusContent" t="Include" />
-          </e>
-          <e p="Prefabs" t="Include">
-            <e p="BonusContent" t="Include">
-              <e p="PolygonSpaceship" t="Include" />
-            </e>
-            <e p="Examples" t="Include" />
-            <e p="Modular Examples" t="Include" />
-            <e p="Modules" t="Include" />
-          </e>
-          <e p="Readme" t="Include">
-            <e p="Readme Files" t="Include">
-              <e p="Icons" t="Include" />
-              <e p="Scripts" t="Include">
-                <e p="Editor" t="Include">
-                  <e p="ReadmeStarSparrowEditor.cs" t="Include" />
-                </e>
-                <e p="ReadmeStarSparrow.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="Scenes" t="Include">
-            <e p="Settings" t="Include" />
-          </e>
-          <e p="SRP" t="Include" />
-          <e p="SubstancePainter" t="Include">
-            <e p="Substance3DPainter.txt" t="Include" />
-          </e>
-          <e p="Textures" t="Include">
-            <e p="BonusContent" t="Include">
-              <e p="Asteroids" t="Include" />
-              <e p="FlyingInsect" t="Include" />
-              <e p="Mines" t="Include" />
-              <e p="MissileBomb" t="Include" />
-              <e p="Planet" t="Include" />
-              <e p="PolygonSpaceship" t="Include" />
-            </e>
-            <e p="Masks" t="Include" />
-          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Documentation" t="Include" />

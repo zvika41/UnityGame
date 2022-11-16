@@ -12,6 +12,12 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager Instance => _instance;
     
+    #region --- Const ---
+
+    private const string GAME_MANAGER_NAME = "GameManager";
+
+    #endregion Const
+    
     
     #region --- SerializeField ---
 
@@ -39,7 +45,7 @@ public class GameManager : MonoBehaviour
     {
         if (_instance == null)
         {
-            _instance = GameObject.Find("GameManager").GetComponent<GameManager>();
+            _instance = GameObject.Find(GAME_MANAGER_NAME).GetComponent<GameManager>();
         }
 
         _playerController = GameObject.Find(GlobalConstMembers.PLAYER).GetComponent<PlayerController>();

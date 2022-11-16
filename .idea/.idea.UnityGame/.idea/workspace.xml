@@ -20,22 +20,746 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce9369e-daa0-4247-ae42-ce0a1cf2ca20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Missile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Missile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Baloo_Chettan.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Baloo_Chettan/BalooChettan-Regular SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Baloo_Chettan/BalooChettan-Regular SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Baloo_Chettan/BalooChettan-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Baloo_Chettan/BalooChettan-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Baloo_Chettan/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Baloo_Chettan/OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Black.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-BlackItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-BoldItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ExtraBold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ExtraBoldItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ExtraLight.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ExtraLightItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Italic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Light.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-LightItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Medium.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-MediumItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-SemiBold SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-SemiBold SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-SemiBold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-SemiBoldItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-Thin.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/Exo2-ThinItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Exo_2/OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Indie_Flower.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Indie_Flower/IndieFlower SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Indie_Flower/IndieFlower SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Indie_Flower/IndieFlower.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Indie_Flower/IndieFlower.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Indie_Flower/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Indie_Flower/OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Margarine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Margarine/Margarine-Regular SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Margarine/Margarine-Regular SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Margarine/Margarine-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Margarine/Margarine-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Margarine/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Margarine/OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-ExtraLight.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Light.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Medium.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Regular SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Regular SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Oswald/Oswald-SemiBold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/LICENSE.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Light.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-LightItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Regular SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Regular SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Bad.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Bad/SM_Prop_Bomb_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Bad/SM_Prop_Bomb_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Bad/Skull_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Bad/Skull_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_8Ball.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_8Ball.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_American_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_American_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Beachball.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Beachball.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Cricket.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Cricket.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Eye.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Eye.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Nuclear.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Nuclear.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Soccer_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Balls/Ball_Soccer_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Bone_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Bone_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Cookie_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Cookie_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_EnergyCan_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_EnergyCan_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Fish_Cooked.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Fish_Cooked.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Organic_Apple_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Organic_Apple_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Organic_Apple_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Organic_Apple_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Organic_Carrot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Organic_Carrot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Organic_Pear_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Organic_Pear_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Pizza_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Pizza_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Sandwich_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Sandwich_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Steak_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Steak_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Wine_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Food/Food_Wine_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Barrel_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Barrel_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Barrel_01P.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Barrel_01P.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Crate_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Crate_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Crate_Question_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Crate_Question_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Synty_Cube_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Props/Other/Synty_Cube_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/Abstract.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/Abstract/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/Abstract/Materials/PolygonPrototype_Texture_Grid_06.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/Abstract/Materials/PolygonPrototype_Texture_Grid_06.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_05.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_06.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_07.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_08.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_Glass_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/Textures/PolygonPrototype_Texture_Grid_Glass_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_8Ball.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_8Ball.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_Beachball.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_Beachball.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_Cricket.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_Cricket.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_Eye.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_Eye.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_Nuclear.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Ball_Nuclear.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_Cookie_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_Cookie_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_EnergyCan_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_EnergyCan_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_Pizza_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_Pizza_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_Sandwich_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_Sandwich_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_Wine_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/Items_Wine_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_FireIcon.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_FireIcon.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Fish_Cooked.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Fish_Cooked.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Organic_Apple_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Organic_Apple_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Organic_Apple_03.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Organic_Apple_03.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Organic_Carrot.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Organic_Carrot.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Organic_Pear_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_Food_Organic_Pear_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_MultiplierIcon.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_MultiplierIcon.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_RadiationIcon.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SI_RadiationIcon.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Icon_Skull_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Icon_Skull_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Item_Ball_American_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Item_Ball_American_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Item_Ball_Soccer_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Item_Ball_Soccer_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Primitive_Cube_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Primitive_Cube_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Barrel_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Barrel_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Barrel_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Barrel_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Bomb_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Bomb_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Bone_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Bone_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Crate_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Crate_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Crate_Question_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Crate_Question_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Steak_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Steak_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Synty_Cube_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/FBX/SM_Prop_Synty_Cube_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/MilitaryProps.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/MilitaryProps.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonCity_Mat_01_A.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonCity_Mat_01_A.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonCity_Texture_01_A.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonCity_Texture_01_A.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonPrototype_Texture_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonPrototype_Texture_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonPrototype_Texture_04.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonPrototype_Texture_04.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SimpleDogs.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SimpleDogs.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SimpleIcons.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SimpleIcons.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SimpleItems.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SimpleItems.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SimpleShopInteriors.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SimpleShopInteriors.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SumoBalls_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SumoBalls_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SumoBalls_Material_Shiny.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/SumoBalls_Material_Shiny.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/lambert1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/lambert1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Scripts/DestroyAfterDelay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Scripts/DestroyAfterDelay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/SimpleFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/SimpleFX/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/SimpleFX/Materials/FX_Base.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/SimpleFX/Materials/FX_Base.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/SimpleFX/Materials/UnlitVertexColour_Alpha.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/SimpleFX/Materials/UnlitVertexColour_Alpha.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/Emissive_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/Emissive_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonCity_Texture_01_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonCity_Texture_01_A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonCity_Texture_Metallic.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonCity_Texture_Metallic.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonCity_Texture_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonCity_Texture_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonPrototype_Texture_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonPrototype_Texture_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonPrototype_Texture_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/PolygonPrototype_Texture_04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SimpleDogs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SimpleDogs.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SimpleIcons_Texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SimpleIcons_Texture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SimpleItems.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SimpleItems.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SimpleShopInterior_Texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SimpleShopInterior_Texture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SumoBalls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/SumoBalls.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/Textures_Props.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Textures/Textures_Props.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/_LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/_LICENSE.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Border_Color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Border_Color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Grid_Texture.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Grid_Texture.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PolygonPrototype_Texture_Grid_08.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PolygonPrototype_Texture_Grid_08.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PolygonPrototype_Texture_Grid_Glass_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PolygonPrototype_Texture_Grid_Glass_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Black.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Black.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Grey.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Grey.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Yellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/Explosion_Yellow.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype 5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyMissilesOutOfBounds.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyMissilesOutOfBounds.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DifficultyLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DifficultyLevel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissilesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissilesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnObjectManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnObjectManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Targets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Targets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/AsteroidsLava_Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/AsteroidsLava_Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Bomb.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Bomb.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/CloudsRed.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/CloudsRed.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/ColorsAtlas.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/ColorsAtlas.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/FlyingInsect_Purple.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/FlyingInsect_Purple.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Grey.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Grey.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Mine Sample 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Mine Sample 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Mine Sample 2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Mine Sample 2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Missile.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/Missile.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/TinniuqPlanet.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/BonusContent/TinniuqPlanet.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/Extra.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/Extra/StarSparrow_Black.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/Extra/StarSparrow_Black.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/Extra/StarSparrow_Cyan.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/Extra/StarSparrow_Cyan.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/Extra/StarSparrow_Orange.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/Extra/StarSparrow_Orange.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/Extra/StarSparrow_Yellow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/Extra/StarSparrow_Yellow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Green.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Grey.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Grey.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Purple.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Purple.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_White.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials/StarSparrow_White.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/AsteroidsSample.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/AsteroidsSample.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/Clouds.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/Clouds.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3_Wing1.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3_Wing1.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3_Wing2.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3_Wing2.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3_Wing3.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3_Wing3.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3_Wing4.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/FlyingInsects3_Wing4.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/MinesSample.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/MinesSample.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/MissilesSample.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/MissilesSample.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/Planet.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/Planet.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/StarSparrow_1_LP_Red.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/StarSparrow_1_LP_Red.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/StarSparrow_Modules_LP_Red.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/BonusContent/StarSparrow_Modules_LP_Red.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow10.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow10.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow11.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow11.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow12.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow12.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow13.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow13.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow14.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow14.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow15.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow15.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow16.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow16.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow17.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow17.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow18.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow18.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow19.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow19.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow20.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow20.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow4.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow4.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow5.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow5.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow7.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow7.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow8.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow8.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow9.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrow9.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrowModules.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes/StarSparrowModules.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Asteroid Lava Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Asteroid Lava Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Asteroid Lava Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Asteroid Lava Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Bomb.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Bomb.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Flying Insect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Flying Insect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Mine Sample 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Mine Sample 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Mine Sample 2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Mine Sample 2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Missile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Missile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_1_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_1_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_1_LP_Red_Modular.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_1_LP_Red_Modular.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Core_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Core_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Engine_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Engine_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Plasma_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Plasma_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Thruster_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Thruster_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Weapon_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Weapon_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Weapon_Mirrored_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Weapon_Mirrored_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Wing_1_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Wing_1_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Wing_1_Mirrored_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Wing_1_Mirrored_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Wing_2_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Wing_2_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Wing_3_LP_Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/PolygonSpaceship/StarSparrow_Wing_3_LP_Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Tinniuq Planet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent/Tinniuq Planet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow10.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow10.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow11.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow11.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow12.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow12.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow13.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow13.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow14.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow14.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow15.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow15.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow16.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow16.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow17.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow17.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow18.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow18.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow19.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow19.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow20.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow20.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow7.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow7.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow8.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow8.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow9.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Examples/StarSparrow9.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow10.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow10.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow11.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow11.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow12.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow12.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow13.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow13.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow14.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow14.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow15.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow15.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow16.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow16.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow17.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow17.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow18.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow18.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow19.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow19.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow20.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow20.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow7.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow7.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow8.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow8.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow9.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modular Examples/StarSparrow9.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Core.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Core.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Engine.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Engine.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Plasma.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Plasma.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Thruster.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Thruster.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Weapon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Weapon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Weapon_Mirrored.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Weapon_Mirrored.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_1_Mirrored.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_1_Mirrored.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_2_Mirrored.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_2_Mirrored.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/Modules/StarSparrow_Wing_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Icons/HelpStarSparrow_Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Icons/HelpStarSparrow_Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Icons/ReadMeStarSparrow_Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Icons/ReadMeStarSparrow_Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/LayoutStarSparrow.wlt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/LayoutStarSparrow.wlt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts/Editor/ReadmeStarSparrowEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts/Editor/ReadmeStarSparrowEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts/ReadmeStarSparrow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts/ReadmeStarSparrow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/ReadmeStarSparrow.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/ReadmeStarSparrow.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/USC Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/USC Documentation.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SRP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SRP/HDRP_Upgrade.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SRP/URP_Materials.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes/BonusContent.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes/BonusContent.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes/Settings/LightingSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes/Settings/LightingSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes/StarSparrow.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes/StarSparrow.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SubstancePainter.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SubstancePainter/StarSparrow.spp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SubstancePainter/StarSparrow.spp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SubstancePainter/Substance3DPainter.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SubstancePainter/Substance3DPainter.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_EmissionBlue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_EmissionBlue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_EmissionRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_EmissionRed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_Grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_Grey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Asteroids/AsteroidsLava_Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/FlyingInsect.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample1_Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample1_Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample1_EmissionBlue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample1_EmissionBlue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample1_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample1_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample1_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample1_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample2_Brown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample2_Brown.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample2_EmissionRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample2_EmissionRed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample2_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample2_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample2_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Mines/MineSample2_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Emission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Emission.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Grey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Missile_Emission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Missile_Emission.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Missile_Grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Missile_Grey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Missile_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Missile_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Missile_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/MissileBomb/Missile_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Planet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Planet/Clouds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Planet/Clouds.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Planet/Tinniuq_Albedo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Planet/Tinniuq_Albedo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Planet/Tinniuq_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Planet/Tinniuq_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Planet/Tinniuq_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/Planet/Tinniuq_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/PolygonSpaceship.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/PolygonSpaceship/ColorsAtlas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent/PolygonSpaceship/ColorsAtlas.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Mask5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/Masks/StarSparrow_Neutral.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Black.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Cyan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Cyan.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Emission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Emission.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Grey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_White.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_White.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/StarSparrow_Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +794,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Targets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DifficultyLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MissilesController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
