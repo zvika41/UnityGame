@@ -114,6 +114,7 @@
           <e p="MissilesController.cs" t="Include" />
           <e p="ObjectPooler.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="RepeatBackground.cs" t="Include" />
           <e p="ScoringSystem.cs" t="Include" />
           <e p="SpawnManager.cs" t="Include" />
           <e p="Targets.cs" t="Include" />

@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     
     private PlayerController _playerController;
     private SpawnManager _spawnManager;
+    private RepeatBackground _background;
     private bool _isGameActive;
 
     #endregion Members
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
         _playerController.gameObject.SetActive(false);
 
         _spawnManager = GameObject.Find(SPAWN_MANAGER_NAME).GetComponent<SpawnManager>();
+        _background = GameObject.Find("Background").GetComponent<RepeatBackground>();
     }
 
     #endregion Mono Methods
@@ -70,6 +72,7 @@ public class GameManager : MonoBehaviour
         _isGameActive = true;
         ScoringSystem.Instance.InitScore();
         _spawnManager.StartSpawn(difficulty);
+       _background.ShouldRepeatBackground = true;
     }
     
     public void GameOver()
@@ -84,6 +87,7 @@ public class GameManager : MonoBehaviour
         button.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
         _spawnManager.StopSpawn();
+        _background.ShouldRepeatBackground = false;
         ScoringSystem.Instance.SaveData();
     }
 

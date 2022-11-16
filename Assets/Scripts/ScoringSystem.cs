@@ -104,7 +104,7 @@ public class ScoringSystem : MonoBehaviour
 
             _data = JsonUtility.FromJson<ScoreData>(json);
 
-            if (!bestScoreText.gameObject.activeInHierarchy)
+            if (!bestScoreText.gameObject.activeInHierarchy && _data.score > 0)
             {
                 bestScoreText.gameObject.SetActive(true);
             }
