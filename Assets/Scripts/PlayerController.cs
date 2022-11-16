@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         HandlePlayerMovement();
+        FireMissile();
         HandlePlayerBounds();
     }
     
@@ -40,8 +41,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector3.left * Time.deltaTime * Speed);
         }
-        
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+    }
+
+    private void FireMissile()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(missile, transform.position, missile.transform.rotation);
         }
