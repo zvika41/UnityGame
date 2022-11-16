@@ -32,25 +32,25 @@ public class Targets : MonoBehaviour
 
     private void HandleGameObjects()
     {
-        if (gameObject.transform.position.y > 0 && gameObject.CompareTag("Good") || gameObject.transform.position.y > 0 && gameObject.CompareTag("Bad"))
+        if (gameObject.transform.position.y > 0 && gameObject.CompareTag(GlobalConstMembers.ENEMY) || gameObject.transform.position.y > 0 && gameObject.CompareTag(GlobalConstMembers.BOMB))
         {
             _isObjectShowed = true;
         }
 
-        if (_isObjectShowed && gameObject.transform.position.y < 0 && gameObject.CompareTag("Good"))
+        if (_isObjectShowed && gameObject.transform.position.y < 0 && gameObject.CompareTag(GlobalConstMembers.ENEMY))
         {
-            if (GameManager.Instance.score > 0)
-            {
-                GameManager.Instance.UpdateScore(-1);
-            }
-            // else if (_gameManager.score == 0)
+            // if (ScoringSystem.Instance.Score > 0)
             // {
-            //     _gameManager.GameOver();
+            //     ScoringSystem.Instance.UpdateScore(-1);
             // }
+            // // else if (_gameManager.score == 0)
+            // // {
+            // //     _gameManager.GameOver();
+            // // }
             
             Destroy(gameObject);
         }
-        else if (_isObjectShowed && gameObject.transform.position.y < 0 && gameObject.CompareTag("Bad"))
+        else if (_isObjectShowed && gameObject.transform.position.y < 0 && gameObject.CompareTag(GlobalConstMembers.BOMB))
         {
             Destroy(gameObject);
         }
@@ -81,7 +81,7 @@ public class Targets : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag(GlobalConstMembers.PLAYER))
         {
             Destroy(gameObject);
             Destroy(other.gameObject);
