@@ -125,12 +125,13 @@
         </e>
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="DestroyOutOfBounds.cs" t="Include" />
           <e p="DifficultyLevel.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GlobalConstMembers.cs" t="Include" />
+          <e p="MissilesController.cs" t="Include" />
           <e p="ObjectPooler.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
-          <e p="SpawnObjectManager.cs" t="Include" />
+          <e p="ScoringSystem.cs" t="Include" />
           <e p="Targets.cs" t="Include" />
         </e>
         <e p="StarSparrow" t="Include">

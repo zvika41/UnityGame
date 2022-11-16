@@ -1,40 +1,48 @@
-using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    #region --- Const ---
 
+    private const float Speed = 15f;
+
+    #endregion Const
     
-    void Start()
-    {
-        speed = 9f;
-    }
+    #region --- SerializeField ---
 
-    void FixedUpdate()
+    [SerializeField] private GameObject missile;
+
+    #endregion SerializeField
+    
+
+    #region --- Mono Methods ---
+
+    private void Update()
     {
         HandlePlayerMovement();
         HandlePlayerBounds();
     }
+    
+    #endregion Mono Methods
 
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Debug.Log("Shooting");
-        }
-    }
+
+    #region --- Private Methods ---
 
     private void HandlePlayerMovement()
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
+            transform.Translate(Vector3.right * Time.deltaTime * Speed);
         }
         
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * speed);
+            transform.Translate(Vector3.left * Time.deltaTime * Speed);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Instantiate(missile, transform.position, missile.transform.rotation);
         }
     }
 
@@ -50,4 +58,6 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(6, transform.position.y, transform.position.z);
         }
     }
+
+    #endregion Private Methods
 }

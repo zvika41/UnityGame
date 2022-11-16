@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using TMPro;
@@ -12,83 +10,70 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
-
     public static GameManager Instance => _instance;
-
+    
+    
+    #region --- SerializeField ---
 
     [SerializeField] private List<GameObject> targets;
-    [SerializeField] private Text scoreText;
-    [SerializeField] private Text scoreNumber;
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private TextMeshProUGUI startGameText;
     [SerializeField] private Button button;
     [SerializeField] private Button exitButton;
-    [SerializeField] private Text bestScoreText;
-    
-    public bool isGameActive;
-    public int score;
 
-    private ScoreData _data;
+    #endregion SerializeField
+    
+    
+    #region --- Members ---
+    
+    private PlayerController _playerController;
+    private bool _isGameActive;
     private float _spawnRate;
-    
 
-    void Awake()
-    { 
-        _data = new ScoreData();
-        LoadScorer();
-    }
+    #endregion Members
 
-    void Start()
+
+    #region --- Mono Methods ---
+
+    private void Awake()
     {
-        _spawnRate = 1;
+        if (_instance == null)
+        {
+            _instance = GameObject.Find("GameManager").GetComponent<GameManager>();
+        }
+
+        _playerController = GameObject.Find(GlobalConstMembers.PLAYER).GetComponent<PlayerController>();
+        _playerController.gameObject.SetActive(false);
     }
-    
+
+    #endregion Mono Methods
+
+
+    #region --- Public Methods ---
 
     public void StartGame(int difficulty)
     {
         startGameText.gameObject.SetActive(false);
-        isGameActive = true;
+        _playerController.gameObject.SetActive(true);
+        _isGameActive = true;
+        _spawnRate = 1;
         _spawnRate /= difficulty;
-        InitScore();
+        ScoringSystem.Instance.InitScore();
         StartCoroutine(SpawnTarget());
-       
     }
     
-    private IEnumerator SpawnTarget()
-    {
-        while (isGameActive)
-        {
-            yield return new WaitForSeconds(_spawnRate);
-            int index = Random.Range(0, targets.Count);
-            Instantiate(targets[index]);
-        }
-    }
-
-    public void UpdateScore(int addScore)
-    {
-        score += addScore;
-
-        if (score == 0)
-        {
-            scoreNumber.text = 0.ToString();
-
-
-            GameOver();
-            
-            return;
-        }
-        
-        scoreNumber.text = score.ToString();
-    }
-
     public void GameOver()
     {
-        isGameActive = false;
+        if (_playerController.gameObject.activeInHierarchy)
+        {
+            _playerController.gameObject.SetActive(false);
+        }
+        _isGameActive = false;
         gameOverText.gameObject.SetActive(true);
         button.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
         
-        SaveData();
+        ScoringSystem.Instance.SaveData();
     }
 
     public void RestartGame()
@@ -105,47 +90,20 @@ public class GameManager : MonoBehaviour
 #endif
     }
 
-    private void InitScore()
+    #endregion Public Methods
+
+
+    #region --- Private Methods ---
+
+    private IEnumerator SpawnTarget()
     {
-        scoreText.gameObject.SetActive(true);
-        scoreText.text = "Score: ";
-        scoreNumber.text = 0.ToString();
-    }
-    
-    private void SaveData()
-    {
-        if (_data.score < score)
+        while (_isGameActive)
         {
-            _data.score = score;
-        }
-        
-        string json = JsonUtility.ToJson(_data);
-        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
-    }
-
-    private void LoadScorer()
-    {
-        string path = Application.persistentDataPath + "/savefile.json";
-
-        if (File.Exists(path))
-        {
-            string json = File.ReadAllText(path);
-
-            _data = JsonUtility.FromJson<ScoreData>(json);
-
-            if (!bestScoreText.gameObject.activeInHierarchy)
-            {
-                bestScoreText.gameObject.SetActive(true);
-            }
-            
-            bestScoreText.text = "Best Score: " + _data.score;
+            yield return new WaitForSeconds(_spawnRate);
+            int index = Random.Range(0, targets.Count);
+            Instantiate(targets[index]);
         }
     }
 
-
-    [Serializable]
-    class ScoreData
-    {
-        public int score;
-    }
+    #endregion Private Methods
 }
