@@ -116,6 +116,7 @@
           <e p="PlayerController.cs" t="Include" />
           <e p="RepeatBackground.cs" t="Include" />
           <e p="ScoringSystem.cs" t="Include" />
+          <e p="SpawnBoosts.cs" t="Include" />
           <e p="SpawnManager.cs" t="Include" />
           <e p="Targets.cs" t="Include" />
         </e>

@@ -43,7 +43,7 @@ public class Targets : MonoBehaviour
 
     private void HandleGameObjects()
     {
-        if (gameObject.transform.position.y < 0 && (gameObject.CompareTag(GlobalConstMembers.ENEMY) || gameObject.CompareTag(GlobalConstMembers.BOMB)))
+        if (gameObject.transform.position.y < 0 && (gameObject.CompareTag(GlobalConstMembers.ENEMY) || gameObject.CompareTag(GlobalConstMembers.BOMB) || gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST)))
         {
             Destroy(gameObject);
         }
@@ -66,8 +66,8 @@ public class Targets : MonoBehaviour
     
     private Vector3 RandomPosition()
     {
-        _xRange = 6;
-        _ySpawnPos = 12;
+        _xRange = 5;
+        _ySpawnPos = 15;
         
         return new Vector3(Random.Range(-_xRange, _xRange), _ySpawnPos);
     }
@@ -79,7 +79,7 @@ public class Targets : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (!gameObject.CompareTag("MultiplierBoost") && other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
             Destroy(other.gameObject);

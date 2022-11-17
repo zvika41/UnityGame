@@ -41,6 +41,16 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector3.left * Time.deltaTime * Speed);
         }
+        
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(Vector3.forward * Time.deltaTime * Speed);
+        }
+        
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(-Vector3.forward * Time.deltaTime * Speed);
+        }
     }
 
     private void FireMissile()
@@ -61,6 +71,16 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > 6)
         {
             transform.position = new Vector3(6, transform.position.y, transform.position.z);
+        }
+        
+        if (transform.position.y > 6)
+        {
+            transform.position = new Vector3(transform.position.x, 6, transform.position.z);
+        }
+        
+        if (transform.position.y < 0)
+        {
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         }
     }
 

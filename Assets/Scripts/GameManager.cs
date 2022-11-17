@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     
     private PlayerController _playerController;
     private SpawnManager _spawnManager;
+    private SpawnBoosts _spawnBoosts;
     private RepeatBackground _background;
     private bool _isGameActive;
 
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
         _playerController.gameObject.SetActive(false);
 
         _spawnManager = GameObject.Find(SPAWN_MANAGER_NAME).GetComponent<SpawnManager>();
+        _spawnBoosts  = GameObject.Find("SpawnBoosts").GetComponent<SpawnBoosts>();
         _background = GameObject.Find("Background").GetComponent<RepeatBackground>();
     }
 
@@ -72,7 +74,9 @@ public class GameManager : MonoBehaviour
         _isGameActive = true;
         ScoringSystem.Instance.InitScore();
         _spawnManager.StartSpawn(difficulty);
+        _spawnBoosts.StartSpawn(difficulty);
        _background.ShouldRepeatBackground = true;
+       ScoringSystem.Instance._isMultiplierBoost = false;
     }
     
     public void GameOver()

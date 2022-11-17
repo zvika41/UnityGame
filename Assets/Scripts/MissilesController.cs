@@ -17,8 +17,8 @@ public class MissilesController : MonoBehaviour
     
     
     #region --- Members ---
-    
-    private ScoringSystem _scoringSystem;
+
+    private bool _isCollied;
 
     #endregion Members
 
@@ -43,7 +43,7 @@ public class MissilesController : MonoBehaviour
 
     private void DestroyMissileOutOfBounds()
     {
-        if (transform.position.y > 12)
+        if (transform.position.y > 18)
         {
             Destroy(gameObject);
         }
@@ -57,18 +57,33 @@ public class MissilesController : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         if (!GameManager.Instance.IsGameActive) return;
-        
-        if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) && other.gameObject.transform.position.y < 12)
+
+        if (_isCollied)
         {
+            _isCollied = false;
+            
+            return;
+        }
+        
+        if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) && other.gameObject.transform.position.y < 15)
+        {
+            _isCollied = true;
             Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
             ScoringSystem.Instance.UpdateScore(5);
             Destroy(gameObject);
             Destroy(other.gameObject);
         }
-        else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB) && other.gameObject.transform.position.y < 12)
+        else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB) && other.gameObject.transform.position.y < 15)
         {
             Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
             GameManager.Instance.GameOver();
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+        else if (!ScoringSystem.Instance._isMultiplierBoost && other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.transform.position.y < 15)
+        {
+            ScoringSystem.Instance._shouldStartBoostTimer = true;
+            Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
             Destroy(gameObject);
             Destroy(other.gameObject);
         }

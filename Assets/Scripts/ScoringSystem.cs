@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,6 +33,11 @@ public class ScoringSystem : MonoBehaviour
     
     private ScoreData _data;
     private int _score;
+    public bool _isMultiplierBoost;
+    public bool _shouldStartBoostTimer;
+    private bool _isBoostTimerEnded;
+    private float _timer;
+    private int _seconds;
 
     #endregion Members
 
@@ -47,6 +53,23 @@ public class ScoringSystem : MonoBehaviour
         
         _data = new ScoreData();
         LoadScore();
+        _isMultiplierBoost = false;
+    }
+
+    private void Update()
+    {
+        if (_shouldStartBoostTimer)
+        {
+            _shouldStartBoostTimer = false;
+            _isMultiplierBoost = true;
+            StartCoroutine(Timer());
+        }
+        
+        if (_seconds > 10)
+        {
+            _isMultiplierBoost = false;
+            StopCoroutine(Timer());
+        }
     }
 
     #endregion Mono Methods
@@ -63,18 +86,15 @@ public class ScoringSystem : MonoBehaviour
     
     public void UpdateScore(int addScore)
     {
-        _score += addScore;
-
-        if (_score == 0)
+        if (_isMultiplierBoost)
         {
-            scoreNumber.text = 0.ToString();
-
-
-            GameManager.Instance.GameOver();
-            
-            return;
+            _score += addScore * 2;
         }
-        
+        else
+        {
+            _score += addScore;
+        }
+       
         scoreNumber.text = _score.ToString();
     }
     
@@ -93,6 +113,20 @@ public class ScoringSystem : MonoBehaviour
 
 
     #region --- Private Methods ---
+    
+    private IEnumerator Timer()
+    {
+        while (_isMultiplierBoost)
+        {
+            TimeCount();
+            yield return new WaitForSeconds(1);
+        }
+    }
+    
+    private void TimeCount()
+    {
+        _seconds += 1;
+    }
 
     private void LoadScore()
     {

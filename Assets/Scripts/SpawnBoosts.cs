@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnManager : MonoBehaviour
+public class SpawnBoosts : MonoBehaviour
 {
     #region --- SerializeField ---
 
-    [SerializeField] private List<GameObject> targets;
+    [SerializeField] private List<GameObject> boosts;
 
     #endregion SerializeField
     
@@ -20,31 +20,31 @@ public class SpawnManager : MonoBehaviour
 
     #region -- Public Methods ---
 
-    public virtual void StartSpawn(int difficulty)
+    public void StartSpawn(int difficulty)
     {
-        _spawnRate = 2;
+        _spawnRate = 1;
         _spawnRate /= difficulty;
       
-        StartCoroutine(SpawnTarget());
+        StartCoroutine(SpawnBoost());
     }
     
-    public void StopSpawn()
-    {
-        StopAllCoroutines();
-    }
+    // public void StopSpawn()
+    // {
+    //     StopAllCoroutines();
+    // }
 
     #endregion Public Methods
     
     
     #region --- Private Methods ---
 
-    private IEnumerator SpawnTarget()
+    private IEnumerator SpawnBoost()
     {
         while (GameManager.Instance.IsGameActive)
         {
             yield return new WaitForSeconds(_spawnRate);
-            int index = Random.Range(0, targets.Count);
-            Instantiate(targets[index]);
+            int index = Random.Range(0, boosts.Count);
+            Instantiate(boosts[0]);
         }
     }
 
