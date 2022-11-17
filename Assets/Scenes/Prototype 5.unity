@@ -931,7 +931,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets:
+  - {fileID: 341824121272346996, guid: 87080e6d4ad9f324cae055b8a46c706c, type: 3}
   - {fileID: 3604543982420291544, guid: df077e8e83ab9274cb3517bd1ff6a951, type: 3}
+  - {fileID: 6379427672728979885, guid: 36b30d9a574e9184f87ef6be6d97550e, type: 3}
+  - {fileID: 8723275167469192252, guid: be0ebd515f360254c99886937162b102, type: 3}
 --- !u!4 &750941357
 Transform:
   m_ObjectHideFlags: 0
@@ -2566,8 +2569,6 @@ MonoBehaviour:
   scoreText: {fileID: 1447984144}
   scoreNumber: {fileID: 2062681339}
   bestScoreText: {fileID: 1021962177}
-  _isMultiplierBoost: 0
-  _shouldStartBoostTimer: 0
 --- !u!4 &1953776991
 Transform:
   m_ObjectHideFlags: 0

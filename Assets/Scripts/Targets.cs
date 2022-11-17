@@ -79,7 +79,7 @@ public class Targets : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (!gameObject.CompareTag("MultiplierBoost") && other.gameObject.CompareTag("Player"))
+        if (!gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.CompareTag(GlobalConstMembers.PLAYER))
         {
             Destroy(gameObject);
             Destroy(other.gameObject);

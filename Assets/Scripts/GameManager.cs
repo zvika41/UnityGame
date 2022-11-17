@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     private const string GAME_MANAGER_NAME = "GameManager";
     private const string SPAWN_MANAGER_NAME = "SpawnManager";
+    private const string BCKGROUND_NAME = "Background";
 
     #endregion Const
     
@@ -59,7 +60,7 @@ public class GameManager : MonoBehaviour
 
         _spawnManager = GameObject.Find(SPAWN_MANAGER_NAME).GetComponent<SpawnManager>();
         _spawnBoosts  = GameObject.Find("SpawnBoosts").GetComponent<SpawnBoosts>();
-        _background = GameObject.Find("Background").GetComponent<RepeatBackground>();
+        _background = GameObject.Find(BCKGROUND_NAME).GetComponent<RepeatBackground>();
     }
 
     #endregion Mono Methods
@@ -76,7 +77,6 @@ public class GameManager : MonoBehaviour
         _spawnManager.StartSpawn(difficulty);
         _spawnBoosts.StartSpawn(difficulty);
        _background.ShouldRepeatBackground = true;
-       ScoringSystem.Instance._isMultiplierBoost = false;
     }
     
     public void GameOver()
@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
         _spawnManager.StopSpawn();
         _background.ShouldRepeatBackground = false;
         ScoringSystem.Instance.SaveData();
+        ScoringSystem.Instance.IsMultiplierBoost = false;
     }
 
     public void RestartGame()

@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     #region --- Const ---
 
-    private const float Speed = 15f;
+    private const float SPEED = 15f;
 
     #endregion Const
     
@@ -34,22 +34,22 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * Speed);
+            transform.Translate(Vector3.right * Time.deltaTime * SPEED);
         }
         
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * Speed);
+            transform.Translate(Vector3.left * Time.deltaTime * SPEED);
         }
         
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * Speed);
+            transform.Translate(Vector3.forward * Time.deltaTime * SPEED);
         }
         
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Translate(-Vector3.forward * Time.deltaTime * Speed);
+            transform.Translate(-Vector3.forward * Time.deltaTime * SPEED);
         }
     }
 

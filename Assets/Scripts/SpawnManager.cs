@@ -20,7 +20,7 @@ public class SpawnManager : MonoBehaviour
 
     #region -- Public Methods ---
 
-    public virtual void StartSpawn(int difficulty)
+    public void StartSpawn(int difficulty)
     {
         _spawnRate = 2;
         _spawnRate /= difficulty;

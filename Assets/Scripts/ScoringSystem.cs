@@ -12,6 +12,7 @@ public class ScoringSystem : MonoBehaviour
     
     #region --- Const ---
 
+    private const string SCORING_SYSTEM_NAME = "ScoringSystem";
     private const string FILE_PATH = "/savefile.json";
     private const string SCORE_TEXT = "Score: ";
     private const string BEST_SCORE_TEXT = "Best Score: ";
@@ -33,13 +34,30 @@ public class ScoringSystem : MonoBehaviour
     
     private ScoreData _data;
     private int _score;
-    public bool _isMultiplierBoost;
-    public bool _shouldStartBoostTimer;
+    private bool _isMultiplierBoost;
+    private bool _shouldStartBoostTimer;
     private bool _isBoostTimerEnded;
     private float _timer;
     private int _seconds;
 
     #endregion Members
+
+
+    #region --- Properties ---
+
+    public bool IsMultiplierBoost
+    {
+        get => _isMultiplierBoost;
+        set => _isMultiplierBoost = value;
+    }
+    
+    public bool ShouldStartBoostTimer
+    {
+        get => _shouldStartBoostTimer;
+        set => _shouldStartBoostTimer = value;
+    }
+
+    #endregion Properties
 
 
     #region --- Mono Methods ---
@@ -48,12 +66,11 @@ public class ScoringSystem : MonoBehaviour
     {
         if (_instance == null)
         {
-            _instance = GameObject.Find("ScoringSystem").GetComponent<ScoringSystem>();
+            _instance = GameObject.Find(SCORING_SYSTEM_NAME).GetComponent<ScoringSystem>();
         }
         
         _data = new ScoreData();
         LoadScore();
-        _isMultiplierBoost = false;
     }
 
     private void Update()

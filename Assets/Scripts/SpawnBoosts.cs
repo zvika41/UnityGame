@@ -22,16 +22,16 @@ public class SpawnBoosts : MonoBehaviour
 
     public void StartSpawn(int difficulty)
     {
-        _spawnRate = 1;
+        _spawnRate = 10;
         _spawnRate /= difficulty;
       
         StartCoroutine(SpawnBoost());
     }
     
-    // public void StopSpawn()
-    // {
-    //     StopAllCoroutines();
-    // }
+    public void StopSpawn()
+    {
+        StopAllCoroutines();
+    }
 
     #endregion Public Methods
     
@@ -43,7 +43,7 @@ public class SpawnBoosts : MonoBehaviour
         while (GameManager.Instance.IsGameActive)
         {
             yield return new WaitForSeconds(_spawnRate);
-            int index = Random.Range(0, boosts.Count);
+            //int index = Random.Range(0, boosts.Count);
             Instantiate(boosts[0]);
         }
     }

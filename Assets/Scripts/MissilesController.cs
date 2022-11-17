@@ -80,9 +80,13 @@ public class MissilesController : MonoBehaviour
             Destroy(gameObject);
             Destroy(other.gameObject);
         }
-        else if (!ScoringSystem.Instance._isMultiplierBoost && other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.transform.position.y < 15)
+        else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.transform.position.y < 15)
         {
-            ScoringSystem.Instance._shouldStartBoostTimer = true;
+            if (!ScoringSystem.Instance.IsMultiplierBoost)
+            {
+                ScoringSystem.Instance.ShouldStartBoostTimer = true;
+            }
+
             Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
             Destroy(gameObject);
             Destroy(other.gameObject);
