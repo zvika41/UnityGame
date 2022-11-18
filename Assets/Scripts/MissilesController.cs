@@ -4,7 +4,7 @@ public class MissilesController : MonoBehaviour
 {
     #region --- Const ---
 
-    private const float SPEED = 15f;
+    private const float SPEED = 18f;
 
     #endregion Const
     
@@ -18,12 +18,19 @@ public class MissilesController : MonoBehaviour
     
     #region --- Members ---
 
+    private SoundsEffectController _soundsEffectController;
     private bool _isCollied;
 
     #endregion Members
 
 
     #region --- Mono Methods ---
+
+    private void Awake()
+    {
+        _soundsEffectController  = GameObject.Find("SoundsEffect").GetComponent<SoundsEffectController>();
+    }
+
 
     private void Update()
     {
@@ -72,6 +79,8 @@ public class MissilesController : MonoBehaviour
             ScoringSystem.Instance.UpdateScore(5);
             Destroy(gameObject);
             Destroy(other.gameObject);
+            _soundsEffectController.PlayEffect();
+            
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB) && other.gameObject.transform.position.y < 15)
         {
@@ -79,6 +88,7 @@ public class MissilesController : MonoBehaviour
             GameManager.Instance.GameOver();
             Destroy(gameObject);
             Destroy(other.gameObject);
+            _soundsEffectController.PlayEffect();
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.transform.position.y < 15)
         {
@@ -90,6 +100,7 @@ public class MissilesController : MonoBehaviour
             Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
             Destroy(gameObject);
             Destroy(other.gameObject);
+             _soundsEffectController.PlayEffect();
         }
     }
 

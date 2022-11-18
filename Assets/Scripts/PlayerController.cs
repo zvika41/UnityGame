@@ -12,11 +12,24 @@ public class PlayerController : MonoBehaviour
     #region --- SerializeField ---
 
     [SerializeField] private GameObject missile;
+    [SerializeField] private ParticleSystem particle;
 
     #endregion SerializeField
     
+    
+    #region --- Members ---
+
+    private AudioSource _shootingSound;
+
+    #endregion Members
+    
 
     #region --- Mono Methods ---
+    
+    private void Awake()
+    {
+        _shootingSound = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -57,6 +70,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            _shootingSound.Play();
             Instantiate(missile, transform.position, missile.transform.rotation);
         }
     }

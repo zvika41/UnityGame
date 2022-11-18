@@ -5,9 +5,8 @@ public class Targets : MonoBehaviour
 {
     #region --- Members ---
     
-    public ParticleSystem particleSystem;
-
     private Rigidbody _rigidBody;
+    private SoundsEffectController _soundsEffectController;
     private float _speed;
     private float _minSpeed;
     private float _maxSpeed;
@@ -27,7 +26,9 @@ public class Targets : MonoBehaviour
         _rigidBody = GetComponent<Rigidbody>();
         _rigidBody.AddForce(RandomForce());
         _rigidBody.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
-
+        
+        _soundsEffectController  = GameObject.Find("SoundsEffect").GetComponent<SoundsEffectController>();
+        
         transform.position = RandomPosition();
     }
 
@@ -81,9 +82,9 @@ public class Targets : MonoBehaviour
     {
         if (!gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.CompareTag(GlobalConstMembers.PLAYER))
         {
+            _soundsEffectController.PlayEffect();
             Destroy(gameObject);
             Destroy(other.gameObject);
-            Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
             GameManager.Instance.GameOver();
         }
     }

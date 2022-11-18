@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     private SpawnManager _spawnManager;
     private SpawnBoosts _spawnBoosts;
     private RepeatBackground _background;
+    private AudioSource _musicTheme;
     private bool _isGameActive;
 
     #endregion Members
@@ -57,10 +58,11 @@ public class GameManager : MonoBehaviour
 
         _playerController = GameObject.Find(GlobalConstMembers.PLAYER).GetComponent<PlayerController>();
         _playerController.gameObject.SetActive(false);
-
         _spawnManager = GameObject.Find(SPAWN_MANAGER_NAME).GetComponent<SpawnManager>();
         _spawnBoosts  = GameObject.Find("SpawnBoosts").GetComponent<SpawnBoosts>();
         _background = GameObject.Find(BCKGROUND_NAME).GetComponent<RepeatBackground>();
+        _musicTheme = GetComponent<AudioSource>();
+        _musicTheme.Play();
     }
 
     #endregion Mono Methods
@@ -91,9 +93,11 @@ public class GameManager : MonoBehaviour
         button.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
         _spawnManager.StopSpawn();
+        _spawnBoosts.StopSpawn();
         _background.ShouldRepeatBackground = false;
         ScoringSystem.Instance.SaveData();
         ScoringSystem.Instance.IsMultiplierBoost = false;
+        _musicTheme.Stop();
     }
 
     public void RestartGame()
