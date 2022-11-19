@@ -113,18 +113,18 @@
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
           <e p="BackgroundController.cs" t="Include" />
+          <e p="BoostsController.cs" t="Include" />
           <e p="DifficultyLevel.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="GlobalConstMembers.cs" t="Include" />
           <e p="HealthManager.cs" t="Include" />
+          <e p="ISpawnManager.cs" t="Include" />
           <e p="MissilesController.cs" t="Include" />
           <e p="ObjectPooler.cs" t="Include" />
           <e p="ParticleController.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
-          <e p="ScoringSystem.cs" t="Include" />
+          <e p="ScoringManager.cs" t="Include" />
           <e p="SoundsEffectController.cs" t="Include" />
-          <e p="SpawnBoosts.cs" t="Include" />
-          <e p="SpawnManager.cs" t="Include" />
           <e p="TargetsController.cs" t="Include" />
         </e>
         <e p="Sounds" t="Include" />

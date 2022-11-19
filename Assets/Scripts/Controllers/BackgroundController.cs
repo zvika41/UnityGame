@@ -54,5 +54,4 @@ public class BackgroundController : MonoBehaviour
     }
 
     #endregion Private Methods
-    
 }

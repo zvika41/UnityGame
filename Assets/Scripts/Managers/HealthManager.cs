@@ -2,12 +2,16 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
+    #region --- SerializeField ---
+
     [SerializeField] private GameObject health1;
     [SerializeField] private GameObject health2;
     [SerializeField] private GameObject health3;
+
+    #endregion SerializeField
     
     
-    
+    #region --- Public Methods ---
 
     public void ActiveHealthObjects()
     {
@@ -37,4 +41,6 @@ public class HealthManager : MonoBehaviour
             health3.SetActive(false);
         }
     }
+
+    #endregion Public Methods
 }

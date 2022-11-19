@@ -1,12 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnBoosts : MonoBehaviour
+public class BoostsController : MonoBehaviour, ISpawnManager
 {
     #region --- SerializeField ---
 
-    [SerializeField] private List<GameObject> boosts;
+    [SerializeField] private GameObject boost;
 
     #endregion SerializeField
     
@@ -16,6 +15,13 @@ public class SpawnBoosts : MonoBehaviour
     private float _spawnRate;
     
     #endregion Members
+
+
+    #region --- Properties ---
+
+    public float SpawnRate => _spawnRate;
+
+    #endregion Properties
 
 
     #region -- Public Methods ---
@@ -43,8 +49,7 @@ public class SpawnBoosts : MonoBehaviour
         while (GameManager.Instance.IsGameActive)
         {
             yield return new WaitForSeconds(_spawnRate);
-            //int index = Random.Range(0, boosts.Count);
-            Instantiate(boosts[0]);
+            Instantiate(boost);
         }
     }
 

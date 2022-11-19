@@ -4,15 +4,10 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoringSystem : MonoBehaviour
+public class ScoringManager : MonoBehaviour
 {
-    private static ScoringSystem _instance;
-    public static ScoringSystem Instance => _instance;
-
-    
     #region --- Const ---
-
-    private const string SCORING_SYSTEM_NAME = "ScoringSystem";
+    
     private const string FILE_PATH = "/savefile.json";
     private const string SCORE_TEXT = "Score: ";
     private const string BEST_SCORE_TEXT = "Best Score: ";
@@ -64,11 +59,6 @@ public class ScoringSystem : MonoBehaviour
 
     private void Awake()
     {
-        if (_instance == null)
-        {
-            _instance = GameObject.Find(SCORING_SYSTEM_NAME).GetComponent<ScoringSystem>();
-        }
-        
         _data = new ScoreData();
         LoadScore();
     }

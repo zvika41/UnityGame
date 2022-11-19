@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 15498231}
   - component: {fileID: 15498232}
   m_Layer: 0
-  m_Name: SpawnBoosts
+  m_Name: Boost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,8 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79e401120ec34643b415c42789f2884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boosts:
-  - {fileID: 1241166147213281852, guid: 6e2fb6ba5282bbf438c205fc3d3a691c, type: 3}
+  boost: {fileID: 1241166147213281852, guid: 6e2fb6ba5282bbf438c205fc3d3a691c, type: 3}
 --- !u!850595691 &115500859
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -2817,6 +2816,12 @@ MonoBehaviour:
   startGameText: {fileID: 278831198}
   button: {fileID: 1254556441}
   exitButton: {fileID: 410021224}
+  playerController: {fileID: 0}
+  soundsEffectController: {fileID: 0}
+  backgroundController: {fileID: 0}
+  healthManager: {fileID: 0}
+  spawnManager: {fileID: 0}
+  boostsController: {fileID: 0}
 --- !u!4 &1831505927
 Transform:
   m_ObjectHideFlags: 0

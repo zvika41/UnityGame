@@ -49,6 +49,22 @@ public class MissilesController : MonoBehaviour
         }
     }
 
+    private void DestroyCollidedObjects(GameObject current, GameObject other)
+    {
+        Destroy(current);
+        Destroy(other.gameObject);
+    }
+
+    private void PlayParticleEffect()
+    {
+        Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
+    }
+
+    private void PlaySoundEffect()
+    {
+        GameManager.Instance.SoundsEffectController.PlayEffect();
+    }
+
     #endregion Private Methods
 
 
@@ -68,31 +84,29 @@ public class MissilesController : MonoBehaviour
         if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) && other.gameObject.transform.position.y < 12)
         {
             _isCollied = true;
-            Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
-            ScoringSystem.Instance.UpdateScore(5);
-            Destroy(gameObject);
-            Destroy(other.gameObject);
-            GameManager.Instance.soundsEffectController.PlayEffect();
+            PlayParticleEffect();
+            GameManager.Instance.ScoringManager.UpdateScore(5);
+            DestroyCollidedObjects(gameObject, other.gameObject);
+            PlaySoundEffect();
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB) && other.gameObject.transform.position.y < 12)
         {
-            Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
+            _isCollied = true;
+            PlayParticleEffect();
+            DestroyCollidedObjects(gameObject, other.gameObject);
+            PlaySoundEffect();
             GameManager.Instance.GameOver();
-            Destroy(gameObject);
-            Destroy(other.gameObject);
-            GameManager.Instance.soundsEffectController.PlayEffect();
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.transform.position.y < 12)
         {
-            if (!ScoringSystem.Instance.IsMultiplierBoost)
+            if (!GameManager.Instance.ScoringManager.IsMultiplierBoost)
             {
-                ScoringSystem.Instance.ShouldStartBoostTimer = true;
+                GameManager.Instance.ScoringManager.ShouldStartBoostTimer = true;
             }
 
-            Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
-            Destroy(gameObject);
-            Destroy(other.gameObject);
-            GameManager.Instance.soundsEffectController.PlayEffect();
+            PlayParticleEffect();
+            DestroyCollidedObjects(gameObject, other.gameObject);
+            PlaySoundEffect();
         }
     }
 

@@ -117,7 +117,7 @@ public class PlayerController : MonoBehaviour
                 return;
             }
             
-            GameManager.Instance.healthManager.DisableHealthObject(_lifeCounter);
+            GameManager.Instance.HealthManager.DisableHealthObject(_lifeCounter);
             _lifeCounter--;
         }
     }

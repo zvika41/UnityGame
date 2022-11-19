@@ -1,8 +1,17 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class TargetsController : MonoBehaviour
+public class TargetsController : MonoBehaviour, ISpawnManager
 {
+    #region --- SerializeField ---
+
+    [SerializeField] private List<GameObject> targets;
+
+    #endregion SerializeField
+    
+    
     #region --- Members ---
     
     private Rigidbody _rigidBody;
@@ -13,8 +22,16 @@ public class TargetsController : MonoBehaviour
     private float _xRange;
     private float _ySpawnPos;
     private bool _isObjectShowed;
+    private float _spawnRate;
 
     #endregion Members
+    
+    
+    #region --- Properties ---
+
+    public float SpawnRate => _spawnRate;
+
+    #endregion Properties
     
     
     #region --- Mono Methods ---
@@ -34,9 +51,37 @@ public class TargetsController : MonoBehaviour
     }
     
     #endregion Mono Methods
+    
+    
+    #region -- Public Methods ---
+
+    public void StartSpawn(int difficulty)
+    {
+        _spawnRate = 2;
+        _spawnRate /= difficulty;
+      
+        StartCoroutine(SpawnTarget());
+    }
+    
+    public void StopSpawn()
+    {
+        StopAllCoroutines();
+    }
+
+    #endregion Public Methods
    
     
     #region --- Private Methods ---
+    
+    private IEnumerator SpawnTarget()
+    {
+        while (GameManager.Instance.IsGameActive)
+        {
+            yield return new WaitForSeconds(_spawnRate);
+            int index = Random.Range(0, targets.Count);
+            Instantiate(targets[index]);
+        }
+    }
 
     private void HandleGameObjects()
     {
@@ -78,7 +123,7 @@ public class TargetsController : MonoBehaviour
     {
         if (!gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.CompareTag(GlobalConstMembers.PLAYER))
         {
-            GameManager.Instance.soundsEffectController.PlayEffect();
+            GameManager.Instance.SoundsEffectController.PlayEffect();
             Destroy(gameObject);
         }
     }
