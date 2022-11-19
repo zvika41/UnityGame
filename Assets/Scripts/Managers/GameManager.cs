@@ -16,8 +16,9 @@ public class GameManager : MonoBehaviour
     private const string SCORING_MANAGER_OBJECT_NAME = "ScoringManager";
     private const string BOOST_OBJECT_NAME = "Boost";
     private const string HEALTH_OBJECT_NAME = "HealthManager";
-    private const string SOUND_EFFECT_OBJECT__NAME = "SoundsEffect";
+    private const string SOUND_EFFECT_OBJECT_NAME = "SoundsEffect";
     private const string BCKGROUND_OBJECT__NAME = "Background";
+    private const string INFO_POPUP_OBJECT_NAME = "InfoPopup";
 
     #endregion Const
     
@@ -48,10 +49,10 @@ public class GameManager : MonoBehaviour
     private SoundsEffectController _soundsEffectController;
     private BackgroundController _backgroundController;
     private BoostsController _boostsController;
+    private InfoPopupController _infoPopupController;
     
     private ScoringManager _scoringManager;
     private HealthManager _healthManager;
-    private ISpawnManager _spawnManager;
     
     #endregion Controllers/Managers
 
@@ -59,6 +60,8 @@ public class GameManager : MonoBehaviour
     #region --- Properties ---
 
     public bool IsGameActive => _isGameActive;
+
+    public TextMeshProUGUI StartGameText => startGameText;
 
     #region ___Controllers___
 
@@ -115,10 +118,11 @@ public class GameManager : MonoBehaviour
     {
         _playerController = GameObject.Find(GlobalConstMembers.PLAYER).GetComponent<PlayerController>();
         _targetsController = GameObject.Find(TARGETS_NAME).GetComponent<TargetsController>();
-        _boostsController  = GameObject.Find(BOOST_OBJECT_NAME).GetComponent<BoostsController>();
+        _boostsController = GameObject.Find(BOOST_OBJECT_NAME).GetComponent<BoostsController>();
         _backgroundController = GameObject.Find(BCKGROUND_OBJECT__NAME).GetComponent<BackgroundController>();
-        _soundsEffectController  = GameObject.Find(SOUND_EFFECT_OBJECT__NAME).GetComponent<SoundsEffectController>();
-        
+        _soundsEffectController = GameObject.Find(SOUND_EFFECT_OBJECT_NAME).GetComponent<SoundsEffectController>();
+        _infoPopupController = GameObject.Find(INFO_POPUP_OBJECT_NAME).GetComponent<InfoPopupController>();
+
         _scoringManager = GameObject.Find(SCORING_MANAGER_OBJECT_NAME).GetComponent<ScoringManager>();
         _healthManager = GameObject.Find(HEALTH_OBJECT_NAME).GetComponent<HealthManager>();
     }
@@ -152,7 +156,7 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         button.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
-        infoButton.gameObject.SetActive(true);
+        infoButton.gameObject.SetActive(false);
         _targetsController.StopSpawn();
         _boostsController.StopSpawn();
         _backgroundController.ShouldRepeatBackground = false;
@@ -175,10 +179,17 @@ public class GameManager : MonoBehaviour
 #endif
     }
 
+    #endregion Public Methods
+    
+    
+    #region -- Event Handler ---
+
     public void OnInfoButtonClicked()
     {
-        
+        StartGameText.gameObject.SetActive(false);
+        _infoPopupController.InfoPopup.gameObject.SetActive(true);
+        _infoPopupController.CloseInfoPopup.gameObject.SetActive(true);
     }
 
-    #endregion Public Methods
+    #endregion Event Handler
 }

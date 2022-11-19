@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class DifficultyLevel : MonoBehaviour
+public class DifficultyLevelManager : MonoBehaviour
 {
     #region --- Enum ---
 
