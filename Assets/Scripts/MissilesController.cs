@@ -18,19 +18,12 @@ public class MissilesController : MonoBehaviour
     
     #region --- Members ---
 
-    private SoundsEffectController _soundsEffectController;
     private bool _isCollied;
 
     #endregion Members
 
 
     #region --- Mono Methods ---
-
-    private void Awake()
-    {
-        _soundsEffectController  = GameObject.Find("SoundsEffect").GetComponent<SoundsEffectController>();
-    }
-
 
     private void Update()
     {
@@ -72,25 +65,24 @@ public class MissilesController : MonoBehaviour
             return;
         }
         
-        if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) && other.gameObject.transform.position.y < 15)
+        if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) && other.gameObject.transform.position.y < 12)
         {
             _isCollied = true;
             Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
             ScoringSystem.Instance.UpdateScore(5);
             Destroy(gameObject);
             Destroy(other.gameObject);
-            _soundsEffectController.PlayEffect();
-            
+            GameManager.Instance.soundsEffectController.PlayEffect();
         }
-        else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB) && other.gameObject.transform.position.y < 15)
+        else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB) && other.gameObject.transform.position.y < 12)
         {
             Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
             GameManager.Instance.GameOver();
             Destroy(gameObject);
             Destroy(other.gameObject);
-            _soundsEffectController.PlayEffect();
+            GameManager.Instance.soundsEffectController.PlayEffect();
         }
-        else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.transform.position.y < 15)
+        else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.transform.position.y < 12)
         {
             if (!ScoringSystem.Instance.IsMultiplierBoost)
             {
@@ -100,7 +92,7 @@ public class MissilesController : MonoBehaviour
             Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
             Destroy(gameObject);
             Destroy(other.gameObject);
-             _soundsEffectController.PlayEffect();
+            GameManager.Instance.soundsEffectController.PlayEffect();
         }
     }
 

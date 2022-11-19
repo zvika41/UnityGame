@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Targets : MonoBehaviour
+public class TargetsController : MonoBehaviour
 {
     #region --- Members ---
     
     private Rigidbody _rigidBody;
-    private SoundsEffectController _soundsEffectController;
     private float _speed;
     private float _minSpeed;
     private float _maxSpeed;
@@ -14,7 +13,6 @@ public class Targets : MonoBehaviour
     private float _xRange;
     private float _ySpawnPos;
     private bool _isObjectShowed;
-    private bool _test;
 
     #endregion Members
     
@@ -26,8 +24,6 @@ public class Targets : MonoBehaviour
         _rigidBody = GetComponent<Rigidbody>();
         _rigidBody.AddForce(RandomForce());
         _rigidBody.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
-        
-        _soundsEffectController  = GameObject.Find("SoundsEffect").GetComponent<SoundsEffectController>();
         
         transform.position = RandomPosition();
     }
@@ -82,10 +78,8 @@ public class Targets : MonoBehaviour
     {
         if (!gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.CompareTag(GlobalConstMembers.PLAYER))
         {
-            _soundsEffectController.PlayEffect();
+            GameManager.Instance.soundsEffectController.PlayEffect();
             Destroy(gameObject);
-            Destroy(other.gameObject);
-            GameManager.Instance.GameOver();
         }
     }
 

@@ -1036,6 +1036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missile: {fileID: 527761041456558962, guid: d61e0551b1a179546ab8c28a498340e1, type: 3}
+  particle: {fileID: 0}
 --- !u!1 &8837579179476349085
 GameObject:
   m_ObjectHideFlags: 0

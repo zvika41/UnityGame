@@ -18,8 +18,9 @@ public class PlayerController : MonoBehaviour
     
     
     #region --- Members ---
-
+    
     private AudioSource _shootingSound;
+    private int _lifeCounter;
 
     #endregion Members
     
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _shootingSound = GetComponent<AudioSource>();
+        _lifeCounter = 3;
     }
 
     private void Update()
@@ -99,4 +101,26 @@ public class PlayerController : MonoBehaviour
     }
 
     #endregion Private Methods
+    
+    
+    #region --- Event Handler ---
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) || other.gameObject.CompareTag(GlobalConstMembers.BOMB))
+        {
+            if (_lifeCounter == 0)
+            {
+                Destroy(gameObject);
+                GameManager.Instance.GameOver();
+                
+                return;
+            }
+            
+            GameManager.Instance.healthManager.DisableHealthObject(_lifeCounter);
+            _lifeCounter--;
+        }
+    }
+
+    #endregion Event Handler
 }
