@@ -22,8 +22,8 @@ public class BoostsController : BaseTargetController, ISpawnManager
     public float SpawnRate => _spawnRate;
 
     #endregion Properties
-
-
+    
+    
     #region -- Public Methods ---
 
     public void StartSpawn(int difficulty)

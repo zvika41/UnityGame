@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6402342388584315973}
   - component: {fileID: 6380464163935826242}
   - component: {fileID: -7615805823652164987}
+  - component: {fileID: 4398478643149025538}
   m_Layer: 0
   m_Name: Mine Sample 2
   m_TagString: Enemy
@@ -112,6 +113,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62c8b0ca0faca0740aaa989162321e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4398478643149025538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6379427672728979885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2749c477ba3c8d744a69c244e09dfbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6379439690948424855

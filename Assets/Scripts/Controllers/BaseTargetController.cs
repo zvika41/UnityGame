@@ -7,7 +7,6 @@ public class BaseTargetController : MonoBehaviour
     private Rigidbody _rigidBody;
     private float _minSpeed;
     private float _maxSpeed;
-    private float _maxTorque;
     private float _xRange;
     private float _ySpawnPos;
 
@@ -20,8 +19,7 @@ public class BaseTargetController : MonoBehaviour
     {
         _rigidBody = GetComponent<Rigidbody>();
         _rigidBody.AddForce(RandomForce());
-        //_rigidBody.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
-        
+
         transform.position = RandomPosition();
     }
 
@@ -37,7 +35,11 @@ public class BaseTargetController : MonoBehaviour
     
     private void HandleGameObjects()
     {
-        if (gameObject.transform.position.y < 0 && (gameObject.CompareTag(GlobalConstMembers.ENEMY) || gameObject.CompareTag(GlobalConstMembers.BOMB) || gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST)))
+        if (!(gameObject.transform.position.y < 0)) return;
+        
+        if (gameObject.CompareTag(GlobalConstMembers.ENEMY) || gameObject.CompareTag(GlobalConstMembers.BOMB) ||
+            gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) ||
+            gameObject.CompareTag(GlobalConstMembers.HEALTH))
         {
             Destroy(gameObject);
         }
@@ -50,13 +52,6 @@ public class BaseTargetController : MonoBehaviour
         
         return Vector3.down * Random.Range(_minSpeed, _maxSpeed);
     }
-    
-    //private float RandomTorque()
-    // {
-    //     _maxTorque = 10;
-    //     
-    //     return Random.Range(-_maxTorque, _maxTorque);
-    // }
     
     private Vector3 RandomPosition()
     {

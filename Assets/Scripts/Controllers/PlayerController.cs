@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     
     private AudioSource _shootingSound;
     private int _lifeCounter;
+    private bool _isCollied;
 
     #endregion Members
     
@@ -99,6 +100,20 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         }
     }
+    
+    private void HandleCollision(Collision colliderGameObject, bool shouldPlayBoostSound)
+    {
+        if (shouldPlayBoostSound)
+        {
+            GameManager.Instance.SoundsEffectController.PlayCollectSoundEffect();
+        }
+        else
+        {
+            GameManager.Instance.SoundsEffectController.PlayExplosionSoundEffect();
+        }
+        
+        Destroy(colliderGameObject.gameObject);
+    }
 
     #endregion Private Methods
     
@@ -111,8 +126,7 @@ public class PlayerController : MonoBehaviour
         
         if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) || other.gameObject.CompareTag(GlobalConstMembers.BOMB))
         {
-            GameManager.Instance.SoundsEffectController.PlayEffect();
-            Destroy(other.gameObject);
+            HandleCollision(other, false);
             
             if (_lifeCounter == 0)
             {
@@ -132,8 +146,7 @@ public class PlayerController : MonoBehaviour
                 GameManager.Instance.ScoringManager.UpdateScore(5);
             }
             
-            //GameManager.Instance.SoundsEffectController.PlayEffect();
-            Destroy(other.gameObject);
+            HandleCollision(other, true);
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.HEALTH))
         {
@@ -147,7 +160,7 @@ public class PlayerController : MonoBehaviour
                 GameManager.Instance.ScoringManager.UpdateScore(5);
             }
             
-            Destroy(other.gameObject);
+            HandleCollision(other, true);
         }
     }
 

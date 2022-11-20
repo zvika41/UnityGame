@@ -60,9 +60,24 @@ public class MissilesController : MonoBehaviour
         Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
     }
 
-    private void PlaySoundEffect()
+    private void PlaySoundEffect(bool shouldPlayBoostSound)
     {
-        GameManager.Instance.SoundsEffectController.PlayEffect();
+        if (shouldPlayBoostSound)
+        {
+            GameManager.Instance.SoundsEffectController.PlayCollectSoundEffect();
+        }
+        else
+        {
+            GameManager.Instance.SoundsEffectController.PlayExplosionSoundEffect();
+        }
+    }
+
+    private void HandleCollision(Collision colliderGameObject, bool shouldPlayBoostSound)
+    {
+        _isCollied = true;
+        PlayParticleEffect();
+        DestroyCollidedObjects(gameObject, colliderGameObject.gameObject);
+        PlaySoundEffect(shouldPlayBoostSound);
     }
 
     #endregion Private Methods
@@ -80,39 +95,27 @@ public class MissilesController : MonoBehaviour
             
             return;
         }
+
+        if (!(other.gameObject.transform.position.y < 11.5f)) return;
         
-        if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) && other.gameObject.transform.position.y < 12)
+        if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY))
         {
-            _isCollied = true;
-            PlayParticleEffect();
+            HandleCollision(other, false);
             GameManager.Instance.ScoringManager.UpdateScore(5);
-            DestroyCollidedObjects(gameObject, other.gameObject);
-            PlaySoundEffect();
         }
-        else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB) && other.gameObject.transform.position.y < 12)
+        else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB))
         {
-            _isCollied = true;
-            PlayParticleEffect();
-            DestroyCollidedObjects(gameObject, other.gameObject);
-            PlaySoundEffect();
+            HandleCollision(other, false);
             GameManager.Instance.GameOver();
         }
-        else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) && other.gameObject.transform.position.y < 12)
+        else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) || other.gameObject.CompareTag(GlobalConstMembers.HEALTH))
         {
             if (!GameManager.Instance.ScoringManager.IsMultiplierBoost)
             {
                 GameManager.Instance.ScoringManager.ShouldStartBoostTimer = true;
             }
 
-            PlayParticleEffect();
-            DestroyCollidedObjects(gameObject, other.gameObject);
-            PlaySoundEffect();
-        }
-        else if (other.gameObject.CompareTag(GlobalConstMembers.HEALTH) && other.gameObject.transform.position.y < 12)
-        {
-            PlayParticleEffect();
-            DestroyCollidedObjects(gameObject, other.gameObject);
-            PlaySoundEffect();
+            HandleCollision(other, true);
         }
     }
 

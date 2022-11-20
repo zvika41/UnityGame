@@ -22,25 +22,80 @@
     <list default="true" id="fce9369e-daa0-4247-ae42-ce0a1cf2ca20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_100.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_150.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_200.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_round_130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_round_130.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_round_220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_round_220.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_round_320.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_round_320.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_round_400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/buttons/button_round_400.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/arrow_down.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/arrow_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/arrow_left.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/arrow_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/arrow_right.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/arrow_up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/checkmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/checkmark.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/help.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/info.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/info.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/menu.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/message.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/minus.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/pause.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/play.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/plus.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/repeat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/repeat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/settings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/share.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/speaker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/speaker.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/star.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/user.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FreeButtonSet/Textures/icons/256x256/x.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Asteroid Lava Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Asteroid Lava Blue.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Asteroid Lava Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Asteroid Lava Red.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BoostScore.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BoostScore.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InfoButton.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InfoButton.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InfoPopup.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InfoPopup.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Health.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Health.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mine Sample 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mine Sample 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MultiBoost.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MultiBoost.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype 5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/SoundsEffectController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/SoundsEffectController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalConstMembers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalConstMembers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +108,16 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/InfoPopupController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Library/_Source_Files/Scripts/DestroyAfterDelay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DifficultyLevelManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GlobalConstMembers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/SoundsEffectController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Library/_Source_Files/Scripts/DestroyAfterDelay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/RandomTorqueController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -99,13 +155,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InfoButtonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DifficultyLevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InfoPopupController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstMembers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SoundsEffectController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/RandomTorqueController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
       </list>
     </option>
@@ -156,7 +215,7 @@
       <workItem from="1668844047690" duration="6799000" />
       <workItem from="1668853161985" duration="466000" />
       <workItem from="1668853996739" duration="16794000" />
-      <workItem from="1668933556690" duration="3940000" />
+      <workItem from="1668933556690" duration="11368000" />
     </task>
     <servers />
   </component>
@@ -185,10 +244,10 @@
       <screen x="0" y="0" width="1920" height="1152" />
     </state>
     <state x="616" y="268" key="run.anything.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668795809403" />
-    <state x="623" y="253" width="672" height="678" key="search.everywhere.popup" timestamp="1668881987274">
+    <state x="623" y="253" width="672" height="678" key="search.everywhere.popup" timestamp="1668946401013">
       <screen x="0" y="0" width="1920" height="1152" />
     </state>
-    <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668881987274" />
+    <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668946401013" />
     <state x="498" y="179" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1668603071249" />
   </component>
 </project>

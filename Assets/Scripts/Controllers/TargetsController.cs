@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -55,6 +54,6 @@ public class TargetsController : BaseTargetController, ISpawnManager
             Instantiate(targets[index]);
         }
     }
-
+    
     #endregion Private Methods
 }

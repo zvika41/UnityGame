@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 355279597499470402}
   - component: {fileID: 341611880927153393}
   - component: {fileID: 3767348137073446872}
+  - component: {fileID: 8878312749961776382}
   m_Layer: 0
   m_Name: Asteroid Lava Blue
   m_TagString: Enemy
@@ -159,5 +160,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62c8b0ca0faca0740aaa989162321e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8878312749961776382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341824121272346996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2749c477ba3c8d744a69c244e09dfbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -7,14 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="FreeButtonSet" t="Include">
-          <e p="Textures" t="Include">
-            <e p="buttons" t="Include" />
-            <e p="Icons" t="Include">
-              <e p="256x256" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="CasualGameSounds" t="Include" />
         <e p="Library" t="Include">
           <e p="_Source_Files" t="Include">
             <e p="_LICENSE.txt" t="Include" />
@@ -52,6 +45,14 @@
           </e>
           <e p="Free Droid" t="Include">
             <e p="Materials" t="Include" />
+          </e>
+          <e p="FreeButtonSet" t="Include">
+            <e p="Textures" t="Include">
+              <e p="buttons" t="Include" />
+              <e p="Icons" t="Include">
+                <e p="256x256" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="Materials" t="Include" />
           <e p="Particles" t="Include" />
@@ -128,15 +129,18 @@
             <e p="MissilesController.cs" t="Include" />
             <e p="ParticleController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="RandomTorqueController.cs" t="Include" />
             <e p="SoundsEffectController.cs" t="Include" />
             <e p="TargetsController.cs" t="Include" />
           </e>
-          <e p="DifficultyLevelManager.cs" t="Include" />
-          <e p="GlobalConstMembers.cs" t="Include" />
+          <e p="Global" t="Include">
+            <e p="GlobalConstMembers.cs" t="Include" />
+          </e>
           <e p="Interface" t="Include">
             <e p="ISpawnManager.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
+            <e p="DifficultyLevelManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="HealthManager.cs" t="Include" />
             <e p="ScoringManager.cs" t="Include" />
