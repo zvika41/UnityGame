@@ -2,58 +2,30 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class TargetsController : BaseTargetController, ISpawnManager
+public class TargetsController : BaseTargetsController
 {
-    #region --- SerializeField ---
+    #region -- Override Methods ---
 
-    [SerializeField] private GameObject[] targets;
-
-    #endregion SerializeField
-    
-    
-    #region --- Members ---
-    
-    private float _spawnRate;
-
-    #endregion Members
-    
-    
-    #region --- Properties ---
-
-    public float SpawnRate => _spawnRate;
-
-    #endregion Properties
-    
-    
-    #region -- Public Methods ---
-
-    public void StartSpawn(int difficulty)
+    public override void StartSpawn(int difficulty)
     {
-        _spawnRate = 2;
-        _spawnRate /= difficulty;
-      
+        spawnRate /= difficulty;
         StartCoroutine(SpawnTarget());
     }
     
-    public void StopSpawn()
+    public override void StopSpawn()
     {
         StopAllCoroutines();
     }
-
-    #endregion Public Methods
-   
     
-    #region --- Private Methods ---
-    
-    private IEnumerator SpawnTarget()
+    public override IEnumerator SpawnTarget()
     {
         while (GameManager.Instance.IsGameActive)
         {
-            yield return new WaitForSeconds(_spawnRate);
+            yield return new WaitForSeconds(spawnRate);
             int index = Random.Range(0, targets.Length);
             Instantiate(targets[index]);
         }
     }
-    
-    #endregion Private Methods
+
+    #endregion Override Methods
 }

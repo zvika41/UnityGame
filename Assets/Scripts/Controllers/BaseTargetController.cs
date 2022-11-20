@@ -1,65 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseTargetController : MonoBehaviour
+public class BaseTargetsController : MonoBehaviour
 {
-    #region --- Members ---
-    
-    private Rigidbody _rigidBody;
-    private float _minSpeed;
-    private float _maxSpeed;
-    private float _xRange;
-    private float _ySpawnPos;
+    #region --- SerializeField ---
 
-    #endregion Members
-    
-    
-    #region --- Mono Methods ---
+    [SerializeField] public GameObject[] targets;
+    [SerializeField] public float spawnRate;
 
-    private void Start()
+    #endregion SerializeField
+
+
+    #region -- Virtual Methods ---
+
+    public virtual void StartSpawn(int difficulty) { }
+    
+    public virtual void StopSpawn() { }
+    
+    public virtual IEnumerator SpawnTarget()
     {
-        _rigidBody = GetComponent<Rigidbody>();
-        _rigidBody.AddForce(RandomForce());
-
-        transform.position = RandomPosition();
+        yield return new WaitForSeconds(0);
     }
 
-    private void Update()
-    {
-        HandleGameObjects();
-    }
-    
-    #endregion Mono Methods
-    
-    
-    #region --- Private Methods ---
-    
-    private void HandleGameObjects()
-    {
-        if (!(gameObject.transform.position.y < 0)) return;
-        
-        if (gameObject.CompareTag(GlobalConstMembers.ENEMY) || gameObject.CompareTag(GlobalConstMembers.BOMB) ||
-            gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) ||
-            gameObject.CompareTag(GlobalConstMembers.HEALTH))
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private Vector3 RandomForce()
-    {
-        _minSpeed = 0.1f;
-        _maxSpeed = 0.3f;
-        
-        return Vector3.down * Random.Range(_minSpeed, _maxSpeed);
-    }
-    
-    private Vector3 RandomPosition()
-    {
-        _xRange = 5;
-        _ySpawnPos = 15;
-        
-        return new Vector3(Random.Range(-_xRange, _xRange), _ySpawnPos);
-    }
-
-    #endregion Private Methods
+    #endregion Virtual Methods
 }

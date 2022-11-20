@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     #region --- SerializeField ---
 
     [SerializeField] private GameObject missile;
-    [SerializeField] private ParticleSystem particle;
 
     #endregion SerializeField
     
@@ -122,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if(!GameManager.Instance.IsGameActive) return;
+        if(!GameManager.Instance.IsGameActive || other.gameObject.CompareTag("Misile")) return;
         
         if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) || other.gameObject.CompareTag(GlobalConstMembers.BOMB))
         {
@@ -139,11 +138,15 @@ public class PlayerController : MonoBehaviour
             GameManager.Instance.HealthManager.DisableHealthObject(_lifeCounter);
             _lifeCounter--;
         }
-        else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST))
+        else if (other.gameObject.CompareTag(GlobalConstMembers.MULTIPLER_BOOST))
         {
             if (GameManager.Instance.ScoringManager.IsMultiplierBoost)
             {
                 GameManager.Instance.ScoringManager.UpdateScore(5);
+            }
+            else
+            {
+                GameManager.Instance.ScoringManager.ShouldStartBoostTimer = true;
             }
             
             HandleCollision(other, true);

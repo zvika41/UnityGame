@@ -21,6 +21,7 @@ public class ScoringManager : MonoBehaviour
     [SerializeField] private Text scoreText;
     [SerializeField] private Text scoreNumber;
     [SerializeField] private Text bestScoreText;
+    [SerializeField] private Text boostModeIndicator;
 
     #endregion SerializeField
     
@@ -33,7 +34,7 @@ public class ScoringManager : MonoBehaviour
     private bool _shouldStartBoostTimer;
     private bool _isBoostTimerEnded;
     private float _timer;
-    private int _seconds;
+    private float _seconds;
 
     #endregion Members
 
@@ -48,7 +49,6 @@ public class ScoringManager : MonoBehaviour
     
     public bool ShouldStartBoostTimer
     {
-        get => _shouldStartBoostTimer;
         set => _shouldStartBoostTimer = value;
     }
 
@@ -67,15 +67,22 @@ public class ScoringManager : MonoBehaviour
     {
         if (_shouldStartBoostTimer)
         {
+            _seconds = 10f;
             _shouldStartBoostTimer = false;
             _isMultiplierBoost = true;
-            StartCoroutine(Timer());
+            boostModeIndicator.gameObject.SetActive(true);
+            StartCoroutine(FlickerBoostText());
         }
-        
-        if (_seconds > 10)
+
+        if (_seconds > 0 && _isMultiplierBoost)
+        {
+            _seconds -= Time.deltaTime;
+        }
+        else
         {
             _isMultiplierBoost = false;
-            StopCoroutine(Timer());
+            boostModeIndicator.gameObject.SetActive(false);
+            StopCoroutine(FlickerBoostText());
         }
     }
 
@@ -120,19 +127,16 @@ public class ScoringManager : MonoBehaviour
 
 
     #region --- Private Methods ---
-    
-    private IEnumerator Timer()
+
+    private IEnumerator FlickerBoostText()
     {
         while (_isMultiplierBoost)
         {
-            TimeCount();
+            boostModeIndicator.gameObject.SetActive(false);
+            yield return new WaitForSeconds(1);
+            boostModeIndicator.gameObject.SetActive(true);
             yield return new WaitForSeconds(1);
         }
-    }
-    
-    private void TimeCount()
-    {
-        _seconds += 1;
     }
 
     private void LoadScore()

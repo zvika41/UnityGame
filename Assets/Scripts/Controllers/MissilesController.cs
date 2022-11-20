@@ -87,7 +87,7 @@ public class MissilesController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (!GameManager.Instance.IsGameActive) return;
+        if (!GameManager.Instance.IsGameActive || other.gameObject.CompareTag(GlobalConstMembers.PLAYER)) return;
 
         if (_isCollied)
         {
@@ -108,13 +108,17 @@ public class MissilesController : MonoBehaviour
             HandleCollision(other, false);
             GameManager.Instance.GameOver();
         }
-        else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST) || other.gameObject.CompareTag(GlobalConstMembers.HEALTH))
+        else if (other.gameObject.CompareTag(GlobalConstMembers.MULTIPLER_BOOST))
         {
             if (!GameManager.Instance.ScoringManager.IsMultiplierBoost)
             {
                 GameManager.Instance.ScoringManager.ShouldStartBoostTimer = true;
             }
 
+            HandleCollision(other, true);
+        }
+        else if (other.gameObject.CompareTag(GlobalConstMembers.HEALTH))
+        {
             HandleCollision(other, true);
         }
     }
