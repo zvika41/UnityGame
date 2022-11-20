@@ -122,6 +122,7 @@
         <e p="Scripts" t="Include">
           <e p="Controllers" t="Include">
             <e p="BackgroundController.cs" t="Include" />
+            <e p="BaseTargetController.cs" t="Include" />
             <e p="BoostsController.cs" t="Include" />
             <e p="InfoPopupController.cs" t="Include" />
             <e p="MissilesController.cs" t="Include" />

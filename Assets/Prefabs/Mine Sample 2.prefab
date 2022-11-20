@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6412449929393422193}
   - component: {fileID: 6402342388584315973}
   - component: {fileID: 6380464163935826242}
-  - component: {fileID: 6380464163935826243}
+  - component: {fileID: -7615805823652164987}
   m_Layer: 0
   m_Name: Mine Sample 2
   m_TagString: Enemy
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6379427672728979885}
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0665812, y: 1, z: 0}
+  m_LocalPosition: {x: -3.0665812, y: 15, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -102,7 +102,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6380464163935826243
+--- !u!114 &-7615805823652164987
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,11 +111,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6379427672728979885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14ce918784fcdae4fb6d602ad20369a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 62c8b0ca0faca0740aaa989162321e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 6601538019107920666, guid: 70a1428e5f80a4866a779ef1ab9fe521,
-    type: 3}
 --- !u!1 &6379439690948424855
 GameObject:
   m_ObjectHideFlags: 0

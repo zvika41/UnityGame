@@ -108,6 +108,12 @@ public class MissilesController : MonoBehaviour
             DestroyCollidedObjects(gameObject, other.gameObject);
             PlaySoundEffect();
         }
+        else if (other.gameObject.CompareTag(GlobalConstMembers.HEALTH) && other.gameObject.transform.position.y < 12)
+        {
+            PlayParticleEffect();
+            DestroyCollidedObjects(gameObject, other.gameObject);
+            PlaySoundEffect();
+        }
     }
 
     #endregion Event Handler

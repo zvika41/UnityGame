@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 3635890116167049494}
   - component: {fileID: 3625737077440750744}
   - component: {fileID: 3603883342920992142}
-  - component: {fileID: 3603883342920992143}
+  - component: {fileID: 2486820780123213084}
   m_Layer: 0
   m_Name: Asteroid Lava Red
   m_TagString: Enemy
@@ -149,7 +149,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3603883342920992143
+--- !u!114 &2486820780123213084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,8 +158,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3604543982420291544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14ce918784fcdae4fb6d602ad20369a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 62c8b0ca0faca0740aaa989162321e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 7535607469619513247, guid: ac10190cf200c4f7e881ca8e41d3d760,
-    type: 3}

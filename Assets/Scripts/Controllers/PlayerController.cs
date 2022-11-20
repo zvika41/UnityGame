@@ -107,8 +107,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        if(!GameManager.Instance.IsGameActive) return;
+        
         if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) || other.gameObject.CompareTag(GlobalConstMembers.BOMB))
         {
+            GameManager.Instance.SoundsEffectController.PlayEffect();
+            Destroy(other.gameObject);
+            
             if (_lifeCounter == 0)
             {
                 Destroy(gameObject);
@@ -119,6 +124,30 @@ public class PlayerController : MonoBehaviour
             
             GameManager.Instance.HealthManager.DisableHealthObject(_lifeCounter);
             _lifeCounter--;
+        }
+        else if (other.gameObject.CompareTag(GlobalConstMembers.MILTIPLER_BOOST))
+        {
+            if (GameManager.Instance.ScoringManager.IsMultiplierBoost)
+            {
+                GameManager.Instance.ScoringManager.UpdateScore(5);
+            }
+            
+            //GameManager.Instance.SoundsEffectController.PlayEffect();
+            Destroy(other.gameObject);
+        }
+        else if (other.gameObject.CompareTag(GlobalConstMembers.HEALTH))
+        {
+            if (!GameManager.Instance.HealthManager.IsHealthFull)
+            {
+                GameManager.Instance.HealthManager.AddLife();
+                _lifeCounter++;
+            }
+            else
+            {
+                GameManager.Instance.ScoringManager.UpdateScore(5);
+            }
+            
+            Destroy(other.gameObject);
         }
     }
 

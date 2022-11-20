@@ -1,11 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class BoostsController : MonoBehaviour, ISpawnManager
+public class BoostsController : BaseTargetController, ISpawnManager
 {
     #region --- SerializeField ---
 
-    [SerializeField] private GameObject boost;
+    [SerializeField] private GameObject[] boosts;
 
     #endregion SerializeField
     
@@ -49,7 +49,8 @@ public class BoostsController : MonoBehaviour, ISpawnManager
         while (GameManager.Instance.IsGameActive)
         {
             yield return new WaitForSeconds(_spawnRate);
-            Instantiate(boost);
+            int index = Random.Range(0, boosts.Length);
+            Instantiate(boosts[index]);
         }
     }
 
