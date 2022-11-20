@@ -61,7 +61,7 @@ public class DifficultyLevelManager : MonoBehaviour
     private void OnDifficultySelected()
     {
         int level = GetLevelSelected();
-        GameManager.Instance.StartGame(level);
+        GameManager.Instance.StartTimer(level);
     }
 
     #endregion Event Handler

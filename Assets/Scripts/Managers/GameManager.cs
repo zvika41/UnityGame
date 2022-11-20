@@ -11,14 +11,15 @@ public class GameManager : MonoBehaviour
     
     #region --- Const ---
 
-    private const string GAME_MANAGER_OBJECT__NAME = "GameManager";
+    private const string GAME_MANAGER_OBJECT_NAME = "GameManager";
     private const string TARGETS_NAME = "Targets";
     private const string SCORING_MANAGER_OBJECT_NAME = "ScoringManager";
     private const string BOOST_OBJECT_NAME = "Boost";
     private const string HEALTH_OBJECT_NAME = "HealthManager";
     private const string SOUND_EFFECT_OBJECT_NAME = "SoundsEffect";
-    private const string BCKGROUND_OBJECT__NAME = "Background";
+    private const string BCKGROUND_OBJECT_NAME = "Background";
     private const string INFO_POPUP_OBJECT_NAME = "InfoPopup";
+    private const string TIMER_OBJECT_NAME = "Timer";
 
     #endregion Const
     
@@ -38,6 +39,8 @@ public class GameManager : MonoBehaviour
     
     private AudioSource _musicTheme;
     private bool _isGameActive;
+    private bool _isTimerStarted;
+    private int _gameDifficulty;
 
     #endregion Members
 
@@ -50,6 +53,7 @@ public class GameManager : MonoBehaviour
     private BackgroundController _backgroundController;
     private BoostsController _boostsController;
     private InfoPopupController _infoPopupController;
+    private TimerController _timerController;
     
     private ScoringManager _scoringManager;
     private HealthManager _healthManager;
@@ -98,15 +102,25 @@ public class GameManager : MonoBehaviour
     {
         if (_instance == null)
         {
-            _instance = GameObject.Find(GAME_MANAGER_OBJECT__NAME).GetComponent<GameManager>();
+            _instance = GameObject.Find(GAME_MANAGER_OBJECT_NAME).GetComponent<GameManager>();
         }
         
         Init();
         
         _playerController.gameObject.SetActive(false);
+        _timerController.gameObject.SetActive(false);
         _healthManager.DisableHealthObject(4);
         _musicTheme = GetComponent<AudioSource>();
         _musicTheme.Play();
+    }
+
+    private void Update()
+    {
+        if (_timerController.IsTimerOn || !_isTimerStarted) return;
+        
+        _isTimerStarted = false;
+        _timerController.gameObject.SetActive(false);
+        StartGame(_gameDifficulty);
     }
 
     #endregion Mono Methods
@@ -119,12 +133,24 @@ public class GameManager : MonoBehaviour
         _playerController = GameObject.Find(GlobalConstMembers.PLAYER).GetComponent<PlayerController>();
         _targetsController = GameObject.Find(TARGETS_NAME).GetComponent<TargetsController>();
         _boostsController = GameObject.Find(BOOST_OBJECT_NAME).GetComponent<BoostsController>();
-        _backgroundController = GameObject.Find(BCKGROUND_OBJECT__NAME).GetComponent<BackgroundController>();
+        _backgroundController = GameObject.Find(BCKGROUND_OBJECT_NAME).GetComponent<BackgroundController>();
         _soundsEffectController = GameObject.Find(SOUND_EFFECT_OBJECT_NAME).GetComponent<SoundsEffectController>();
         _infoPopupController = GameObject.Find(INFO_POPUP_OBJECT_NAME).GetComponent<InfoPopupController>();
+        _timerController = GameObject.Find(TIMER_OBJECT_NAME).GetComponent<TimerController>();
 
         _scoringManager = GameObject.Find(SCORING_MANAGER_OBJECT_NAME).GetComponent<ScoringManager>();
         _healthManager = GameObject.Find(HEALTH_OBJECT_NAME).GetComponent<HealthManager>();
+    }
+    
+    private void StartGame(int difficulty)
+    {
+        _playerController.gameObject.SetActive(true);
+        _healthManager.ActiveHealthObjects();
+        _isGameActive = true;
+        _scoringManager.InitScore();
+        _targetsController.StartSpawn(difficulty);
+        _boostsController.StartSpawn(difficulty);
+        _backgroundController.ShouldRepeatBackground = true;
     }
 
     #endregion Private Methods
@@ -132,17 +158,14 @@ public class GameManager : MonoBehaviour
 
     #region --- Public Methods ---
 
-    public void StartGame(int difficulty)
+    public void StartTimer(int difficult)
     {
+        _timerController.gameObject.SetActive(true);
+        _gameDifficulty = difficult;
         infoButton.gameObject.SetActive(false);
         startGameText.gameObject.SetActive(false);
-        _playerController.gameObject.SetActive(true);
-        _healthManager.ActiveHealthObjects();
-        _isGameActive = true;
-        _scoringManager.InitScore();
-        _targetsController.StartSpawn(difficulty);
-        _boostsController.StartSpawn(difficulty);
-       _backgroundController.ShouldRepeatBackground = true;
+        _timerController.IsTimerOn = true;
+        _isTimerStarted = true;
     }
     
     public void GameOver()

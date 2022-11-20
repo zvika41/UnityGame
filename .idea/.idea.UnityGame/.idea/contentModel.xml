@@ -132,6 +132,7 @@
             <e p="SoundsEffectController.cs" t="Include" />
             <e p="TargetMovementController.cs" t="Include" />
             <e p="TargetsController.cs" t="Include" />
+            <e p="TimerController.cs" t="Include" />
           </e>
           <e p="Global" t="Include">
             <e p="GlobalConstMembers.cs" t="Include" />
