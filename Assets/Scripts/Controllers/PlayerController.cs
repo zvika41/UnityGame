@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     #region --- Const ---
 
     private const float SPEED = 15f;
+    private const string MISSILE_OBJECT_NAME = "Misile";
 
     #endregion Const
     
@@ -121,7 +122,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if(!GameManager.Instance.IsGameActive || other.gameObject.CompareTag("Misile")) return;
+        if(!GameManager.Instance.IsGameActive || other.gameObject.CompareTag(MISSILE_OBJECT_NAME)) return;
         
         if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) || other.gameObject.CompareTag(GlobalConstMembers.BOMB))
         {

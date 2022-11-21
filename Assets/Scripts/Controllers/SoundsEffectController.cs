@@ -6,7 +6,7 @@ public class SoundsEffectController : MonoBehaviour
 
     [SerializeField] private AudioClip explosionSound;
     [SerializeField] private AudioClip collectSound;
-    [SerializeField] private AudioClip shootingSound;
+    [SerializeField] private AudioClip missileShot;
     
     #endregion SerializeField
     
@@ -16,22 +16,23 @@ public class SoundsEffectController : MonoBehaviour
     private AudioSource _musicTheme;
     private AudioSource _explosionAudioSource;
     private AudioSource _collectAudioSource;
+    private AudioSource _missileShotAudioSource;
 
     #endregion Members
 
 
     #region --- Public Methods ---
 
-    public void StopThemeMusic()
-    {
-        _musicTheme = GetComponent<AudioSource>();
-        _musicTheme.Stop();
-    }
-    
     public void PlayExplosionSoundEffect()
     {
         _explosionAudioSource = GetComponent<AudioSource>();
         _explosionAudioSource.PlayOneShot(explosionSound);
+    }
+    
+    public void PlayMissileShoSoundEffect()
+    {
+        _missileShotAudioSource = GetComponent<AudioSource>();
+        _missileShotAudioSource.PlayOneShot(missileShot);
     }
     
     public void PlayCollectSoundEffect()

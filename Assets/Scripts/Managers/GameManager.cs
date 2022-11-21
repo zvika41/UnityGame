@@ -158,10 +158,10 @@ public class GameManager : MonoBehaviour
 
     #region --- Public Methods ---
 
-    public void StartTimer(int difficult)
+    public void StartTimer(int difficulty)
     {
         _timerController.gameObject.SetActive(true);
-        _gameDifficulty = difficult;
+        _gameDifficulty = difficulty;
         infoButton.gameObject.SetActive(false);
         startGameText.gameObject.SetActive(false);
         _timerController.IsTimerOn = true;
@@ -212,6 +212,7 @@ public class GameManager : MonoBehaviour
         StartGameText.gameObject.SetActive(false);
         _infoPopupController.InfoPopup.gameObject.SetActive(true);
         _infoPopupController.CloseInfoPopup.gameObject.SetActive(true);
+        _soundsEffectController.PlayMissileShoSoundEffect();
     }
 
     #endregion Event Handler
