@@ -6,8 +6,13 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    #region --- Singleton ---
+
     private static GameManager _instance;
     public static GameManager Instance => _instance;
+
+    #endregion Singleton
+   
     
     #region --- Const ---
 
@@ -20,6 +25,7 @@ public class GameManager : MonoBehaviour
     private const string BCKGROUND_OBJECT_NAME = "Background";
     private const string INFO_POPUP_OBJECT_NAME = "InfoPopup";
     private const string TIMER_OBJECT_NAME = "Timer";
+    private const string TARGET_POOLER_OBJECT_NAME = "TargetPooler";
 
     #endregion Const
     
@@ -54,6 +60,7 @@ public class GameManager : MonoBehaviour
     private BoostsController _boostsController;
     private InfoPopupController _infoPopupController;
     private TimerController _timerController;
+    private ObjectPoolerController _objectPoolerController;
     
     private ScoringManager _scoringManager;
     private HealthManager _healthManager;
@@ -73,6 +80,12 @@ public class GameManager : MonoBehaviour
     {
         get => _soundsEffectController;
         private set => _soundsEffectController = value;
+    }
+
+    public ObjectPoolerController ObjectPoolerController
+    {
+        get => _objectPoolerController;
+        private set => _objectPoolerController = value;
     }
 
     #endregion Controllers
@@ -111,7 +124,6 @@ public class GameManager : MonoBehaviour
         _timerController.gameObject.SetActive(false);
         _healthManager.DisableHealthObject(4);
         _musicTheme = GetComponent<AudioSource>();
-        _musicTheme.Play();
     }
 
     private void Update()
@@ -137,6 +149,7 @@ public class GameManager : MonoBehaviour
         _soundsEffectController = GameObject.Find(SOUND_EFFECT_OBJECT_NAME).GetComponent<SoundsEffectController>();
         _infoPopupController = GameObject.Find(INFO_POPUP_OBJECT_NAME).GetComponent<InfoPopupController>();
         _timerController = GameObject.Find(TIMER_OBJECT_NAME).GetComponent<TimerController>();
+        _objectPoolerController = GameObject.Find(TARGET_POOLER_OBJECT_NAME).GetComponent<ObjectPoolerController>();
 
         _scoringManager = GameObject.Find(SCORING_MANAGER_OBJECT_NAME).GetComponent<ScoringManager>();
         _healthManager = GameObject.Find(HEALTH_OBJECT_NAME).GetComponent<HealthManager>();
@@ -178,7 +191,12 @@ public class GameManager : MonoBehaviour
         _isGameActive = false;
         gameOverText.gameObject.SetActive(true);
         button.gameObject.SetActive(true);
+        
+        #if UNITY_EDITOR
         exitButton.gameObject.SetActive(true);
+        #endif
+        
+        
         infoButton.gameObject.SetActive(false);
         _targetsController.StopSpawn();
         _boostsController.StopSpawn();
@@ -186,20 +204,6 @@ public class GameManager : MonoBehaviour
         _scoringManager.SaveData();
         _scoringManager.IsMultiplierBoost = false;
         _musicTheme.Stop();
-    }
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public void OnExitButtonClicked()
-    {
-#if UNITY_EDITOR
-        EditorApplication.ExitPlaymode();
-#else
-        Application.Quit();
-#endif
     }
 
     #endregion Public Methods
@@ -213,6 +217,18 @@ public class GameManager : MonoBehaviour
         _infoPopupController.InfoPopup.gameObject.SetActive(true);
         _infoPopupController.CloseInfoPopup.gameObject.SetActive(true);
         _soundsEffectController.PlayMissileShoSoundEffect();
+    }
+    
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void OnExitButtonClicked()
+    {
+        #if UNITY_EDITOR
+        EditorApplication.ExitPlaymode();
+        #endif
     }
 
     #endregion Event Handler

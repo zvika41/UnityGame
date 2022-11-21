@@ -22,8 +22,8 @@ public class TargetsController : BaseTargetsController
         while (GameManager.Instance.IsGameActive)
         {
             yield return new WaitForSeconds(spawnRate);
-            int index = Random.Range(0, targets.Length);
-            Instantiate(targets[index]);
+            string objectTag = tags[Random.Range(0, tags.Length)];
+            GameManager.Instance.ObjectPoolerController.SpawnFromPool(objectTag);
         }
     }
 

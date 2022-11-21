@@ -6,8 +6,8 @@ public class BaseTargetsController : MonoBehaviour
 {
     #region --- SerializeField ---
 
-    [SerializeField] public GameObject[] targets;
     [SerializeField] public float spawnRate;
+    [SerializeField] public string[] tags;
 
     #endregion SerializeField
 

@@ -48,8 +48,12 @@
           <e p="FreeButtonSet" t="Include">
             <e p="Textures" t="Include">
               <e p="buttons" t="Include" />
+              <e p="controls" t="Include" />
               <e p="Icons" t="Include">
+                <e p="128x128" t="Include" />
                 <e p="256x256" t="Include" />
+                <e p="32x32" t="Include" />
+                <e p="64x64" t="Include" />
               </e>
             </e>
           </e>
@@ -146,6 +150,7 @@
             <e p="HealthManager.cs" t="Include" />
             <e p="ScoringManager.cs" t="Include" />
           </e>
+          <e p="ObjectPoolerController.cs" t="Include" />
         </e>
         <e p="Sounds" t="Include" />
         <e p="TextMesh Pro" t="Include">

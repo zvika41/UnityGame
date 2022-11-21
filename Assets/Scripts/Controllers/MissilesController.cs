@@ -28,7 +28,7 @@ public class MissilesController : MonoBehaviour
     private void Update()
     {
         MissileDirection();
-        DestroyMissileOutOfBounds();
+        DisableMissileOutOfBounds();
     }
 
     #endregion Mono Methods
@@ -41,18 +41,18 @@ public class MissilesController : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * SPEED);
     }
 
-    private void DestroyMissileOutOfBounds()
+    private void DisableMissileOutOfBounds()
     {
         if (transform.position.y > 18)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
-    private void DestroyCollidedObjects(GameObject current, GameObject other)
+    private void DisableCollidedObjects(GameObject current, GameObject other)
     {
-        Destroy(current);
-        Destroy(other.gameObject);
+        current.SetActive(false);
+        other.SetActive(false);
     }
 
     private void PlayParticleEffect()
@@ -76,7 +76,7 @@ public class MissilesController : MonoBehaviour
     {
         _isCollied = true;
         PlayParticleEffect();
-        DestroyCollidedObjects(gameObject, colliderGameObject.gameObject);
+        DisableCollidedObjects(gameObject, colliderGameObject.gameObject);
         PlaySoundEffect(shouldPlayBoostSound);
     }
 
@@ -106,6 +106,7 @@ public class MissilesController : MonoBehaviour
         else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB))
         {
             HandleCollision(other, false);
+            GameManager.Instance.HealthManager.DisableHealthObject(4);
             GameManager.Instance.GameOver();
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.MULTIPLER_BOOST))
@@ -115,10 +116,12 @@ public class MissilesController : MonoBehaviour
                 GameManager.Instance.ScoringManager.ShouldStartBoostTimer = true;
             }
 
+            GameManager.Instance.ScoringManager.UpdateScore(5);
             HandleCollision(other, true);
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.HEALTH))
         {
+            GameManager.Instance.ScoringManager.UpdateScore(5);
             HandleCollision(other, true);
         }
     }

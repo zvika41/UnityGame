@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
     #region --- Const ---
 
     private const float SPEED = 15f;
-    private const string MISSILE_OBJECT_NAME = "Misile";
+    private const string MISSILE_OBJECT_NAME = "Missile";
 
     #endregion Const
     
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             _shootingSound.Play();
-            Instantiate(missile, transform.position, missile.transform.rotation);
+            GameManager.Instance.ObjectPoolerController.SpawnFromPool(MISSILE_OBJECT_NAME, transform.position);
         }
     }
 
@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
             GameManager.Instance.SoundsEffectController.PlayExplosionSoundEffect();
         }
         
-        Destroy(colliderGameObject.gameObject);
+        colliderGameObject.gameObject.SetActive(false);
     }
 
     #endregion Private Methods
