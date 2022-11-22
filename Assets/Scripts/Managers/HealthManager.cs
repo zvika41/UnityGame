@@ -40,7 +40,7 @@ public class HealthManager : MonoBehaviour
     {
         _isHealthFull = false;
 
-        if (objectNumber <= 3)
+        if (objectNumber <= healthList.Count)
         {
             healthList[objectNumber].SetActive(false);
         }
