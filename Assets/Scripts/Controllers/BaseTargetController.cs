@@ -1,27 +1,37 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BaseTargetsController : MonoBehaviour
 {
     #region --- SerializeField ---
 
-    [SerializeField] public float spawnRate;
-    [SerializeField] public string[] tags;
+    [SerializeField] protected float spawnRate;
+    [SerializeField] protected string[] tags;
 
     #endregion SerializeField
 
 
     #region -- Virtual Methods ---
 
-    public virtual void StartSpawn(int difficulty) { }
+    public virtual void StartSpawn(int difficulty){ }
     
-    public virtual void StopSpawn() { }
+    public virtual void StopSpawn(){ }
     
-    public virtual IEnumerator SpawnTarget()
-    {
-        yield return new WaitForSeconds(0);
-    }
 
     #endregion Virtual Methods
+
+
+    #region --- Protected Methods ---
+
+    protected  IEnumerator SpawnTarget()
+    {
+        while (GameManager.Instance.IsGameActive)
+        {
+            yield return new WaitForSeconds(spawnRate);
+            string objectTag = tags[Random.Range(0, tags.Length)];
+            GameManager.Instance.ObjectPoolerController.SpawnFromPool(objectTag);
+        }
+    }
+
+    #endregion Protected Methods
 }

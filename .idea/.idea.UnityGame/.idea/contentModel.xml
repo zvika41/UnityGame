@@ -130,6 +130,7 @@
             <e p="BoostsController.cs" t="Include" />
             <e p="InfoPopupController.cs" t="Include" />
             <e p="MissilesController.cs" t="Include" />
+            <e p="ObjectPoolerController.cs" t="Include" />
             <e p="ParticleController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="RandomTorqueController.cs" t="Include" />
@@ -150,7 +151,6 @@
             <e p="HealthManager.cs" t="Include" />
             <e p="ScoringManager.cs" t="Include" />
           </e>
-          <e p="ObjectPoolerController.cs" t="Include" />
         </e>
         <e p="Sounds" t="Include" />
         <e p="TextMesh Pro" t="Include">

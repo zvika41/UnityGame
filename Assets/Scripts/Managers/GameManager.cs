@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private TextMeshProUGUI startGameText;
-    [SerializeField] private Button button;
+    [SerializeField] private Button tryAgainButton;
     [SerializeField] private Button exitButton;
     [SerializeField] private Button infoButton;
 
@@ -190,7 +190,7 @@ public class GameManager : MonoBehaviour
         
         _isGameActive = false;
         gameOverText.gameObject.SetActive(true);
-        button.gameObject.SetActive(true);
+        tryAgainButton.gameObject.SetActive(true);
         
         #if UNITY_EDITOR
         exitButton.gameObject.SetActive(true);
