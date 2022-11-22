@@ -5,7 +5,7 @@ public class HealthManager : MonoBehaviour
 {
     #region --- SerializeField ---
 
-    [SerializeField] private List<GameObject> health;
+    [SerializeField] private List<GameObject> healthList;
 
     #endregion SerializeField
     
@@ -30,50 +30,37 @@ public class HealthManager : MonoBehaviour
     {
         _isHealthFull = true;
         
-        foreach (GameObject o in health)
+        foreach (GameObject health in healthList)
         {
-            o.SetActive(true);
+            health.SetActive(true);
         }
     }
     
     public void DisableHealthObject(int objectNumber)
     {
         _isHealthFull = false;
-        
-        if (objectNumber == 1)
+
+        if (objectNumber <= 3)
         {
-            health[1].SetActive(false);
-        }
-        else if (objectNumber == 2)
-        {
-            health[2].SetActive(false);
-        }
-        else if (objectNumber == 3)
-        {
-            health[3].SetActive(false);
+            healthList[objectNumber].SetActive(false);
         }
         else
         {
-            foreach (GameObject o in health)
+            foreach (GameObject health in healthList)
             {
-                o.SetActive(false);
+                health.SetActive(false);
             }
         }
     }
 
     public void AddLife()
     {
-        if (!health[1].gameObject.activeInHierarchy)
+        foreach (GameObject health in healthList)
         {
-            health[1].SetActive(true);
-        }
-        else if (!health[2].gameObject.activeInHierarchy)
-        {
-            health[2].SetActive(true);
-        }
-        else if (!health[3].gameObject.activeInHierarchy)
-        {
-            health[3].SetActive(true);
+            if (!health.gameObject.activeInHierarchy)
+            {
+                health.SetActive(true);
+            }
         }
     }
 
