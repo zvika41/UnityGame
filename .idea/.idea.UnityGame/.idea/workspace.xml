@@ -23,15 +23,27 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype 5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPoolerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPoolerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/Free Droid.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/FreeButtonSet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/Particles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/Props.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Readme.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/SubstancePainter.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/_Source_Files.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +180,7 @@
       <workItem from="1668933556690" duration="19389000" />
       <workItem from="1668963507607" duration="5647000" />
       <workItem from="1669023067820" duration="2637000" />
-      <workItem from="1669122549035" duration="2138000" />
+      <workItem from="1669122549035" duration="2947000" />
     </task>
     <servers />
   </component>

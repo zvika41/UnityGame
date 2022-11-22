@@ -7,6 +7,26 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Course Library" t="Include">
+          <e p="_Source_Files" t="Include">
+            <e p="Scripts" t="Include" />
+            <e p="SimpleFX" t="Include">
+              <e p="Materials" t="Include" />
+            </e>
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="Baloo_Chettan" t="Include" />
+            <e p="Exo_2" t="Include" />
+            <e p="Indie_Flower" t="Include" />
+            <e p="Margarine" t="Include" />
+            <e p="Oswald" t="Include" />
+            <e p="Roboto_Condensed" t="Include" />
+          </e>
+          <e p="Props" t="Include" />
+          <e p="Textures" t="Include">
+            <e p="Abstract" t="Include" />
+          </e>
+        </e>
         <e p="Library" t="Include">
           <e p="_Source_Files" t="Include">
             <e p="_LICENSE.txt" t="Include" />
@@ -153,6 +173,25 @@
           </e>
         </e>
         <e p="Sounds" t="Include" />
+        <e p="StarSparrow" t="Include">
+          <e p="Materials" t="Include" />
+          <e p="Meshes" t="Include" />
+          <e p="Prefabs" t="Include">
+            <e p="BonusContent" t="Include" />
+          </e>
+          <e p="Readme" t="Include">
+            <e p="Readme Files" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Scenes" t="Include" />
+          <e p="SubstancePainter" t="Include" />
+          <e p="Textures" t="Include">
+            <e p="BonusContent" t="Include" />
+          </e>
+        </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Documentation" t="Include" />
           <e p="Examples &amp; Extras" t="Include">

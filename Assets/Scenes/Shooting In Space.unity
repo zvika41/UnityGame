@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79e401120ec34643b415c42789f2884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 10
+  spawnRate: 20
   tags:
   - Boost
   - Health
@@ -4110,7 +4110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1066594989}
   startGameText: {fileID: 278831198}
-  button: {fileID: 1254556441}
+  tryAgainButton: {fileID: 1254556441}
   exitButton: {fileID: 410021224}
   infoButton: {fileID: 634384490}
 --- !u!4 &1831505927
@@ -4442,27 +4442,27 @@ MonoBehaviour:
     Size: 5
   - Tag: Enemy1
     Prefab: {fileID: 341824121272346996, guid: 87080e6d4ad9f324cae055b8a46c706c, type: 3}
-    Size: 5
+    Size: 100
   - Tag: Enemy2
     Prefab: {fileID: 3604543982420291544, guid: df077e8e83ab9274cb3517bd1ff6a951,
       type: 3}
-    Size: 5
+    Size: 100
   - Tag: Enemy3
     Prefab: {fileID: 6379427672728979885, guid: 36b30d9a574e9184f87ef6be6d97550e,
       type: 3}
-    Size: 5
+    Size: 100
   - Tag: Boost
     Prefab: {fileID: 1241166147213281852, guid: 6e2fb6ba5282bbf438c205fc3d3a691c,
       type: 3}
-    Size: 5
+    Size: 100
   - Tag: Health
     Prefab: {fileID: 7655065325273907776, guid: 7e9bcda0c40041e48877329fc2539f5d,
       type: 3}
-    Size: 5
+    Size: 100
   - Tag: Bomb
     Prefab: {fileID: 8723275167469192252, guid: be0ebd515f360254c99886937162b102,
       type: 3}
-    Size: 5
+    Size: 100
 --- !u!4 &2046950431
 Transform:
   m_ObjectHideFlags: 0
