@@ -1,12 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
     #region --- SerializeField ---
 
-    [SerializeField] private GameObject health1;
-    [SerializeField] private GameObject health2;
-    [SerializeField] private GameObject health3;
+    [SerializeField] private List<GameObject> health;
 
     #endregion SerializeField
     
@@ -30,9 +29,11 @@ public class HealthManager : MonoBehaviour
     public void ActiveHealthObjects()
     {
         _isHealthFull = true;
-        health1.SetActive(true);
-        health2.SetActive(true);
-        health3.SetActive(true);
+        
+        foreach (GameObject o in health)
+        {
+            o.SetActive(true);
+        }
     }
     
     public void DisableHealthObject(int objectNumber)
@@ -41,37 +42,38 @@ public class HealthManager : MonoBehaviour
         
         if (objectNumber == 1)
         {
-            health1.SetActive(false);
+            health[1].SetActive(false);
         }
         else if (objectNumber == 2)
         {
-            health2.SetActive(false);
+            health[2].SetActive(false);
         }
         else if (objectNumber == 3)
         {
-            health3.SetActive(false);
+            health[3].SetActive(false);
         }
         else
         {
-            health1.SetActive(false);
-            health2.SetActive(false);
-            health3.SetActive(false);
+            foreach (GameObject o in health)
+            {
+                o.SetActive(false);
+            }
         }
     }
 
     public void AddLife()
     {
-        if (!health1.gameObject.activeInHierarchy)
+        if (!health[1].gameObject.activeInHierarchy)
         {
-            health1.SetActive(true);
+            health[1].SetActive(true);
         }
-        else if (!health2.gameObject.activeInHierarchy)
+        else if (!health[2].gameObject.activeInHierarchy)
         {
-            health2.SetActive(true);
+            health[2].SetActive(true);
         }
-        else if (!health3.gameObject.activeInHierarchy)
+        else if (!health[3].gameObject.activeInHierarchy)
         {
-            health3.SetActive(true);
+            health[3].SetActive(true);
         }
     }
 

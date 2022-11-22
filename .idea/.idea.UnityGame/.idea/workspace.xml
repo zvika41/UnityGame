@@ -20,30 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce9369e-daa0-4247-ae42-ce0a1cf2ca20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/Free Droid.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/FreeButtonSet.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/Particles.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/Props.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Readme.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/SubstancePainter.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/_Source_Files.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +89,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DifficultyLevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InfoPopupController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstMembers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/RandomTorqueController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstMembers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetMovementController.cs" />
@@ -128,6 +105,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ObjectPoolerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" />
       </list>
     </option>
   </component>
@@ -180,7 +158,7 @@
       <workItem from="1668933556690" duration="19389000" />
       <workItem from="1668963507607" duration="5647000" />
       <workItem from="1669023067820" duration="2637000" />
-      <workItem from="1669122549035" duration="2947000" />
+      <workItem from="1669122549035" duration="3899000" />
     </task>
     <servers />
   </component>
@@ -213,11 +191,11 @@
       <screen x="0" y="0" width="1920" height="1152" />
     </state>
     <state x="616" y="268" key="run.anything.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668795809403" />
-    <state x="-1422" y="181" width="672" height="487" key="search.everywhere.popup" timestamp="1669124321953">
-      <screen x="-1920" y="0" width="1536" height="826" />
+    <state x="623" y="253" width="672" height="678" key="search.everywhere.popup" timestamp="1669133296334">
+      <screen x="0" y="0" width="1920" height="1152" />
     </state>
     <state x="-1422" y="181" width="672" height="487" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@-1920.0.1536.826" timestamp="1669124321953" />
-    <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1669053159106" />
+    <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1669133296334" />
     <state x="498" y="179" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1668603071249" />
   </component>
 </project>
