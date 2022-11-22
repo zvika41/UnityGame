@@ -1,0 +1,130 @@
+using UnityEngine;
+
+public class MissilesController : MonoBehaviour
+{
+    #region --- Const ---
+
+    private const float SPEED = 18f;
+
+    #endregion Const
+    
+    
+    #region --- SerializeField ---
+
+    [SerializeField] private ParticleSystem particleSystem;
+
+    #endregion SerializeField
+    
+    
+    #region --- Members ---
+
+    private bool _isCollied;
+
+    #endregion Members
+
+
+    #region --- Mono Methods ---
+
+    private void Update()
+    {
+        MissileDirection();
+        DisableMissileOutOfBounds();
+    }
+
+    #endregion Mono Methods
+
+
+    #region --- Private Methods ---
+
+    private void MissileDirection()
+    {
+        transform.Translate(Vector3.forward * Time.deltaTime * SPEED);
+    }
+
+    private void DisableMissileOutOfBounds()
+    {
+        if (transform.position.y > 18)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    private void DisableCollidedObjects(GameObject current, GameObject other)
+    {
+        current.SetActive(false);
+        other.SetActive(false);
+    }
+
+    private void PlayParticleEffect()
+    {
+        Instantiate(particleSystem, transform.position, particleSystem.transform.rotation);
+    }
+
+    private void PlaySoundEffect(bool shouldPlayBoostSound)
+    {
+        if (shouldPlayBoostSound)
+        {
+            GameManager.Instance.SoundsEffectController.PlayCollectSoundEffect();
+        }
+        else
+        {
+            GameManager.Instance.SoundsEffectController.PlayExplosionSoundEffect();
+        }
+    }
+
+    private void HandleCollision(Collision colliderGameObject, bool shouldPlayBoostSound)
+    {
+        _isCollied = true;
+        PlayParticleEffect();
+        DisableCollidedObjects(gameObject, colliderGameObject.gameObject);
+        PlaySoundEffect(shouldPlayBoostSound);
+    }
+
+    #endregion Private Methods
+
+
+    #region --- Event Handler ---
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (!GameManager.Instance.IsGameActive || other.gameObject.CompareTag(GlobalConstMembers.PLAYER)) return;
+
+        if (_isCollied)
+        {
+            _isCollied = false;
+            
+            return;
+        }
+
+        if (!(other.gameObject.transform.position.y < 11.5f)) return;
+        
+        if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY))
+        {
+            HandleCollision(other, false);
+            GameManager.Instance.ScoringManager.UpdateScore(5);
+        }
+        else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB))
+        {
+            HandleCollision(other, false);
+            GameManager.Instance.HealthManager.DisableHealthObject(4);
+            GameManager.Instance.GameOver();
+        }
+        else if (other.gameObject.CompareTag(GlobalConstMembers.MULTIPLER_BOOST))
+        {
+            if (!GameManager.Instance.ScoringManager.IsMultiplierBoost)
+            {
+                GameManager.Instance.ScoringManager.ShouldStartBoostTimer = true;
+            }
+
+            GameManager.Instance.ScoringManager.UpdateScore(5);
+            HandleCollision(other, true);
+        }
+        else if (other.gameObject.CompareTag(GlobalConstMembers.HEALTH))
+        {
+            GameManager.Instance.ScoringManager.UpdateScore(5);
+            HandleCollision(other, true);
+        }
+    }
+
+    #endregion Event Handler
+}

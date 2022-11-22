@@ -21,21 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="fce9369e-daa0-4247-ae42-ce0a1cf2ca20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Missile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Missile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype 5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyMissilesOutOfBounds.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyMissilesOutOfBounds.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DifficultyLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DifficultyLevel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissilesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissilesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnObjectManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnObjectManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Targets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Targets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPoolerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPoolerController.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +42,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissilesController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DifficultyLevel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GlobalConstMembers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Targets.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPooler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/InfoPopupController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/SoundsEffectController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/ObjectPoolerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/DifficultyLevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TimerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TargetMovementController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Library/_Source_Files/Scripts/DestroyAfterDelay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/RandomTorqueController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/CanvasScalerWithChildTextObjectDoesNotCrash.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstMembers.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,18 +72,57 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ParticalService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ParticleService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstMembers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DestroyMissilesOutOfBounds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Targets.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DifficultyLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReapetBackground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RepaetBackground.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DifficultyLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RepeatBackground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ParticleController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundsEffectsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnBoosts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundsEffectController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Targets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScoringManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MissilesController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ISpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TargetsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoostsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InfoPopupCntroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/EnterScreenController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InfoButtonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DifficultyLevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InfoPopupController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstMembers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/RandomTorqueController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstMembers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetMovementController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TimerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DifficultyLevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SoundsEffectController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPooler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPoolerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ObjectPoolerController.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="2HaWNRtYILQwP8lkcGm7RR1isTg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -114,6 +160,15 @@
       <workItem from="1668517044596" duration="5709000" />
       <workItem from="1668523641588" duration="2203000" />
       <workItem from="1668597248469" duration="2473000" />
+      <workItem from="1668703639865" duration="6016000" />
+      <workItem from="1668761102498" duration="14071000" />
+      <workItem from="1668844047690" duration="6799000" />
+      <workItem from="1668853161985" duration="466000" />
+      <workItem from="1668853996739" duration="16794000" />
+      <workItem from="1668933556690" duration="19389000" />
+      <workItem from="1668963507607" duration="5647000" />
+      <workItem from="1669023067820" duration="2637000" />
+      <workItem from="1669122549035" duration="2138000" />
     </task>
     <servers />
   </component>
@@ -138,10 +193,19 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="498" y="179" width="672" height="481" key="search.everywhere.popup" timestamp="1668598361022">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state x="-1481" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1669120489508">
+      <screen x="-1920" y="0" width="1536" height="826" />
     </state>
-    <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668536380337" />
-    <state x="498" y="179" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1668598361022" />
+    <state x="-1481" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1920.0.1536.826/0.0.1920.1152@-1920.0.1536.826" timestamp="1669120489508" />
+    <state x="616" y="268" key="run.anything.popup" timestamp="1668795809403">
+      <screen x="0" y="0" width="1920" height="1152" />
+    </state>
+    <state x="616" y="268" key="run.anything.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668795809403" />
+    <state x="-1422" y="181" width="672" height="487" key="search.everywhere.popup" timestamp="1669124321953">
+      <screen x="-1920" y="0" width="1536" height="826" />
+    </state>
+    <state x="-1422" y="181" width="672" height="487" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@-1920.0.1536.826" timestamp="1669124321953" />
+    <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1669053159106" />
+    <state x="498" y="179" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1668603071249" />
   </component>
 </project>

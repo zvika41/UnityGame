@@ -5,9 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Background
-  - Misile
   - Enemy
   - Bomb
+  - MultiplierBoost
+  - Health
+  - Missile
   layers:
   - Default
   - TransparentFX
