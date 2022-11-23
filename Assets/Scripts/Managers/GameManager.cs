@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
         
         _playerController.gameObject.SetActive(false);
         _timerController.gameObject.SetActive(false);
-        _healthManager.DisableHealthObject(4);
+        _healthManager.DisableAllHealthObjects();
         _musicTheme = GetComponent<AudioSource>();
     }
 

@@ -16,13 +16,6 @@ public class MissilesController : MonoBehaviour
     #endregion SerializeField
     
     
-    #region --- Members ---
-
-    private bool _isCollied;
-
-    #endregion Members
-
-
     #region --- Mono Methods ---
 
     private void Update()
@@ -74,7 +67,6 @@ public class MissilesController : MonoBehaviour
 
     private void HandleCollision(Collision colliderGameObject, bool shouldPlayBoostSound)
     {
-        _isCollied = true;
         PlayParticleEffect();
         DisableCollidedObjects(gameObject, colliderGameObject.gameObject);
         PlaySoundEffect(shouldPlayBoostSound);
@@ -89,15 +81,6 @@ public class MissilesController : MonoBehaviour
     {
         if (!GameManager.Instance.IsGameActive || other.gameObject.CompareTag(GlobalConstMembers.PLAYER)) return;
 
-        if (_isCollied)
-        {
-            _isCollied = false;
-            
-            return;
-        }
-
-        if (!(other.gameObject.transform.position.y < 11.5f)) return;
-        
         if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY))
         {
             HandleCollision(other, false);
@@ -106,22 +89,34 @@ public class MissilesController : MonoBehaviour
         else if (other.gameObject.CompareTag(GlobalConstMembers.BOMB))
         {
             HandleCollision(other, false);
-            GameManager.Instance.HealthManager.DisableHealthObject(4);
+            GameManager.Instance.HealthManager.DisableAllHealthObjects();
             GameManager.Instance.GameOver();
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.MULTIPLER_BOOST))
         {
-            if (!GameManager.Instance.ScoringManager.IsMultiplierBoost)
+            if (GameManager.Instance.ScoringManager.IsMultiplierBoost)
+            {
+                GameManager.Instance.ScoringManager.UpdateScore(5);
+            }
+            else
             {
                 GameManager.Instance.ScoringManager.ShouldStartBoostTimer = true;
             }
-
-            GameManager.Instance.ScoringManager.UpdateScore(5);
+            
             HandleCollision(other, true);
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.HEALTH))
         {
-            GameManager.Instance.ScoringManager.UpdateScore(5);
+            if (!GameManager.Instance.HealthManager.IsHealthFull)
+            {
+                GameManager.Instance.HealthManager.AddLife(GameManager.Instance.HealthManager.HealthCounter);
+                GameManager.Instance.HealthManager.HealthCounter++;
+            }
+            else
+            {
+                GameManager.Instance.ScoringManager.UpdateScore(5);
+            }
+            
             HandleCollision(other, true);
         }
     }

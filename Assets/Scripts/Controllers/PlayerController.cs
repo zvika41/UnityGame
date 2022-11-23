@@ -20,8 +20,6 @@ public class PlayerController : MonoBehaviour
     #region --- Members ---
     
     private AudioSource _shootingSound;
-    private int _lifeCounter;
-    private bool _isCollied;
 
     #endregion Members
     
@@ -31,7 +29,6 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _shootingSound = GetComponent<AudioSource>();
-        _lifeCounter = 3;
     }
 
     private void Update()
@@ -123,21 +120,19 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         if(!GameManager.Instance.IsGameActive || other.gameObject.CompareTag(MISSILE_OBJECT_NAME)) return;
-        
+
         if (other.gameObject.CompareTag(GlobalConstMembers.ENEMY) || other.gameObject.CompareTag(GlobalConstMembers.BOMB))
         {
             HandleCollision(other, false);
+
+            GameManager.Instance.HealthManager.HealthCounter--;
+            GameManager.Instance.HealthManager.DisableHealthObject(GameManager.Instance.HealthManager.HealthCounter);
+
+            if (GameManager.Instance.HealthManager.HealthCounter != 0) return;
             
-            if (_lifeCounter == 0)
-            {
-                Destroy(gameObject);
-                GameManager.Instance.GameOver();
-                
-                return;
-            }
-            
-            GameManager.Instance.HealthManager.DisableHealthObject(_lifeCounter);
-            _lifeCounter--;
+            Destroy(gameObject);
+            GameManager.Instance.GameOver();
+
         }
         else if (other.gameObject.CompareTag(GlobalConstMembers.MULTIPLER_BOOST))
         {
@@ -156,8 +151,8 @@ public class PlayerController : MonoBehaviour
         {
             if (!GameManager.Instance.HealthManager.IsHealthFull)
             {
-                GameManager.Instance.HealthManager.AddLife();
-                _lifeCounter++;
+                GameManager.Instance.HealthManager.AddLife(GameManager.Instance.HealthManager.HealthCounter);
+                GameManager.Instance.HealthManager.HealthCounter++;
             }
             else
             {

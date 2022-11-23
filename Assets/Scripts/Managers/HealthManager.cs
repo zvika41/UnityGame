@@ -13,6 +13,7 @@ public class HealthManager : MonoBehaviour
     #region --- Members ---
     
     private bool _isHealthFull;
+    private int _healthCounter;
     
     #endregion Members
     
@@ -21,7 +22,23 @@ public class HealthManager : MonoBehaviour
 
     public bool IsHealthFull => _isHealthFull;
 
+    public int HealthCounter
+    {
+        get => _healthCounter;
+        set => _healthCounter = value;
+    }
+
     #endregion Properties
+    
+    
+    #region --- Mono Methods ---
+    
+    private void Awake()
+    {
+        _healthCounter = 3;
+    }
+
+    #endregion Mono Methods
     
     
     #region --- Public Methods ---
@@ -38,29 +55,27 @@ public class HealthManager : MonoBehaviour
     
     public void DisableHealthObject(int objectNumber)
     {
+        if (objectNumber > healthList.Count) return;
+
+        healthList[objectNumber].SetActive(false);
         _isHealthFull = false;
-
-        if (objectNumber <= healthList.Count)
-        {
-            healthList[objectNumber].SetActive(false);
-        }
-        else
-        {
-            foreach (GameObject health in healthList)
-            {
-                health.SetActive(false);
-            }
-        }
     }
-
-    public void AddLife()
+    
+    public void DisableAllHealthObjects()
     {
         foreach (GameObject health in healthList)
         {
-            if (!health.gameObject.activeInHierarchy)
-            {
-                health.SetActive(true);
-            }
+            health.SetActive(false);
+        }
+    }
+
+    public void AddLife(int objectNumber)
+    {
+        healthList[objectNumber].SetActive(true);
+        
+        if (objectNumber == 2)
+        {
+            _isHealthFull = true;
         }
     }
 

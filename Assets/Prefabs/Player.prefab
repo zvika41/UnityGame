@@ -690,7 +690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7223610415998415300
 Transform:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ Transform:
   m_Children:
   - {fileID: 7223610415998415300}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &8290627035474546791
 MeshFilter:
@@ -1036,7 +1036,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missile: {fileID: 527761041456558962, guid: d61e0551b1a179546ab8c28a498340e1, type: 3}
-  particle: {fileID: 0}
 --- !u!1 &8837579179476349085
 GameObject:
   m_ObjectHideFlags: 0

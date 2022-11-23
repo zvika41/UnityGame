@@ -22,6 +22,15 @@
     <list default="true" id="fce9369e-daa0-4247-ae42-ce0a1cf2ca20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Health.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Health.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Missile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Missile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shooting In Space.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shooting In Space.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +60,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/RandomTorqueController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/CanvasScalerWithChildTextObjectDoesNotCrash.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/874D3E57-E875-4567-B575-3A47CBB1AE54/18/102be6c0/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstMembers.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -98,14 +108,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DifficultyLevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SoundsEffectController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPooler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPoolerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ObjectPoolerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" />
       </list>
     </option>
@@ -123,6 +133,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -159,7 +170,7 @@
       <workItem from="1668933556690" duration="19389000" />
       <workItem from="1668963507607" duration="5647000" />
       <workItem from="1669023067820" duration="2637000" />
-      <workItem from="1669122549035" duration="6439000" />
+      <workItem from="1669122549035" duration="18671000" />
     </task>
     <servers />
   </component>
@@ -188,15 +199,16 @@
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
     <state x="-1481" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1920.0.1536.826/0.0.1920.1152@-1920.0.1536.826" timestamp="1669120489508" />
-    <state x="616" y="268" key="run.anything.popup" timestamp="1668795809403">
-      <screen x="0" y="0" width="1920" height="1152" />
+    <state x="493" y="190" key="run.anything.popup" timestamp="1669208791958">
+      <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="616" y="268" key="run.anything.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668795809403" />
-    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup" timestamp="1669134350137">
+    <state x="493" y="190" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1669208791958" />
+    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup" timestamp="1669204519696">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="-1422" y="181" width="672" height="487" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@-1920.0.1536.826" timestamp="1669124321953" />
     <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1669133296334" />
-    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1669134350137" />
+    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1669204519696" />
   </component>
 </project>
