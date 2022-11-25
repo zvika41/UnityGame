@@ -138,7 +138,12 @@
           </e>
         </e>
         <e p="Particles" t="Include" />
-        <e p="Prefabs" t="Include" />
+        <e p="Prefabs" t="Include">
+          <e p="Boost" t="Include" />
+          <e p="Enemy" t="Include" />
+          <e p="Player" t="Include" />
+          <e p="View" t="Include" />
+        </e>
         <e p="Resources" t="Include">
           <e p="BillingMode.json" t="Include" />
         </e>
@@ -148,7 +153,6 @@
             <e p="BackgroundController.cs" t="Include" />
             <e p="BaseTargetController.cs" t="Include" />
             <e p="BoostsController.cs" t="Include" />
-            <e p="InfoPopupController.cs" t="Include" />
             <e p="MissilesController.cs" t="Include" />
             <e p="ObjectPoolerController.cs" t="Include" />
             <e p="ParticleController.cs" t="Include" />
@@ -162,14 +166,16 @@
           <e p="Global" t="Include">
             <e p="GlobalConstMembers.cs" t="Include" />
           </e>
-          <e p="Interface" t="Include">
-            <e p="ISpawnManager.cs" t="Include" />
-          </e>
           <e p="Managers" t="Include">
             <e p="DifficultyLevelManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="HealthManager.cs" t="Include" />
             <e p="ScoringManager.cs" t="Include" />
+          </e>
+          <e p="View" t="Include">
+            <e p="GameView.cs" t="Include" />
+            <e p="InfoPopupView.cs" t="Include" />
+            <e p="PlayerView.cs" t="Include" />
           </e>
         </e>
         <e p="Sounds" t="Include" />

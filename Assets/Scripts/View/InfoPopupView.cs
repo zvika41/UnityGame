@@ -1,8 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InfoPopupController : MonoBehaviour
+public class InfoPopupView : MonoBehaviour
 {
+    #region --- Const ---
+
+    private const string GAME_VIEW_OBJECT_NAME = "GameView(Clone)";
+
+    #endregion Const
+    
     
     #region --- SerializeField ---
     
@@ -12,9 +18,15 @@ public class InfoPopupController : MonoBehaviour
     #endregion SerializeField
     
     
+    #region --- Members ---
+
+    private GameView _gameView;
+
+    #endregion Members
+    
+    
     #region --- Properties ---
 
-    public Image InfoPopup => infoPopup;
     public Button CloseInfoPopup => closeInfoPopup;
 
     #endregion Properties
@@ -22,10 +34,11 @@ public class InfoPopupController : MonoBehaviour
     
     #region --- Mono Methods ---
 
-    private void Awake()
-    {
-        closeInfoPopup.gameObject.SetActive(false);
-        infoPopup.gameObject.SetActive(false);
+    private void Start()
+    { 
+        _gameView = GameObject.Find(GAME_VIEW_OBJECT_NAME).GetComponent<GameView>();
+        closeInfoPopup.gameObject.SetActive(true);
+        infoPopup.gameObject.SetActive(true);
     }
 
     #endregion Mono Methods
@@ -37,7 +50,10 @@ public class InfoPopupController : MonoBehaviour
     {
         infoPopup.gameObject.SetActive(false);
         closeInfoPopup.gameObject.SetActive(false);
-        GameManager.Instance.StartGameText.gameObject.SetActive(true);
+        _gameView.StartGameText.gameObject.SetActive(true);
+        _gameView.InfoButton.gameObject.SetActive(true);
+        
+        Destroy(gameObject);
     }
 
     #endregion Event Handler

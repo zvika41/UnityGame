@@ -2,14 +2,15 @@
 {
     #region -- Override Methods ---
 
-    public override void StartSpawn(int difficulty)
+    protected override void StartSpawn(int difficulty)
     {
         spawnRate /= difficulty;
         StartCoroutine(SpawnTarget());
     }
-    
-    public override void StopSpawn()
+
+    protected override void StopSpawn()
     {
+        base.StopSpawn();
         StopAllCoroutines();
     }
 

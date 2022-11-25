@@ -61,6 +61,9 @@ public class ScoringManager : MonoBehaviour
     {
         _data = new ScoreData();
         LoadScore();
+        GameManager.Instance.TimeStart += HandleTimeStart;
+        GameManager.Instance.GameStart += InitScore;
+        GameManager.Instance.InvokeGameOver += HandleGameOver;
     }
 
     private void Update()
@@ -90,13 +93,6 @@ public class ScoringManager : MonoBehaviour
 
 
     #region --- Public Methods ---
-
-    public void InitScore()
-    {
-        scoreText.gameObject.SetActive(true);
-        scoreText.text = SCORE_TEXT;
-        scoreNumber.text = SCORE_ON_START;
-    }
     
     public void UpdateScore(int addScore)
     {
@@ -112,7 +108,27 @@ public class ScoringManager : MonoBehaviour
         scoreNumber.text = _score.ToString();
     }
     
-    public void SaveData()
+    #endregion Public Methods
+
+
+    #region --- Private Methods ---
+
+    private void HandleTimeStart()
+    {
+        bestScoreText.gameObject.SetActive(false);
+    }
+    
+    private void InitScore()
+    {
+        GameManager.Instance.GameStart -= InitScore;
+        
+        
+        scoreText.gameObject.SetActive(true);
+        scoreText.text = SCORE_TEXT;
+        scoreNumber.text = SCORE_ON_START;
+    }
+
+    private void SaveData()
     {
         if (_data.score < _score)
         {
@@ -122,11 +138,6 @@ public class ScoringManager : MonoBehaviour
         string json = JsonUtility.ToJson(_data);
         File.WriteAllText(Application.persistentDataPath + FILE_PATH, json);
     }
-    
-    #endregion Public Methods
-
-
-    #region --- Private Methods ---
 
     private IEnumerator FlickerBoostText()
     {
@@ -156,6 +167,14 @@ public class ScoringManager : MonoBehaviour
             
             bestScoreText.text = BEST_SCORE_TEXT + _data.score;
         }
+    }
+
+    private void HandleGameOver()
+    {
+        GameManager.Instance.InvokeGameOver -= HandleGameOver;
+
+        _isMultiplierBoost = false;
+        SaveData();
     }
 
     #endregion Private Methods

@@ -5,16 +5,23 @@ public class HealthManager : MonoBehaviour
 {
     #region --- SerializeField ---
 
-    [SerializeField] private List<GameObject> healthList;
+    [SerializeField] private GameObject health1;
+    [SerializeField] private GameObject health2;
+    [SerializeField] private GameObject health3;
 
     #endregion SerializeField
     
     
     #region --- Members ---
     
+    private List<GameObject> _healthList;
+    private GameObject _health1;
+    private GameObject _health2;
+    private GameObject _health3;
+    
     private bool _isHealthFull;
     private int _healthCounter;
-    
+
     #endregion Members
     
     
@@ -38,32 +45,46 @@ public class HealthManager : MonoBehaviour
         _healthCounter = 3;
     }
 
-    #endregion Mono Methods
-    
-    
-    #region --- Public Methods ---
-
-    public void ActiveHealthObjects()
+    private void Start()
     {
-        _isHealthFull = true;
-        
-        foreach (GameObject health in healthList)
+        GameManager.Instance.GameStart += HandleGameStart;
+    }
+
+    #endregion Mono Methods
+
+
+    #region --- Private Methods ---
+
+    private void HandleGameStart()
+    {
+        _health1 = Instantiate(health1);
+        _health2 = Instantiate(health2);
+        _health3 = Instantiate(health3);
+
+        _healthList = new List<GameObject> {_health1, _health2, _health3};
+
+        foreach (GameObject health in _healthList)
         {
             health.SetActive(true);
         }
     }
+
+    #endregion Private Methods
     
+    
+    #region --- Public Methods ---
+
     public void DisableHealthObject(int objectNumber)
     {
-        if (objectNumber > healthList.Count) return;
-
-        healthList[objectNumber].SetActive(false);
+        if (objectNumber > _healthList.Count) return;
+        
+        _healthList[objectNumber].SetActive(false);
         _isHealthFull = false;
     }
     
     public void DisableAllHealthObjects()
     {
-        foreach (GameObject health in healthList)
+        foreach (GameObject health in _healthList)
         {
             health.SetActive(false);
         }
@@ -71,7 +92,7 @@ public class HealthManager : MonoBehaviour
 
     public void AddLife(int objectNumber)
     {
-        healthList[objectNumber].SetActive(true);
+        _healthList[objectNumber].SetActive(true);
         
         if (objectNumber == 2)
         {

@@ -14,28 +14,24 @@ public class BackgroundController : MonoBehaviour
     private Renderer _renderer;
     private Vector2 _savedOffset;
     private float _scrollSpeed;
+    private bool _shouldRepeatBackground;
 
     #endregion Members
-    
 
-    #region --- Properties ---
-
-    public bool ShouldRepeatBackground { get; set; }
-
-    #endregion Properties
-    
 
     #region --- Mono Methods ---
 
     private void Start()
     {
+        GameManager.Instance.GameStart += Repeat;
+        GameManager.Instance.InvokeGameOver += StopRepeat;
         _renderer = GetComponent<Renderer> ();
         _scrollSpeed = 0.3f;
     }
 
     private void Update()
     {
-        if (ShouldRepeatBackground)
+        if (_shouldRepeatBackground)
         {
             Repeat();
         }
@@ -48,9 +44,17 @@ public class BackgroundController : MonoBehaviour
 
     private void Repeat()
     {
+        GameManager.Instance.GameStart -= Repeat;
+        _shouldRepeatBackground = true;
         float y = Mathf.Repeat (Time.time * _scrollSpeed, 1);
         Vector2 offset = new Vector2 (0, -y);
         _renderer.sharedMaterial.SetTextureOffset(MAIN_TEX_NAME, offset);
+    }
+    
+    private void StopRepeat()
+    {
+        GameManager.Instance.InvokeGameOver -= StopRepeat;
+        _shouldRepeatBackground = false;
     }
 
     #endregion Private Methods

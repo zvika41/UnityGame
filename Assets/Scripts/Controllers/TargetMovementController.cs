@@ -55,7 +55,7 @@ public class TargetMovementController : MonoBehaviour
     
     private Vector3 RandomPosition()
     {
-        _xRange = 5;
+        _xRange = 9;
         _ySpawnPos = 15;
         
         return new Vector3(Random.Range(-_xRange, _xRange), _ySpawnPos);

@@ -27,16 +27,19 @@ public class TimerController : MonoBehaviour
 
     #region --- Properties ---
     
-    public bool IsTimerOn { get; set; }
+    public bool IsTimerOn { get; private set; }
     
     #endregion Properties
     
     
     #region --- Mono Methods ---
-
+    
     private void Start()
     {
+        gameObject.SetActive(false);
         _timerLeft = 4;
+        
+        GameManager.Instance.TimeStart += HandleTimerStarted;
     }
 
     private void Update()
@@ -50,7 +53,9 @@ public class TimerController : MonoBehaviour
         }
         else
         {
+            gameObject.SetActive(false);
             IsTimerOn = false;
+            GameManager.Instance.StartGame();
         }
     }
 
@@ -58,6 +63,12 @@ public class TimerController : MonoBehaviour
   
 
     #region --- Private Methods ---
+
+    private void HandleTimerStarted()
+    {
+        gameObject.SetActive(true);
+        IsTimerOn = true;
+    }
 
     private void HandleTimerText(float currentTime)
     {

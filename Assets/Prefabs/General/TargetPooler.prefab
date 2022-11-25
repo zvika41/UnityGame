@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &232917342032261170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232917342032261168}
+  - component: {fileID: 232917342032261169}
+  m_Layer: 0
+  m_Name: TargetPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &232917342032261168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232917342032261170}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.2645874, y: 16.216797, z: -0.08551884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 232917343462750338}
+  - {fileID: 232917342725732312}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232917342032261169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232917342032261170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452482c05e900ed438386aa3d10513da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolList:
+  - Tag: Missile
+    Prefab: {fileID: 527761041456558962, guid: d61e0551b1a179546ab8c28a498340e1, type: 3}
+    Size: 5
+  - Tag: Enemy1
+    Prefab: {fileID: 341824121272346996, guid: 87080e6d4ad9f324cae055b8a46c706c, type: 3}
+    Size: 100
+  - Tag: Enemy2
+    Prefab: {fileID: 3604543982420291544, guid: df077e8e83ab9274cb3517bd1ff6a951,
+      type: 3}
+    Size: 100
+  - Tag: Enemy3
+    Prefab: {fileID: 6379427672728979885, guid: 36b30d9a574e9184f87ef6be6d97550e,
+      type: 3}
+    Size: 100
+  - Tag: Boost
+    Prefab: {fileID: 1241166147213281852, guid: 6e2fb6ba5282bbf438c205fc3d3a691c,
+      type: 3}
+    Size: 100
+  - Tag: Health
+    Prefab: {fileID: 7655065325273907776, guid: 7e9bcda0c40041e48877329fc2539f5d,
+      type: 3}
+    Size: 100
+  - Tag: Bomb
+    Prefab: {fileID: 8723275167469192252, guid: be0ebd515f360254c99886937162b102,
+      type: 3}
+    Size: 100
+--- !u!1 &232917342725732313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232917342725732312}
+  - component: {fileID: 232917342725732311}
+  m_Layer: 0
+  m_Name: Boost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &232917342725732312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232917342725732313}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 541.3653, y: 742.7832, z: -2.735897}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 232917342032261168}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232917342725732311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232917342725732313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79e401120ec34643b415c42789f2884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 20
+  tags:
+  - Boost
+  - Health
+--- !u!1 &232917343462750340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232917343462750338}
+  - component: {fileID: 232917343462750337}
+  m_Layer: 0
+  m_Name: Targets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &232917343462750338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232917343462750340}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 541.3653, y: 742.7832, z: -2.735897}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 232917342032261168}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232917343462750337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232917343462750340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14ce918784fcdae4fb6d602ad20369a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 2
+  tags:
+  - Enemy1
+  - Enemy2
+  - Enemy3
+  - Bomb
