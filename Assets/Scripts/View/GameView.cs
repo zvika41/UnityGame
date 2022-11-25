@@ -90,7 +90,8 @@ public class GameView : MonoBehaviour
     {
         StartGameText.gameObject.SetActive(false);
         infoButton.gameObject.SetActive(false);
-        Instantiate(infoPopup);
+        AssetsBundleService.LoadAssetsBundle(@"C:\Users\zvika\Desktop\Assets\infoPopup");
+        AssetsBundleService.InstantiateBundle("infoPopup");
         GameManager.Instance.SoundsEffectController.PlayMissileShoSoundEffect();
     }
     

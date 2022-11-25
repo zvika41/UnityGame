@@ -141,6 +141,8 @@
         <e p="Prefabs" t="Include">
           <e p="Boost" t="Include" />
           <e p="Enemy" t="Include" />
+          <e p="General" t="Include" />
+          <e p="Health" t="Include" />
           <e p="Player" t="Include" />
           <e p="View" t="Include" />
         </e>
@@ -163,6 +165,9 @@
             <e p="TargetsController.cs" t="Include" />
             <e p="TimerController.cs" t="Include" />
           </e>
+          <e p="Editor" t="Include">
+            <e p="AssetBundles.cs" t="Include" />
+          </e>
           <e p="Global" t="Include">
             <e p="GlobalConstMembers.cs" t="Include" />
           </e>
@@ -171,6 +176,9 @@
             <e p="GameManager.cs" t="Include" />
             <e p="HealthManager.cs" t="Include" />
             <e p="ScoringManager.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="AssetsBundleService.cs" t="Include" />
           </e>
           <e p="View" t="Include">
             <e p="GameView.cs" t="Include" />
