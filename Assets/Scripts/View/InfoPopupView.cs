@@ -53,7 +53,6 @@ public class InfoPopupView : MonoBehaviour
         _gameView.StartGameText.gameObject.SetActive(true);
         _gameView.InfoButton.gameObject.SetActive(true);
         
-        AssetsBundleService.UnloadBundle();
         Destroy(gameObject);
     }
 

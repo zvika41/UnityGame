@@ -7,6 +7,13 @@ using UnityEngine.UI;
 
 public class GameView : MonoBehaviour
 {
+    #region --- Const ---
+
+    private const string INFO_POPUP_ASSET_NAME = "infopopup";
+
+    #endregion
+    
+    
     #region --- SerializeField ---
 
     [SerializeField] private TextMeshProUGUI gameOverText;
@@ -15,7 +22,6 @@ public class GameView : MonoBehaviour
     [SerializeField] private Button tryAgainButton;
     [SerializeField] private Button exitButton;
     [SerializeField] private Button infoButton;
-    //[SerializeField] private GameObject infoPopup;
     [SerializeField] private GameObject player;
 
     #endregion SerializeField
@@ -23,7 +29,10 @@ public class GameView : MonoBehaviour
 
     #region --- Members ---
 
+    private AssetsBundleService _assetsBundleService;
     private AudioSource _musicTheme;
+
+    private bool _isAssetDownloaded;
 
     #endregion Members
 
@@ -41,6 +50,7 @@ public class GameView : MonoBehaviour
 
     private void Awake()
     {
+        _assetsBundleService = gameObject.AddComponent<AssetsBundleService>();
         _musicTheme = GetComponent<AudioSource>();
     }
     
@@ -48,7 +58,7 @@ public class GameView : MonoBehaviour
     {
         RegisterToCallbacks();
         HandleDifficultyLevelSelected();
-        _musicTheme.Play();
+        PlayGameMusic();
     }
 
     #endregion Mono Methods
@@ -91,6 +101,11 @@ public class GameView : MonoBehaviour
 #endif
     }
 
+    private void PlayGameMusic()
+    {
+        _musicTheme.Play();
+    }
+
     #endregion Private Methods
 
     
@@ -112,8 +127,17 @@ public class GameView : MonoBehaviour
     {
         StartGameText.gameObject.SetActive(false);
         infoButton.gameObject.SetActive(false);
-        AssetsBundleService.LoadAssetsBundle(@"C:\Users\zvika\Desktop\Assets\infoPopup");
-        AssetsBundleService.InstantiateBundle("infoPopup");
+
+        if (_isAssetDownloaded)
+        {
+            AssetsBundleService.LoadAssetsBundleFromServer(INFO_POPUP_ASSET_NAME);
+        }
+        else
+        {
+            _isAssetDownloaded = true;
+            _assetsBundleService.StartDownloadAsset(INFO_POPUP_ASSET_NAME);
+        }
+        
         GameManager.Instance.SoundsEffectController.PlayMissileShoSoundEffect();
     }
     

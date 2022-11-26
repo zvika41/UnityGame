@@ -20,34 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce9369e-daa0-4247-ae42-ce0a1cf2ca20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Library/StarSparrow/Materials/BonusContent/AsteroidsLava_Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Health/Life1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Health/Life1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Health/Life2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Health/Life2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Health/Life3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Health/Life3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/View/GameView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/View/GameView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shooting In Space.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shooting In Space.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BackgroundController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetMovementController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TimerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TimerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/View/InfoPopup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/View/InfoPopup.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetBundles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetBundles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DifficultyLevelManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DifficultyLevelManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/AssetsBundleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/AssetsBundleService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.data.gz" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.data.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.framework.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.framework.js.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.wasm.gz" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.wasm.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebGL Build/TemplateData/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Build/TemplateData/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebGL Build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Build/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,20 +106,20 @@
         <option value="$PROJECT_DIR$/Assets/Editor/AssetBundleService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/AssetBundleService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/LoadAssetsBundleService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/AssetsBundleService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/AssetBundles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DifficultyLevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TargetMovementController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TimerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BackgroundController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/AssetBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/AssetsBundleService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" />
       </list>
     </option>
   </component>
@@ -193,7 +177,7 @@
       <workItem from="1669306424863" duration="9368000" />
       <workItem from="1669365356962" duration="13366000" />
       <workItem from="1669395468812" duration="2385000" />
-      <workItem from="1669453275037" duration="7884000" />
+      <workItem from="1669453275037" duration="17811000" />
     </task>
     <servers />
   </component>
@@ -222,16 +206,16 @@
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
     <state x="-1481" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1920.0.1536.826/0.0.1920.1152@-1920.0.1536.826" timestamp="1669120489508" />
-    <state x="493" y="190" key="run.anything.popup" timestamp="1669208791958">
+    <state x="493" y="190" key="run.anything.popup" timestamp="1669473285549">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="616" y="268" key="run.anything.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668795809403" />
-    <state x="493" y="190" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1669208791958" />
-    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup" timestamp="1669466593673">
+    <state x="493" y="190" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1669473285549" />
+    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup" timestamp="1669484377586">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="-1422" y="181" width="672" height="487" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@-1920.0.1536.826" timestamp="1669124321953" />
     <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1669133296334" />
-    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1669466593673" />
+    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1669484377586" />
   </component>
 </project>
