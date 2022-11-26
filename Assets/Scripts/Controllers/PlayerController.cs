@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instance.GameStart += InitPlayer;
+        RegisterToCallbacks();
     }
 
     #endregion Mono Methods
@@ -36,9 +36,24 @@ public class PlayerController : MonoBehaviour
 
     private void InitPlayer()
     {
-        GameManager.Instance.GameStart -= InitPlayer;
+        UnRegisterFromCallbacks();
         _player.SetActive(true);
     }
 
     #endregion Private Methods
+    
+    
+    #region --- Event Handler ---
+
+    private void RegisterToCallbacks()
+    {
+        GameManager.Instance.GameStart += InitPlayer;
+    }
+    
+    private void UnRegisterFromCallbacks()
+    {
+        GameManager.Instance.GameStart -= InitPlayer;
+    }
+
+    #endregion Event Handler
 }

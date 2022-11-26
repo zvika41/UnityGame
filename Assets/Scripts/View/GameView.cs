@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
@@ -10,10 +11,11 @@ public class GameView : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private TextMeshProUGUI startGameText;
+    [SerializeField] private List<Button> difficultyButtons;
     [SerializeField] private Button tryAgainButton;
     [SerializeField] private Button exitButton;
     [SerializeField] private Button infoButton;
-    [SerializeField] private GameObject infoPopup;
+    //[SerializeField] private GameObject infoPopup;
     [SerializeField] private GameObject player;
 
     #endregion SerializeField
@@ -44,9 +46,8 @@ public class GameView : MonoBehaviour
     
     private void Start()
     {
-        GameManager.Instance.TimeStart += TimerStarted;
-        GameManager.Instance.GameStart += HandleGameStart;
-        GameManager.Instance.InvokeGameOver += HandleGameOver;
+        RegisterToCallbacks();
+        HandleDifficultyLevelSelected();
         _musicTheme.Play();
     }
 
@@ -54,6 +55,15 @@ public class GameView : MonoBehaviour
 
 
     #region --- Private Methods ---
+
+    private void HandleDifficultyLevelSelected()
+    {
+        for(int i = 0; i < difficultyButtons.Count; ++i)
+        {
+            int capturedButtonIndex = i;
+            difficultyButtons[capturedButtonIndex].onClick.AddListener(() => { OnDifficultyButtonClicked(capturedButtonIndex); });
+        }
+    }
 
     private void TimerStarted()
     {
@@ -85,6 +95,18 @@ public class GameView : MonoBehaviour
 
     
     #region -- Event Handler ---
+    
+    private void RegisterToCallbacks()
+    {
+        GameManager.Instance.TimeStart += TimerStarted;
+        GameManager.Instance.GameStart += HandleGameStart;
+        GameManager.Instance.InvokeGameOver += HandleGameOver;
+    }
+    
+    private void OnDifficultyButtonClicked(int level)
+    {
+        GameManager.Instance.StartTimer(level + 1);
+    }
 
     public void OnInfoButtonClicked()
     {

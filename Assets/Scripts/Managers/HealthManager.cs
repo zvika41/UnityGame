@@ -47,7 +47,7 @@ public class HealthManager : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instance.GameStart += HandleGameStart;
+        RegisterToCallbacks();
     }
 
     #endregion Mono Methods
@@ -57,6 +57,8 @@ public class HealthManager : MonoBehaviour
 
     private void HandleGameStart()
     {
+        UnRegisterFromCallbacks();
+        
         _health1 = Instantiate(health1);
         _health2 = Instantiate(health2);
         _health3 = Instantiate(health3);
@@ -101,4 +103,19 @@ public class HealthManager : MonoBehaviour
     }
 
     #endregion Public Methods
+    
+    
+    #region --- Event Handler ---
+
+    private void RegisterToCallbacks()
+    {
+        GameManager.Instance.GameStart += HandleGameStart;
+    }
+    
+    private void UnRegisterFromCallbacks()
+    {
+        GameManager.Instance.GameStart -= HandleGameStart;
+    }
+
+    #endregion Event Handler
 }

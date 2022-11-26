@@ -16,8 +16,7 @@ public class BaseTargetsController : MonoBehaviour
     
     private void Start()
     {
-        GameManager.Instance.GameStart += StartSpawning;
-        GameManager.Instance.InvokeGameOver += StopSpawn;
+       RegisterToCallbacks();
     }
 
     #endregion Mono Methods
@@ -29,7 +28,7 @@ public class BaseTargetsController : MonoBehaviour
 
     protected virtual void StopSpawn()
     {
-        GameManager.Instance.InvokeGameOver += StopSpawn;
+        GameManager.Instance.InvokeGameOver -= StopSpawn;
     }
 
     #endregion Virtual Methods
@@ -54,9 +53,20 @@ public class BaseTargetsController : MonoBehaviour
     
     private void StartSpawning()
     {
-        GameManager.Instance.GameStart += StartSpawning;
+        GameManager.Instance.GameStart -= StartSpawning;
         StartSpawn(GameManager.Instance.GameDifficulty);
     }
     
     #endregion Private Methods
+    
+    
+    #region --- Event Handler ---
+
+    private void RegisterToCallbacks()
+    {
+        GameManager.Instance.GameStart += StartSpawning;
+        GameManager.Instance.InvokeGameOver += StopSpawn;
+    }
+    
+    #endregion Event Handler
 }

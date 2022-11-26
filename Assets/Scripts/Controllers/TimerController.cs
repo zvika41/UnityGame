@@ -39,7 +39,7 @@ public class TimerController : MonoBehaviour
         gameObject.SetActive(false);
         _timerLeft = 4;
         
-        GameManager.Instance.TimeStart += HandleTimerStarted;
+        RegisterToCallbacks();
     }
 
     private void Update()
@@ -66,6 +66,7 @@ public class TimerController : MonoBehaviour
 
     private void HandleTimerStarted()
     {
+        UnRegisterFromCallbacks();
         gameObject.SetActive(true);
         IsTimerOn = true;
     }
@@ -86,4 +87,19 @@ public class TimerController : MonoBehaviour
     }
 
     #endregion Private Methods
+    
+    
+    #region --- Event Handler ---
+
+    private void RegisterToCallbacks()
+    {
+        GameManager.Instance.TimeStart += HandleTimerStarted;
+    }
+    
+    private void UnRegisterFromCallbacks()
+    {
+        GameManager.Instance.TimeStart -= HandleTimerStarted;
+    }
+
+    #endregion Event Handler
 }

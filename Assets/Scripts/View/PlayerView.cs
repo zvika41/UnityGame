@@ -60,14 +60,14 @@ public class PlayerView : MonoBehaviour
 
     private void HandlePlayerBounds()
     {
-        if (transform.position.x < -9)
+        if (transform.position.x < -12)
         {
-            transform.position = new Vector3(-9, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-12, transform.position.y, transform.position.z);
         }
 
-        if (transform.position.x > 9)
+        if (transform.position.x > 12)
         {
-            transform.position = new Vector3(9, transform.position.y, transform.position.z);
+            transform.position = new Vector3(12, transform.position.y, transform.position.z);
         }
     }
     

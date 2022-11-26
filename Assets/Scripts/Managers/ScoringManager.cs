@@ -59,11 +59,9 @@ public class ScoringManager : MonoBehaviour
 
     private void Awake()
     {
-        _data = new ScoreData();
+        _data = new ScoreData(); 
         LoadScore();
-        GameManager.Instance.TimeStart += HandleTimeStart;
-        GameManager.Instance.GameStart += InitScore;
-        GameManager.Instance.InvokeGameOver += HandleGameOver;
+        RegisterToCallbacks();
     }
 
     private void Update()
@@ -112,7 +110,7 @@ public class ScoringManager : MonoBehaviour
 
 
     #region --- Private Methods ---
-
+    
     private void HandleTimeStart()
     {
         bestScoreText.gameObject.SetActive(false);
@@ -178,6 +176,18 @@ public class ScoringManager : MonoBehaviour
     }
 
     #endregion Private Methods
+
+
+    #region --- Event Handler ---
+
+    private void RegisterToCallbacks()
+    {
+        GameManager.Instance.TimeStart += HandleTimeStart;
+        GameManager.Instance.GameStart += InitScore;
+        GameManager.Instance.InvokeGameOver += HandleGameOver;
+    }
+    
+    #endregion Event Handler
 
 
     #region --- Internal Classes ---

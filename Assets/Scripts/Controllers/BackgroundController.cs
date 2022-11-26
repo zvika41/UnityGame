@@ -23,10 +23,10 @@ public class BackgroundController : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instance.GameStart += Repeat;
-        GameManager.Instance.InvokeGameOver += StopRepeat;
         _renderer = GetComponent<Renderer> ();
         _scrollSpeed = 0.3f;
+        
+        RegisterToCallbacks();
     }
 
     private void Update()
@@ -58,4 +58,15 @@ public class BackgroundController : MonoBehaviour
     }
 
     #endregion Private Methods
+    
+    
+    #region --- Event Handler ---
+
+    private void RegisterToCallbacks()
+    {
+        GameManager.Instance.GameStart += Repeat;
+        GameManager.Instance.InvokeGameOver += StopRepeat;
+    }
+    
+    #endregion Event Handler
 }

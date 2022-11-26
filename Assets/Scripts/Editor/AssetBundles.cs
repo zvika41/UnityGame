@@ -6,6 +6,6 @@ public class AssetBundles : Editor
     static void BuildAssetsBundle()
     {
         BuildPipeline.BuildAssetBundles(@"C:\Users\zvika\Desktop\Assets", BuildAssetBundleOptions.ChunkBasedCompression,
-            BuildTarget.StandaloneWindows);
+            BuildTarget.WebGL);
     }
 }

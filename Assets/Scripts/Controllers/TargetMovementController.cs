@@ -35,7 +35,7 @@ public class TargetMovementController : MonoBehaviour
     
     private void HandleGameObjects()
     {
-        if (!(gameObject.transform.position.y < 0)) return;
+        if (!(gameObject.transform.position.y < -3)) return;
         
         if (gameObject.CompareTag(GlobalConstMembers.ENEMY) || gameObject.CompareTag(GlobalConstMembers.BOMB) ||
             gameObject.CompareTag(GlobalConstMembers.MULTIPLER_BOOST) ||
@@ -55,8 +55,8 @@ public class TargetMovementController : MonoBehaviour
     
     private Vector3 RandomPosition()
     {
-        _xRange = 9;
-        _ySpawnPos = 15;
+        _xRange = 12;
+        _ySpawnPos = 21;
         
         return new Vector3(Random.Range(-_xRange, _xRange), _ySpawnPos);
     }

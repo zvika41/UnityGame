@@ -36,7 +36,7 @@ public class MissilesController : MonoBehaviour
 
     private void DisableMissileOutOfBounds()
     {
-        if (transform.position.y > 18)
+        if (transform.position.y > 20)
         {
             gameObject.SetActive(false);
         }

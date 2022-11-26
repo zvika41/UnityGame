@@ -117,10 +117,9 @@ GameObject:
   - component: {fileID: 2411410335764435303}
   - component: {fileID: 2411410335764435302}
   - component: {fileID: 2411410335764435297}
-  - component: {fileID: 2411410335764435300}
   m_Layer: 5
   m_Name: Medium
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,19 +226,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2411410335764435302}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2411410335764435300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2411410335764435299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42ffd40aa9b21e449f750c2d9d199ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+      m_Calls:
+      - m_Target: {fileID: 2411410336595113351}
+        m_TargetAssemblyTypeName: GameView, Assembly-CSharp
+        m_MethodName: OnDifficultyButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2411410335806036741
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,10 +719,9 @@ GameObject:
   - component: {fileID: 2411410336469242790}
   - component: {fileID: 2411410336469242785}
   - component: {fileID: 2411410336469242784}
-  - component: {fileID: 2411410336469242791}
   m_Layer: 5
   m_Name: Easy
-  m_TagString: Untagged
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -830,19 +828,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2411410336469242785}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2411410336469242791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2411410336469242786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42ffd40aa9b21e449f750c2d9d199ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+      m_Calls:
+      - m_Target: {fileID: 2411410336595113351}
+        m_TargetAssemblyTypeName: GameView, Assembly-CSharp
+        m_MethodName: OnDifficultyButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2411410336528530624
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,11 +969,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 2411410336624766503}
   startGameText: {fileID: 2411410337077476564}
+  difficultyButtons:
+  - {fileID: 2411410336469242784}
+  - {fileID: 2411410335764435297}
+  - {fileID: 2411410336899755312}
   tryAgainButton: {fileID: 2411410336443572115}
   exitButton: {fileID: 2411410337222619618}
   infoButton: {fileID: 2411410336728247520}
-  infoPopup: {fileID: 2016255906120406948, guid: e7514b9a9ef9d024e8c489b20055c70f,
-    type: 3}
   player: {fileID: 8321902173432314399, guid: d9de5a85acd27cc4281f216b7635fd3a, type: 3}
 --- !u!82 &2411410336595113349
 AudioSource:
@@ -1357,10 +1357,9 @@ GameObject:
   - component: {fileID: 2411410336899755318}
   - component: {fileID: 2411410336899755313}
   - component: {fileID: 2411410336899755312}
-  - component: {fileID: 2411410336899755319}
   m_Layer: 5
   m_Name: Hard
-  m_TagString: Untagged
+  m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1467,19 +1466,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2411410336899755313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2411410336899755319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2411410336899755314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42ffd40aa9b21e449f750c2d9d199ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+      m_Calls:
+      - m_Target: {fileID: 2411410336595113351}
+        m_TargetAssemblyTypeName: GameView, Assembly-CSharp
+        m_MethodName: OnDifficultyButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2411410337077476566
 GameObject:
   m_ObjectHideFlags: 0

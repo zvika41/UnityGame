@@ -172,7 +172,6 @@
             <e p="GlobalConstMembers.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
-            <e p="DifficultyLevelManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="HealthManager.cs" t="Include" />
             <e p="ScoringManager.cs" t="Include" />
