@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class PlayerView : MonoBehaviour
@@ -11,7 +10,11 @@ public class PlayerView : MonoBehaviour
     #endregion Const
 
 
-    [SerializeField] private ParticleSystem particleSystem;
+    #region --- Serialize Fields ---
+
+    [SerializeField] private new ParticleSystem particleSystem;
+
+    #endregion Serialize Fields
     
     
     #region --- Members ---
@@ -26,11 +29,6 @@ public class PlayerView : MonoBehaviour
     private void Awake()
     {
         _shootingSound = GetComponent<AudioSource>();
-    }
-
-    private void Start()
-    {
-        particleSystem.Play();
     }
 
     private void Update()

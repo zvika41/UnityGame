@@ -175,7 +175,6 @@
             <e p="HealthManager.cs" t="Include" />
             <e p="ScoringManager.cs" t="Include" />
           </e>
-          <e p="ParticleController.cs" t="Include" />
           <e p="Services" t="Include">
             <e p="AssetsBundleService.cs" t="Include" />
           </e>
@@ -205,7 +204,6 @@
             <e p="BonusContent" t="Include" />
           </e>
         </e>
-        <e p="StreamingAssets" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Documentation" t="Include" />
           <e p="Examples &amp; Extras" t="Include">
