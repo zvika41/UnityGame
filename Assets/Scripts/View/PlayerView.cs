@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerView : MonoBehaviour
@@ -8,6 +9,9 @@ public class PlayerView : MonoBehaviour
     private const string MISSILE_OBJECT_NAME = "Missile";
 
     #endregion Const
+
+
+    [SerializeField] private ParticleSystem particleSystem;
     
     
     #region --- Members ---
@@ -22,6 +26,11 @@ public class PlayerView : MonoBehaviour
     private void Awake()
     {
         _shootingSound = GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        particleSystem.Play();
     }
 
     private void Update()
@@ -41,6 +50,7 @@ public class PlayerView : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector3.right * Time.deltaTime * SPEED);
+            
         }
         
         if (Input.GetKey(KeyCode.LeftArrow))
