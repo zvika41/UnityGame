@@ -4,7 +4,7 @@ public class PlayerView : MonoBehaviour
 {
     #region --- Const ---
 
-    private const float SPEED = 15f;
+    private const float SPEED = 18f;
     private const string MISSILE_OBJECT_NAME = "Missile";
 
     #endregion Const

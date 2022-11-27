@@ -27,6 +27,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SoundsEffectController soundsEffect;
 
     #endregion SerializeField
+
+
+    #region --- Events ---
+
+    public event Action TimeStart;
+    public event Action GameStart;
+    public event Action InvokeGameOver;
+
+    #endregion Events
     
     
     #region --- Members ---
@@ -53,9 +62,6 @@ public class GameManager : MonoBehaviour
 
     public bool IsGameActive => _isGameActive;
     public int GameDifficulty => _gameDifficulty;
-    public Action TimeStart { get; set; }
-    public Action GameStart { get; set; }
-    public Action InvokeGameOver { get; set; }
 
     #region ___Controllers___
 
