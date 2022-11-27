@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce9369e-daa0-4247-ae42-ce0a1cf2ca20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,13 +105,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BackgroundController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/AssetBundles.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/AssetsBundleService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ParticleController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" />
       </list>
     </option>
   </component>
@@ -169,7 +170,7 @@
       <workItem from="1669365356962" duration="13366000" />
       <workItem from="1669395468812" duration="2385000" />
       <workItem from="1669453275037" duration="18840000" />
-      <workItem from="1669550359625" duration="5354000" />
+      <workItem from="1669550359625" duration="6513000" />
     </task>
     <servers />
   </component>
@@ -203,11 +204,11 @@
     </state>
     <state x="616" y="268" key="run.anything.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668795809403" />
     <state x="493" y="190" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1669473285549" />
-    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup" timestamp="1669559536739">
+    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup" timestamp="1669560916490">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="-1422" y="181" width="672" height="487" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@-1920.0.1536.826" timestamp="1669124321953" />
     <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1669133296334" />
-    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1669559536739" />
+    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1669560916490" />
   </component>
 </project>

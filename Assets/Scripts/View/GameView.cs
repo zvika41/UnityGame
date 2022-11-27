@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.IO;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
@@ -128,28 +127,17 @@ public class GameView : MonoBehaviour
     {
         StartGameText.gameObject.SetActive(false);
         infoButton.gameObject.SetActive(false);
+        GameManager.Instance.ScoringManager.BestScoreText.gameObject.SetActive(false);
 
-        // if (_isAssetDownloaded)
-        // {
-        //     AssetsBundleService.LoadAssetsBundleFromServer(INFO_POPUP_ASSET_NAME);
-        // }
-        // else
-        // {
-        //     _isAssetDownloaded = true;
-        //     _assetsBundleService.StartDownloadAsset(INFO_POPUP_ASSET_NAME);
-        // }
-        
-        var myLoadedAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/StreamingAssets/"));
-        if (myLoadedAssetBundle == null)
+        if (_isAssetDownloaded)
         {
-            Debug.Log("Failed to load AssetBundle!");
-            return;
+            AssetsBundleService.LoadAssetsBundleFromServer(INFO_POPUP_ASSET_NAME);
         }
-
-        var prefab = myLoadedAssetBundle.LoadAsset<GameObject>("infopopup");
-        Instantiate(prefab);
-
-        myLoadedAssetBundle.Unload(false);
+        else
+        {
+            _isAssetDownloaded = true;
+            _assetsBundleService.StartDownloadAsset(INFO_POPUP_ASSET_NAME);
+        }
         
         GameManager.Instance.SoundsEffectController.PlayMissileShoSoundEffect();
     }

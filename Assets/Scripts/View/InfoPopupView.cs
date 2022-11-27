@@ -52,6 +52,7 @@ public class InfoPopupView : MonoBehaviour
         closeInfoPopup.gameObject.SetActive(false);
         _gameView.StartGameText.gameObject.SetActive(true);
         _gameView.InfoButton.gameObject.SetActive(true);
+        GameManager.Instance.ScoringManager.BestScoreText.gameObject.SetActive(true);
         
         Destroy(gameObject);
     }

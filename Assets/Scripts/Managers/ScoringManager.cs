@@ -52,6 +52,8 @@ public class ScoringManager : MonoBehaviour
         set => _shouldStartBoostTimer = value;
     }
 
+    public Text BestScoreText => bestScoreText;
+
     #endregion Properties
 
 
