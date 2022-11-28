@@ -977,6 +977,8 @@ MonoBehaviour:
   exitButton: {fileID: 2411410337222619618}
   infoButton: {fileID: 2411410336728247520}
   player: {fileID: 8321902173432314399, guid: d9de5a85acd27cc4281f216b7635fd3a, type: 3}
+  infoPopup: {fileID: 2016255906120406948, guid: e7514b9a9ef9d024e8c489b20055c70f,
+    type: 3}
 --- !u!82 &2411410336595113349
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1548,18 +1550,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Let's Play
+  m_text: Shootin' In Space
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ff9dfb9dcfa9b451da0749c3d2b449a9, type: 2}
-  m_sharedMaterial: {fileID: 21956123629259200, guid: ff9dfb9dcfa9b451da0749c3d2b449a9,
+  m_fontAsset: {fileID: 11400000, guid: 31706cb8c8e1e4d99bb4d0a39c952ca2, type: 2}
+  m_sharedMaterial: {fileID: 21066439983934862, guid: 31706cb8c8e1e4d99bb4d0a39c952ca2,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284488000
-  m_fontColor: {r: 0.25142002, g: 0.097899616, b: 0.3773585, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

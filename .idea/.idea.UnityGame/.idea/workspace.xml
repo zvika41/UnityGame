@@ -20,8 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce9369e-daa0-4247-ae42-ce0a1cf2ca20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SubstancePainter.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,9 +119,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/AssetsBundleService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" />
       </list>
     </option>
   </component>

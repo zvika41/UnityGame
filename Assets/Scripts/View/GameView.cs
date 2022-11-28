@@ -23,6 +23,7 @@ public class GameView : MonoBehaviour
     [SerializeField] private Button exitButton;
     [SerializeField] private Button infoButton;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject infoPopup;
 
     #endregion SerializeField
 
@@ -129,16 +130,7 @@ public class GameView : MonoBehaviour
         infoButton.gameObject.SetActive(false);
         GameManager.Instance.ScoringManager.BestScoreText.gameObject.SetActive(false);
 
-        if (_isAssetDownloaded)
-        {
-            AssetsBundleService.LoadAssetsBundleFromServer(INFO_POPUP_ASSET_NAME);
-        }
-        else
-        {
-            _isAssetDownloaded = true;
-            _assetsBundleService.StartDownloadAsset(INFO_POPUP_ASSET_NAME);
-        }
-        
+        Instantiate(infoPopup);
         GameManager.Instance.SoundsEffectController.PlayMissileShoSoundEffect();
     }
     
