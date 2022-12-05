@@ -48,7 +48,6 @@ public class PlayerView : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector3.right * Time.deltaTime * SPEED);
-            
         }
         
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -70,12 +69,18 @@ public class PlayerView : MonoBehaviour
     {
         if (transform.position.x < -12)
         {
-            transform.position = new Vector3(-12, transform.position.y, transform.position.z);
+            var currentTransform = transform;
+            var position = currentTransform.position;
+            position = new Vector3(-12, position.y, position.z);
+            currentTransform.position = position;
         }
 
         if (transform.position.x > 12)
         {
-            transform.position = new Vector3(12, transform.position.y, transform.position.z);
+            var currentTransform = transform;
+            var position = currentTransform.position;
+            position = new Vector3(12, position.y, position.z);
+            currentTransform.position = position;
         }
     }
     

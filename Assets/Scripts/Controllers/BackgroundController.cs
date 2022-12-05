@@ -11,8 +11,8 @@ public class BackgroundController : MonoBehaviour
 
     #region --- Members ---
     
-    private Renderer _renderer;
-    private Vector2 _savedOffset;
+    private Material _material;
+    private float _offset;
     private float _scrollSpeed;
     private bool _shouldRepeatBackground;
 
@@ -23,8 +23,8 @@ public class BackgroundController : MonoBehaviour
 
     private void Start()
     {
-        _renderer = GetComponent<Renderer> ();
-        _scrollSpeed = 0.3f;
+        _material = GetComponent<Renderer>().material;
+        _scrollSpeed = 6f;
         
         RegisterToCallbacks();
     }
@@ -42,18 +42,20 @@ public class BackgroundController : MonoBehaviour
 
     #region --- Private Methods ---
 
+    private void InitRepeat()
+    {
+        _shouldRepeatBackground = true;
+    }
+
     private void Repeat()
     {
-        GameManager.Instance.GameStart -= Repeat;
-        _shouldRepeatBackground = true;
-        float y = Mathf.Repeat (Time.time * _scrollSpeed, 1);
-        Vector2 offset = new Vector2 (0, -y);
-        _renderer.sharedMaterial.SetTextureOffset(MAIN_TEX_NAME, offset);
+        _offset += (Time.deltaTime * _scrollSpeed) / 10f;
+        _material.SetTextureOffset(MAIN_TEX_NAME, new Vector2(0, -_offset));
     }
     
     private void StopRepeat()
     {
-        GameManager.Instance.InvokeGameOver -= StopRepeat;
+       UnRegisterToCallbacks();
         _shouldRepeatBackground = false;
     }
 
@@ -64,8 +66,14 @@ public class BackgroundController : MonoBehaviour
 
     private void RegisterToCallbacks()
     {
-        GameManager.Instance.GameStart += Repeat;
+        GameManager.Instance.GameStart += InitRepeat;
         GameManager.Instance.InvokeGameOver += StopRepeat;
+    }
+    
+    private void UnRegisterToCallbacks()
+    {
+        GameManager.Instance.GameStart -= Repeat;
+        GameManager.Instance.InvokeGameOver -= StopRepeat;
     }
     
     #endregion Event Handler
