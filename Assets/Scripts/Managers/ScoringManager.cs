@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +7,7 @@ public class ScoringManager : MonoBehaviour
 {
     #region --- Const ---
     
-    private const string FILE_PATH = "/savefile.json";
+    private const string SCORING_DATA = "ScoringData";
     private const string SCORE_TEXT = "Score: ";
     private const string BEST_SCORE_TEXT = "Best Score: ";
     private const string SCORE_ON_START = "0";
@@ -122,7 +121,6 @@ public class ScoringManager : MonoBehaviour
     {
         GameManager.Instance.GameStart -= InitScore;
         
-        
         scoreText.gameObject.SetActive(true);
         scoreText.text = SCORE_TEXT;
         scoreNumber.text = SCORE_ON_START;
@@ -136,7 +134,8 @@ public class ScoringManager : MonoBehaviour
         }
         
         string json = JsonUtility.ToJson(_data);
-        File.WriteAllText(Application.persistentDataPath + FILE_PATH, json);
+        PlayerPrefs.SetString(SCORING_DATA, json);
+        PlayerPrefs.Save();
     }
 
     private IEnumerator FlickerBoostText()
@@ -152,21 +151,24 @@ public class ScoringManager : MonoBehaviour
 
     private void LoadScore()
     {
-        string path = Application.persistentDataPath + FILE_PATH;
-
-        if (File.Exists(path))
+        try
         {
-            string json = File.ReadAllText(path);
-
-            _data = JsonUtility.FromJson<ScoreData>(json);
-
-            if (!bestScoreText.gameObject.activeInHierarchy && _data.score > 0)
-            {
-                bestScoreText.gameObject.SetActive(true);
-            }
-            
-            bestScoreText.text = BEST_SCORE_TEXT + _data.score;
+            _data = JsonUtility.FromJson<ScoreData>(PlayerPrefs.GetString(SCORING_DATA));
         }
+        catch (Exception e)
+        {
+            Debug.LogError(e);
+            throw;
+        }
+       
+        if (_data == null) return;
+        
+        if (_data.score > 0)
+        {
+            bestScoreText.gameObject.SetActive(true);
+        }
+            
+        bestScoreText.text = BEST_SCORE_TEXT + _data.score;
     }
 
     private void HandleGameOver()

@@ -20,20 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce9369e-daa0-4247-ae42-ce0a1cf2ca20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Prefabs/BonusContent.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Readme/Readme Files/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/SubstancePainter.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarSparrow/Textures/BonusContent.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Build.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.data.gz" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.data.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.framework.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.framework.js.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.wasm.gz" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Build/Build/WebGL Build.wasm.gz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,29 +37,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services/AssetsBundleService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/AssetBundles.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/RandomTorqueController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/SoundsEffectController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/ObjectPoolerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BoostsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BaseTargetController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TimerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TargetMovementController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Library/_Source_Files/Scripts/DestroyAfterDelay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/AssetBundles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/RandomTorqueController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/MissilesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/CanvasScalerWithChildTextObjectDoesNotCrash.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/874D3E57-E875-4567-B575-3A47CBB1AE54/18/102be6c0/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/ObjectPoolerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TimerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstMembers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services/AssetsBundleService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TargetsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Library/_Source_Files/Scripts/DestroyAfterDelay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/874D3E57-E875-4567-B575-3A47CBB1AE54/18/102be6c0/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/TargetMovementController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -118,10 +111,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ParticleController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/View/PlayerView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/View/InfoPopupView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/AssetsBundleService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/View/GameView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ScoringManager.cs" />
       </list>
     </option>
   </component>
@@ -181,6 +174,7 @@
       <workItem from="1669395468812" duration="2385000" />
       <workItem from="1669453275037" duration="18840000" />
       <workItem from="1669550359625" duration="7621000" />
+      <workItem from="1670238446637" duration="2006000" />
     </task>
     <servers />
   </component>
@@ -214,11 +208,12 @@
     </state>
     <state x="616" y="268" key="run.anything.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1668795809403" />
     <state x="493" y="190" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1669473285549" />
-    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup" timestamp="1669566081661">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state x="623" y="225" width="840" height="609" key="search.everywhere.popup" timestamp="1670238519152">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
+    <state x="623" y="225" width="840" height="609" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1670238519152" />
     <state x="-1422" y="181" width="672" height="487" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@-1920.0.1536.826" timestamp="1669124321953" />
     <state x="623" y="253" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1152@0.0.1920.1152" timestamp="1669133296334" />
-    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1669566081661" />
+    <state x="498" y="178" width="672" height="481" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1669637313265" />
   </component>
 </project>
