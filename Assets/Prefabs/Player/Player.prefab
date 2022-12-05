@@ -1352,11 +1352,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stars_Flyby_Fast
       objectReference: {fileID: 0}
-    - target: {fileID: 5909986631797049703, guid: d1acb2ad283a4df46b70aefc02ff7186,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5909986631797335765, guid: d1acb2ad283a4df46b70aefc02ff7186,
         type: 3}
       propertyPath: m_RootOrder
